@@ -23,6 +23,7 @@
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.2",
+    "socket.io": "^4.7.2",
     "twilio": "^4.14.1"
   }
 }
