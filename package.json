@@ -24,8 +24,5 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.2",
     "twilio": "^4.14.1"
-  },
-  "devDependencies": {
-    "start":"nodemon ./index.js"
   }
 }
