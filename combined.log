@@ -788,3 +788,6 @@
 2023-08-14T19:29:07.200Z [INFO]: Request to /api/v1/video/create-room?roomName=simran took 2.1396999955177307ms
 2023-08-14T19:29:44.258Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=simran
 2023-08-14T19:29:44.264Z [INFO]: Request to /api/v1/video/join?roomName=simran took 6.050999999046326ms
+2023-08-28T09:58:47.670Z [INFO]: Server running at port 3000
+2023-08-28T09:58:51.093Z [INFO]: Connected to the database
+2023-08-28T10:00:04.475Z [INFO]: Server running at port 3000

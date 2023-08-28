@@ -10,7 +10,7 @@ module.exports.createRoom = async (req, res) => {
         const joinLink = await createVideoRoom(roomName);
         res.json({ joinLink });
     } catch (error) {
-        handleRoomCreationError(res, roomName, error);
+        handleErrorResponse(res, roomName, error);
     }
 };
 
