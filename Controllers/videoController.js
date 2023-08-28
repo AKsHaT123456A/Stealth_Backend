@@ -61,7 +61,7 @@ async function createVideoRoom(roomName) {
 
 // // Helper function: Redirect to the video room page
 function redirectToVideoRoom(res, roomName) {
-    res.redirect(`https://stealth-frontend-x4dw.vercel.app/room/${roomName}`);
+    res.redirect(`http://localhost:5173/room/${roomName}`);
 }
 
 // // Helper function: Check if the recipient is a registered user
