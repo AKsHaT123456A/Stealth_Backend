@@ -19,7 +19,7 @@ module.exports.createRoom = async (req, res) => {
 module.exports.join = (req, res) => {
     const roomName = req.query.roomName;
 
-    notifyOwner(roomName);
+    // notifyOwner(roomName);
     redirectToVideoRoom(res, roomName);
 };
 
@@ -50,7 +50,7 @@ async function createVideoRoom(roomName) {
     //     uniqueName: roomName
     // });
 
-    return `http://localhost:3000/api/v1/video/join?roomName=${roomName}`;
+    return `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${roomName}`;
 }
 
 // // Helper function: Notify the owner about room joining
@@ -60,9 +60,9 @@ async function createVideoRoom(roomName) {
 // }
 
 // // Helper function: Redirect to the video room page
-// function redirectToVideoRoom(res, roomName) {
-//     res.redirect(`http://localhost:5173/room/${roomName}`);
-// }
+function redirectToVideoRoom(res, roomName) {
+    res.redirect(`http://localhost:5173/room/${roomName}`);
+}
 
 // // Helper function: Check if the recipient is a registered user
 // function isRegisteredUser(userId) {
