@@ -51,7 +51,7 @@ socketSetup(server);
 app.get('/', auth, (req, res) => {
     res.send("Welcome to Liviso!!!")
 });
-app.use(`${apiPrefix}/auth`, authRoutes);
+// app.use(`${apiPrefix}/auth`, authRoutes);
 app.use(`${apiPrefix}/video`, videoRoutes);
 
 // Connect to the database
