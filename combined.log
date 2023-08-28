@@ -1,0 +1,790 @@
+2023-08-10T20:04:12.774Z [INFO]: Connected to the database
+2023-08-10T20:04:28.874Z [INFO]: Connected to the database
+2023-08-10T20:04:32.044Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:04:52.059Z [INFO]: Connected to the database
+2023-08-10T20:04:54.642Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:04:54.645Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:04:54.645Z [WARN]: Login failed: Phone number or password missing
+2023-08-10T20:04:54.646Z [ERROR]: An error occurred while logging in: ip is not defined
+2023-08-10T20:04:54.647Z [ERROR]: Error: An error occurred while logging in ip is not defined
+2023-08-10T20:05:47.669Z [INFO]: Connected to the database
+2023-08-10T20:05:47.966Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:05:47.969Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:05:47.970Z [WARN]: Login failed: Phone number or password missing
+2023-08-10T20:06:48.715Z [INFO]: Connected to the database
+2023-08-10T20:06:59.290Z [INFO]: Connected to the database
+2023-08-10T20:07:12.639Z [INFO]: Connected to the database
+2023-08-10T20:07:18.811Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:07:18.813Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:07:18.813Z [WARN]: Login failed: Phone number or password missing
+2023-08-10T20:07:23.836Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:07:23.837Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:07:24.263Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:08:43.735Z [INFO]: Connected to the database
+2023-08-10T20:10:02.432Z [INFO]: Connected to the database
+2023-08-10T20:10:18.627Z [INFO]: Connected to the database
+2023-08-10T20:10:49.298Z [INFO]: Connected to the database
+2023-08-10T20:11:24.240Z [INFO]: Connected to the database
+2023-08-10T20:11:47.051Z [ERROR]: Error connecting to the database: option poolsize is not supported
+2023-08-10T20:11:54.694Z [ERROR]: Error connecting to the database: option mapoolsize is not supported
+2023-08-10T20:11:57.271Z [ERROR]: Error connecting to the database: option maxpoolsizepoolsize is not supported
+2023-08-10T20:13:15.340Z [INFO]: Connected to the database
+2023-08-10T20:13:19.431Z [ERROR]: Error connecting to the database: option mapoolsize is not supported
+2023-08-10T20:13:25.636Z [ERROR]: Error connecting to the database: option maxpoolsizepoolsize is not supported
+2023-08-10T20:14:29.960Z [INFO]: Connected to the database
+2023-08-10T20:15:43.540Z [INFO]: Connected to the database
+2023-08-10T20:17:08.348Z [INFO]: Connected to the database
+2023-08-10T20:18:30.326Z [INFO]: Server running at port 3000
+2023-08-10T20:18:33.785Z [INFO]: Connected to the database
+2023-08-10T20:20:12.243Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:20:12.246Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:20:12.683Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:29:49.952Z [INFO]: Server running at port 3000
+2023-08-10T20:29:51.846Z [INFO]: Server running at port 3000
+2023-08-10T20:29:54.969Z [INFO]: Connected to the database
+2023-08-10T20:30:00.520Z [INFO]: Server running at port 3000
+2023-08-10T20:30:03.812Z [INFO]: Connected to the database
+2023-08-10T20:30:11.806Z [INFO]: Server running at port 3000
+2023-08-10T20:30:17.970Z [INFO]: Server running at port 3000
+2023-08-10T20:30:20.596Z [INFO]: Server running at port 3000
+2023-08-10T20:30:23.798Z [INFO]: Connected to the database
+2023-08-10T20:30:50.130Z [INFO]: Server running at port 3000
+2023-08-10T20:30:53.586Z [INFO]: Connected to the database
+2023-08-10T20:30:56.303Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:30:56.305Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:30:56.650Z [INFO]: Database query for login took 344.4150000214577ms
+2023-08-10T20:31:08.317Z [INFO]: Server running at port 3000
+2023-08-10T20:31:11.502Z [INFO]: Connected to the database
+2023-08-10T20:31:12.629Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:31:12.632Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:31:14.676Z [INFO]: Database query for login took 2043.1044999957085ms
+2023-08-10T20:31:14.735Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:31:14.740Z [INFO]: Request to /api/v1/auth/login took 2111.458899974823ms
+2023-08-10T20:31:21.209Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:31:21.211Z [INFO]: Login request from IP: ::ffff:127.0.0.1
+2023-08-10T20:31:21.544Z [INFO]: Database query for login took 332.51190000772476ms
+2023-08-10T20:31:21.604Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:31:21.606Z [INFO]: Request to /api/v1/auth/login took 397.13159996271133ms
+2023-08-10T20:32:50.361Z [INFO]: Server running at port 3000
+2023-08-10T20:32:51.639Z [INFO]: Server running at port 3000
+2023-08-10T20:32:54.838Z [INFO]: Connected to the database
+2023-08-10T20:33:15.223Z [INFO]: Server running at port 3000
+2023-08-10T20:33:17.965Z [INFO]: Server running at port 3000
+2023-08-10T20:33:21.230Z [INFO]: Connected to the database
+2023-08-10T20:33:32.220Z [INFO]: Server running at port 3000
+2023-08-10T20:33:34.506Z [INFO]: Server running at port 3000
+2023-08-10T20:33:37.764Z [INFO]: Server running at port 3000
+2023-08-10T20:33:40.947Z [INFO]: Connected to the database
+2023-08-10T20:33:43.997Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:34:11.699Z [INFO]: Server running at port 3000
+2023-08-10T20:34:14.871Z [INFO]: Server running at port 3000
+2023-08-10T20:34:15.833Z [INFO]: Server running at port 3000
+2023-08-10T20:34:19.044Z [INFO]: Connected to the database
+2023-08-10T20:34:19.737Z [INFO]: Server running at port 3000
+2023-08-10T20:34:22.919Z [INFO]: Connected to the database
+2023-08-10T20:34:24.587Z [INFO]: Server running at port 3000
+2023-08-10T20:34:27.028Z [INFO]: Server running at port 3000
+2023-08-10T20:34:30.212Z [INFO]: Connected to the database
+2023-08-10T20:34:31.971Z [INFO]: Server running at port 3000
+2023-08-10T20:34:32.915Z [INFO]: Server running at port 3000
+2023-08-10T20:34:35.595Z [INFO]: Server running at port 3000
+2023-08-10T20:34:36.662Z [INFO]: Server running at port 3000
+2023-08-10T20:34:39.883Z [INFO]: Connected to the database
+2023-08-10T20:34:51.269Z [INFO]: Server running at port 3000
+2023-08-10T20:34:54.395Z [INFO]: Server running at port 3000
+2023-08-10T20:34:57.620Z [INFO]: Connected to the database
+2023-08-10T20:35:07.842Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:35:07.846Z [ERROR]: An error occurred while logging in: Cannot access 'queryTime' before initialization
+2023-08-10T20:35:07.846Z [ERROR]: Error: An error occurred while logging in Cannot access 'queryTime' before initialization
+2023-08-10T20:35:07.850Z [INFO]: Request to /api/v1/auth/login took 8.640200018882751ms
+2023-08-10T20:36:04.394Z [INFO]: Server running at port 3000
+2023-08-10T20:36:07.757Z [INFO]: Connected to the database
+2023-08-10T20:36:08.764Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:36:10.706Z [INFO]: Database query for login took 1940.612500011921ms
+2023-08-10T20:36:10.767Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:36:10.771Z [INFO]: Request to /api/v1/auth/login took 2007.725800037384ms
+2023-08-10T20:36:12.867Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:36:13.191Z [INFO]: Database query for login took 323.5417000055313ms
+2023-08-10T20:36:13.249Z [INFO]: User logged in successfully: 64d3883645baca38feca2e2f
+2023-08-10T20:36:13.251Z [INFO]: Request to /api/v1/auth/login took 383.9480000138283ms
+2023-08-10T20:37:05.882Z [INFO]: Server running at port 3000
+2023-08-10T20:37:09.307Z [INFO]: Connected to the database
+2023-08-10T20:37:09.993Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:37:09.997Z [ERROR]: An error occurred while logging in: Seller.findOne(...).select(...).lean(...).cache is not a function
+2023-08-10T20:37:09.998Z [ERROR]: Error: An error occurred while logging in Seller.findOne(...).select(...).lean(...).cache is not a function
+2023-08-10T20:37:10.003Z [INFO]: Request to /api/v1/auth/login took 11.144200026988983ms
+2023-08-10T20:37:50.684Z [INFO]: Server running at port 3000
+2023-08-10T20:37:54.080Z [INFO]: Connected to the database
+2023-08-10T20:37:55.460Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:37:55.465Z [ERROR]: An error occurred while logging in: Cannot access 'user' before initialization
+2023-08-10T20:37:55.466Z [ERROR]: Error: An error occurred while logging in Cannot access 'user' before initialization
+2023-08-10T20:37:55.472Z [INFO]: Request to /api/v1/auth/login took 12.846400022506714ms
+2023-08-10T20:38:05.593Z [INFO]: Server running at port 3000
+2023-08-10T20:38:08.811Z [INFO]: Connected to the database
+2023-08-10T20:38:39.892Z [INFO]: Server running at port 3000
+2023-08-10T20:38:43.159Z [INFO]: Connected to the database
+2023-08-10T20:38:43.758Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:38:45.798Z [INFO]: Database query for login took 2037.424399971962ms
+2023-08-10T20:38:45.879Z [INFO]: Request to /api/v1/auth/login took 2122.1226999759674ms
+2023-08-10T20:38:47.875Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T20:38:48.227Z [INFO]: Database query for login took 349.6026000380516ms
+2023-08-10T20:38:48.287Z [INFO]: Request to /api/v1/auth/login took 412.5353000164032ms
+2023-08-10T21:18:35.836Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:18:37.770Z [INFO]: Database query for login took 1931.921199977398ms
+2023-08-10T21:18:37.825Z [INFO]: Request to /api/v1/auth/login took 1989.6780000329018ms
+2023-08-10T21:20:15.530Z [INFO]: Server running at port 3000
+2023-08-10T21:20:18.059Z [INFO]: Server running at port 3000
+2023-08-10T21:20:21.216Z [INFO]: Connected to the database
+2023-08-10T21:20:41.699Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:42.023Z [INFO]: Database query for login took 320.8270000219345ms
+2023-08-10T21:20:42.086Z [INFO]: Request to /api/v1/auth/login took 387.24889999628067ms
+2023-08-10T21:20:45.088Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:45.410Z [INFO]: Database query for login took 320.2391000390053ms
+2023-08-10T21:20:45.474Z [INFO]: Request to /api/v1/auth/login took 386.01500004529953ms
+2023-08-10T21:20:49.996Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:50.302Z [INFO]: Database query for login took 305.2872000336647ms
+2023-08-10T21:20:50.358Z [INFO]: Request to /api/v1/auth/login took 362.4341000318527ms
+2023-08-10T21:20:50.527Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:50.841Z [INFO]: Database query for login took 312.23639994859695ms
+2023-08-10T21:20:50.898Z [INFO]: Request to /api/v1/auth/login took 370.41319996118546ms
+2023-08-10T21:20:51.006Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:51.322Z [INFO]: Database query for login took 314.8105999827385ms
+2023-08-10T21:20:51.380Z [INFO]: Request to /api/v1/auth/login took 374.30200004577637ms
+2023-08-10T21:20:51.470Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:20:51.804Z [INFO]: Database query for login took 332.82719999551773ms
+2023-08-10T21:20:51.858Z [INFO]: Request to /api/v1/auth/login took 388.2317000031471ms
+2023-08-10T21:21:02.813Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:02.815Z [INFO]: Request to / took 1.4969000220298767ms
+2023-08-10T21:21:06.429Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:06.429Z [INFO]: Request to / took 0.9354999661445618ms
+2023-08-10T21:21:06.799Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:06.800Z [INFO]: Request to / took 1.142199993133545ms
+2023-08-10T21:21:07.021Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:07.022Z [INFO]: Request to / took 1.2795000076293945ms
+2023-08-10T21:21:07.174Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:07.175Z [INFO]: Request to / took 1.3500999808311462ms
+2023-08-10T21:21:07.337Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:07.338Z [INFO]: Request to / took 1.0875999927520752ms
+2023-08-10T21:21:07.506Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:07.507Z [INFO]: Request to / took 1.1191999912261963ms
+2023-08-10T21:21:16.976Z [INFO]: Server running at port 3000
+2023-08-10T21:21:20.297Z [INFO]: Connected to the database
+2023-08-10T21:21:21.809Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:21.813Z [INFO]: Request to / took 5.087499976158142ms
+2023-08-10T21:21:23.652Z [INFO]: Incoming GET request to /
+2023-08-10T21:21:23.654Z [INFO]: Request to / took 1.4749000072479248ms
+2023-08-10T21:21:33.885Z [INFO]: Server running at port 3000
+2023-08-10T21:21:41.672Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:21:51.691Z [ERROR]: An error occurred while logging in: Operation `sellers.findOne()` buffering timed out after 10000ms
+2023-08-10T21:21:51.693Z [ERROR]: Error: An error occurred while logging in Operation `sellers.findOne()` buffering timed out after 10000ms
+2023-08-10T21:21:51.697Z [INFO]: Request to /api/v1/auth/login took 10025.052900016308ms
+2023-08-10T21:21:53.197Z [INFO]: Server running at port 3000
+2023-08-10T21:21:59.590Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T21:22:06.030Z [INFO]: Server running at port 3000
+2023-08-10T21:22:39.477Z [INFO]: Server running at port 3000
+2023-08-10T21:23:09.642Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-10T21:27:04.217Z [INFO]: Server running at port 3000
+2023-08-10T21:27:34.398Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-10T21:34:04.003Z [INFO]: Server running at port 3000
+2023-08-10T21:34:07.668Z [INFO]: Connected to the database
+2023-08-10T22:12:05.644Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T22:12:07.609Z [INFO]: Database query for login took 1962.6391999721527ms
+2023-08-10T22:12:07.610Z [ERROR]: Error: User not found
+2023-08-10T22:12:07.611Z [ERROR]: An error occurred while logging in: Cannot read properties of undefined (reading 'message')
+2023-08-10T22:12:07.612Z [ERROR]: Error: An error occurred while logging in Cannot read properties of undefined (reading 'message')
+2023-08-10T22:12:07.616Z [INFO]: Request to /api/v1/auth/login took 1972.2942000031471ms
+2023-08-10T22:14:46.106Z [INFO]: Server running at port 3000
+2023-08-10T22:14:48.896Z [INFO]: Server running at port 3000
+2023-08-10T22:14:52.123Z [INFO]: Connected to the database
+2023-08-10T22:14:54.657Z [INFO]: Server running at port 3000
+2023-08-10T22:14:57.942Z [INFO]: Connected to the database
+2023-08-10T22:14:58.753Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T22:15:00.805Z [INFO]: Database query for login took 2050.072099983692ms
+2023-08-10T22:15:00.806Z [ERROR]: Error: User not found
+2023-08-10T22:15:00.810Z [INFO]: Request to /api/v1/auth/login took 2057.378600001335ms
+2023-08-10T22:15:51.998Z [INFO]: Server running at port 3000
+2023-08-10T22:15:55.323Z [INFO]: Connected to the database
+2023-08-10T22:15:57.029Z [INFO]: Server running at port 3000
+2023-08-10T22:16:00.186Z [INFO]: Connected to the database
+2023-08-10T22:16:02.848Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T22:16:02.852Z [ERROR]: An error occurred while logging in: Cannot access 'user' before initialization
+2023-08-10T22:16:02.853Z [ERROR]: Error: An error occurred while logging in Cannot access 'user' before initialization
+2023-08-10T22:16:02.858Z [INFO]: Request to /api/v1/auth/login took 11.161800026893616ms
+2023-08-10T22:16:35.277Z [INFO]: Server running at port 3000
+2023-08-10T22:16:38.431Z [INFO]: Connected to the database
+2023-08-10T22:16:54.015Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T22:16:54.356Z [ERROR]: Error: User not found
+2023-08-10T22:16:54.359Z [INFO]: Request to /api/v1/auth/login took 345.48420000076294ms
+2023-08-10T22:17:16.915Z [INFO]: Server running at port 3000
+2023-08-10T22:17:20.431Z [INFO]: Connected to the database
+2023-08-10T22:17:27.941Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-10T22:17:28.265Z [ERROR]: Error: User not found
+2023-08-10T22:17:28.272Z [INFO]: Request to /api/v1/auth/login took 332.8294000029564ms
+2023-08-10T22:19:21.585Z [INFO]: Server running at port 3000
+2023-08-10T22:19:24.208Z [INFO]: Server running at port 3000
+2023-08-10T22:19:27.648Z [INFO]: Server running at port 3000
+2023-08-10T22:19:30.925Z [INFO]: Connected to the database
+2023-08-10T22:31:51.353Z [INFO]: Server running at port 3000
+2023-08-10T22:31:54.703Z [INFO]: Connected to the database
+2023-08-10T22:34:07.023Z [INFO]: Server running at port 3000
+2023-08-10T22:34:10.406Z [INFO]: Connected to the database
+2023-08-10T22:34:11.690Z [INFO]: Server running at port 3000
+2023-08-10T22:34:14.854Z [INFO]: Connected to the database
+2023-08-10T22:40:14.288Z [INFO]: Server running at port 3000
+2023-08-10T22:40:16.179Z [INFO]: Server running at port 3000
+2023-08-10T22:40:19.287Z [INFO]: Connected to the database
+2023-08-10T22:41:03.877Z [INFO]: Server running at port 3000
+2023-08-10T22:41:07.224Z [INFO]: Connected to the database
+2023-08-10T22:41:09.203Z [INFO]: Server running at port 3000
+2023-08-10T22:41:12.972Z [INFO]: Server running at port 3000
+2023-08-10T22:41:14.906Z [INFO]: Server running at port 3000
+2023-08-10T22:41:18.317Z [INFO]: Connected to the database
+2023-08-10T22:41:26.540Z [INFO]: Server running at port 3000
+2023-08-10T22:41:29.784Z [INFO]: Connected to the database
+2023-08-10T22:41:32.079Z [INFO]: Server running at port 3000
+2023-08-10T22:41:33.416Z [INFO]: Server running at port 3000
+2023-08-10T22:41:36.016Z [INFO]: Server running at port 3000
+2023-08-10T22:41:39.260Z [INFO]: Connected to the database
+2023-08-10T22:41:46.976Z [INFO]: Server running at port 3000
+2023-08-10T22:41:50.332Z [INFO]: Connected to the database
+2023-08-10T22:41:54.449Z [INFO]: Server running at port 3000
+2023-08-10T22:41:57.019Z [INFO]: Server running at port 3000
+2023-08-10T22:42:00.931Z [INFO]: Server running at port 3000
+2023-08-10T22:42:04.220Z [INFO]: Connected to the database
+2023-08-10T22:42:17.700Z [INFO]: Server running at port 3000
+2023-08-10T22:42:21.492Z [INFO]: Server running at port 3000
+2023-08-10T22:42:22.488Z [INFO]: Server running at port 3000
+2023-08-10T22:42:25.742Z [INFO]: Connected to the database
+2023-08-10T22:42:34.867Z [INFO]: Server running at port 3000
+2023-08-10T22:42:37.897Z [INFO]: Server running at port 3000
+2023-08-10T22:42:38.882Z [INFO]: Server running at port 3000
+2023-08-10T22:42:42.242Z [INFO]: Connected to the database
+2023-08-10T22:42:44.725Z [INFO]: Server running at port 3000
+2023-08-10T22:42:47.686Z [INFO]: Server running at port 3000
+2023-08-10T22:42:50.911Z [INFO]: Connected to the database
+2023-08-10T22:42:53.019Z [INFO]: Server running at port 3000
+2023-08-10T22:42:55.964Z [INFO]: Server running at port 3000
+2023-08-10T22:42:58.453Z [INFO]: Server running at port 3000
+2023-08-10T22:43:00.287Z [INFO]: Server running at port 3000
+2023-08-10T22:43:04.431Z [INFO]: Server running at port 3000
+2023-08-10T22:43:07.681Z [INFO]: Connected to the database
+2023-08-10T22:43:10.383Z [INFO]: Server running at port 3000
+2023-08-10T22:43:13.631Z [INFO]: Connected to the database
+2023-08-10T22:43:16.137Z [INFO]: Server running at port 3000
+2023-08-10T22:43:17.333Z [INFO]: Server running at port 3000
+2023-08-10T22:43:20.058Z [INFO]: Server running at port 3000
+2023-08-10T22:43:23.384Z [INFO]: Connected to the database
+2023-08-10T22:43:31.538Z [INFO]: Server running at port 3000
+2023-08-10T22:43:34.943Z [INFO]: Connected to the database
+2023-08-10T22:43:44.361Z [INFO]: Server running at port 3000
+2023-08-10T22:43:45.853Z [INFO]: Server running at port 3000
+2023-08-10T22:43:48.899Z [INFO]: Server running at port 3000
+2023-08-10T22:43:52.147Z [INFO]: Connected to the database
+2023-08-10T22:43:57.345Z [INFO]: Server running at port 3000
+2023-08-10T22:44:00.523Z [INFO]: Connected to the database
+2023-08-10T22:44:12.521Z [INFO]: Server running at port 3000
+2023-08-10T22:44:15.702Z [INFO]: Connected to the database
+2023-08-10T22:44:20.983Z [INFO]: Server running at port 3000
+2023-08-10T22:44:24.328Z [INFO]: Connected to the database
+2023-08-10T22:44:35.974Z [INFO]: Server running at port 3000
+2023-08-10T22:44:41.221Z [INFO]: Server running at port 3000
+2023-08-10T22:44:44.432Z [INFO]: Connected to the database
+2023-08-10T22:44:51.367Z [INFO]: Server running at port 3000
+2023-08-10T22:44:52.590Z [INFO]: Server running at port 3000
+2023-08-10T22:44:55.707Z [INFO]: Connected to the database
+2023-08-10T22:44:59.473Z [INFO]: Server running at port 3000
+2023-08-10T22:45:02.724Z [INFO]: Connected to the database
+2023-08-10T22:45:22.521Z [INFO]: Server running at port 3000
+2023-08-10T22:45:25.796Z [INFO]: Server running at port 3000
+2023-08-10T22:45:28.318Z [INFO]: Server running at port 3000
+2023-08-10T22:45:30.108Z [INFO]: Server running at port 3000
+2023-08-10T22:45:32.921Z [INFO]: Server running at port 3000
+2023-08-10T22:45:34.794Z [INFO]: Server running at port 3000
+2023-08-10T22:45:37.982Z [INFO]: Connected to the database
+2023-08-10T22:45:43.708Z [INFO]: Server running at port 3000
+2023-08-10T22:45:46.810Z [INFO]: Connected to the database
+2023-08-10T22:45:48.550Z [INFO]: Server running at port 3000
+2023-08-10T22:45:50.488Z [INFO]: Server running at port 3000
+2023-08-10T22:45:53.605Z [INFO]: Connected to the database
+2023-08-10T22:45:56.923Z [INFO]: Server running at port 3000
+2023-08-10T22:46:00.027Z [INFO]: Connected to the database
+2023-08-10T22:46:06.607Z [INFO]: Server running at port 3000
+2023-08-10T22:46:08.755Z [INFO]: Server running at port 3000
+2023-08-10T22:46:11.681Z [INFO]: Server running at port 3000
+2023-08-10T22:46:14.850Z [INFO]: Connected to the database
+2023-08-10T22:46:19.347Z [INFO]: Server running at port 3000
+2023-08-10T22:46:22.478Z [INFO]: Connected to the database
+2023-08-10T22:46:25.280Z [INFO]: Server running at port 3000
+2023-08-10T22:46:27.957Z [INFO]: Server running at port 3000
+2023-08-10T22:46:29.504Z [INFO]: Server running at port 3000
+2023-08-10T22:46:32.653Z [INFO]: Server running at port 3000
+2023-08-10T22:46:35.125Z [INFO]: Server running at port 3000
+2023-08-10T22:46:38.281Z [INFO]: Connected to the database
+2023-08-10T22:47:22.058Z [INFO]: Server running at port 3000
+2023-08-10T22:47:24.435Z [INFO]: Server running at port 3000
+2023-08-10T22:47:27.598Z [INFO]: Connected to the database
+2023-08-10T22:47:43.595Z [INFO]: Server running at port 3000
+2023-08-10T22:47:46.874Z [INFO]: Connected to the database
+2023-08-10T22:47:50.166Z [INFO]: Server running at port 3000
+2023-08-10T22:47:53.410Z [INFO]: Connected to the database
+2023-08-10T22:47:54.992Z [INFO]: Server running at port 3000
+2023-08-10T22:47:56.909Z [INFO]: Server running at port 3000
+2023-08-10T22:47:58.831Z [INFO]: Server running at port 3000
+2023-08-10T22:48:02.096Z [INFO]: Connected to the database
+2023-08-10T22:50:52.372Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:50:52.388Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 18.21950000524521ms
+2023-08-10T22:52:18.546Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:52:18.549Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 4.2847999930381775ms
+2023-08-10T22:53:21.681Z [INFO]: Server running at port 3000
+2023-08-10T22:53:25.013Z [INFO]: Connected to the database
+2023-08-10T22:53:25.889Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:53:25.904Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 17.992599964141846ms
+2023-08-10T22:53:38.405Z [INFO]: Server running at port 3000
+2023-08-10T22:53:41.679Z [INFO]: Server running at port 3000
+2023-08-10T22:53:43.457Z [INFO]: Server running at port 3000
+2023-08-10T22:53:46.753Z [INFO]: Connected to the database
+2023-08-10T22:53:47.584Z [INFO]: Server running at port 3000
+2023-08-10T22:53:50.812Z [INFO]: Server running at port 3000
+2023-08-10T22:53:54.143Z [INFO]: Connected to the database
+2023-08-10T22:53:58.201Z [INFO]: Server running at port 3000
+2023-08-10T22:54:01.455Z [INFO]: Connected to the database
+2023-08-10T22:54:04.111Z [INFO]: Server running at port 3000
+2023-08-10T22:54:06.769Z [INFO]: Server running at port 3000
+2023-08-10T22:54:10.156Z [INFO]: Connected to the database
+2023-08-10T22:54:11.948Z [INFO]: Server running at port 3000
+2023-08-10T22:54:14.571Z [INFO]: Server running at port 3000
+2023-08-10T22:54:17.818Z [INFO]: Connected to the database
+2023-08-10T22:54:22.072Z [INFO]: Server running at port 3000
+2023-08-10T22:54:23.617Z [INFO]: Server running at port 3000
+2023-08-10T22:54:27.116Z [INFO]: Connected to the database
+2023-08-10T22:54:27.977Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:54:27.990Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 16.535700023174286ms
+2023-08-10T22:54:32.844Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:54:32.848Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 6.212100028991699ms
+2023-08-10T22:55:19.348Z [INFO]: Server running at port 3000
+2023-08-10T22:55:22.576Z [INFO]: Connected to the database
+2023-08-10T22:55:25.128Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:55:25.156Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 32.81919997930527ms
+2023-08-10T22:56:22.729Z [INFO]: Server running at port 3000
+2023-08-10T22:56:24.654Z [INFO]: Server running at port 3000
+2023-08-10T22:56:24.928Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:56:24.938Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 12.24839997291565ms
+2023-08-10T22:56:26.127Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:56:26.134Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 6.944099962711334ms
+2023-08-10T22:56:27.958Z [INFO]: Connected to the database
+2023-08-10T22:56:48.326Z [INFO]: Server running at port 3000
+2023-08-10T22:56:50.083Z [INFO]: Server running at port 3000
+2023-08-10T22:56:51.363Z [INFO]: Server running at port 3000
+2023-08-10T22:56:54.008Z [INFO]: Server running at port 3000
+2023-08-10T22:56:57.222Z [INFO]: Connected to the database
+2023-08-10T22:56:58.102Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:56:58.110Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 9.691100001335144ms
+2023-08-10T22:57:09.263Z [INFO]: Server running at port 3000
+2023-08-10T22:57:12.477Z [INFO]: Connected to the database
+2023-08-10T22:58:56.345Z [INFO]: Server running at port 3000
+2023-08-10T22:58:57.685Z [INFO]: Server running at port 3000
+2023-08-10T22:59:00.988Z [INFO]: Connected to the database
+2023-08-10T22:59:01.653Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T22:59:01.665Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 12.9549999833107ms
+2023-08-10T23:00:02.374Z [INFO]: Server running at port 3000
+2023-08-10T23:00:04.907Z [INFO]: Server running at port 3000
+2023-08-10T23:00:08.226Z [INFO]: Connected to the database
+2023-08-10T23:00:08.897Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T23:00:08.907Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 12.05050003528595ms
+2023-08-10T23:00:31.946Z [INFO]: Server running at port 3000
+2023-08-10T23:00:35.148Z [INFO]: Connected to the database
+2023-08-10T23:00:35.969Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T23:00:35.986Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 19.75880002975464ms
+2023-08-10T23:00:49.081Z [INFO]: Server running at port 3000
+2023-08-10T23:00:52.352Z [INFO]: Connected to the database
+2023-08-10T23:00:53.516Z [INFO]: Incoming GET request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20
+2023-08-10T23:00:53.530Z [INFO]: Request to /api/v1/video/token?identity=64d3883645baca38feca2e2f&roomName=Mahesh%20 took 16.314799964427948ms
+2023-08-11T00:12:48.945Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T00:12:48.963Z [INFO]: Request to /api/v1/video/create-room took 23.11360001564026ms
+2023-08-11T00:12:53.235Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:12:53.245Z [INFO]: Request to /api/v1/video/create-room took 9.451900005340576ms
+2023-08-11T00:13:05.813Z [INFO]: Server running at port 3000
+2023-08-11T00:13:10.045Z [INFO]: Server running at port 3000
+2023-08-11T00:13:12.546Z [INFO]: Server running at port 3000
+2023-08-11T00:13:15.380Z [INFO]: Server running at port 3000
+2023-08-11T00:13:15.636Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:13:15.669Z [INFO]: Request to /api/v1/video/create-room took 33.325100004673004ms
+2023-08-11T00:13:45.796Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:13:49.204Z [INFO]: Server running at port 3000
+2023-08-11T00:13:54.671Z [INFO]: Server running at port 3000
+2023-08-11T00:13:59.477Z [INFO]: Server running at port 3000
+2023-08-11T00:14:02.700Z [INFO]: Server running at port 3000
+2023-08-11T00:14:12.443Z [INFO]: Server running at port 3000
+2023-08-11T00:14:20.586Z [INFO]: Server running at port 3000
+2023-08-11T00:14:30.398Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:14:30.503Z [INFO]: Request to /api/v1/video/create-room took 106.16009998321533ms
+2023-08-11T00:14:51.021Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:14:58.063Z [INFO]: Server running at port 3000
+2023-08-11T00:15:02.027Z [INFO]: Connected to the database
+2023-08-11T00:15:46.012Z [INFO]: Server running at port 3000
+2023-08-11T00:15:49.147Z [INFO]: Server running at port 3000
+2023-08-11T00:15:57.289Z [INFO]: Connected to the database
+2023-08-11T00:16:15.867Z [INFO]: Server running at port 3000
+2023-08-11T00:16:46.266Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:17:30.664Z [INFO]: Server running at port 3000
+2023-08-11T00:17:32.722Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:17:32.848Z [INFO]: Request to /api/v1/video/create-room took 128.79800003767014ms
+2023-08-11T00:17:44.542Z [INFO]: Server running at port 3000
+2023-08-11T00:18:14.966Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::12d7:723e:27017
+2023-08-11T00:18:19.674Z [INFO]: Server running at port 3000
+2023-08-11T00:18:21.632Z [INFO]: Server running at port 3000
+2023-08-11T00:18:23.200Z [INFO]: Server running at port 3000
+2023-08-11T00:18:27.586Z [INFO]: Server running at port 3000
+2023-08-11T00:18:31.084Z [INFO]: Server running at port 3000
+2023-08-11T00:18:32.848Z [INFO]: Server running at port 3000
+2023-08-11T00:18:34.072Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:18:34.129Z [INFO]: Request to /api/v1/video/create-room took 57.33880001306534ms
+2023-08-11T00:18:50.344Z [INFO]: Server running at port 3000
+2023-08-11T00:18:57.632Z [INFO]: Server running at port 3000
+2023-08-11T00:19:01.950Z [INFO]: Server running at port 3000
+2023-08-11T00:19:32.361Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::12d7:723e:27017
+2023-08-11T00:20:44.594Z [INFO]: Server running at port 3000
+2023-08-11T00:20:48.594Z [INFO]: Connected to the database
+2023-08-11T00:22:29.377Z [INFO]: Server running at port 3000
+2023-08-11T00:22:31.479Z [INFO]: Server running at port 3000
+2023-08-11T00:23:24.124Z [INFO]: Server running at port 3000
+2023-08-11T00:23:28.411Z [INFO]: Connected to the database
+2023-08-11T00:23:29.551Z [INFO]: Server running at port 3000
+2023-08-11T00:23:37.941Z [INFO]: Connected to the database
+2023-08-11T00:24:51.634Z [INFO]: Server running at port 3000
+2023-08-11T00:24:59.081Z [INFO]: Connected to the database
+2023-08-11T00:25:30.412Z [INFO]: Incoming POST request to /api/v1/video/join/Mahesh
+2023-08-11T00:25:30.417Z [INFO]: Request to /api/v1/video/join/Mahesh took 5.051700055599213ms
+2023-08-11T00:25:35.308Z [INFO]: Incoming GET request to /api/v1/video/join/Mahesh
+2023-08-11T00:25:35.313Z [INFO]: Request to /api/v1/video/join/Mahesh took 7.429000020027161ms
+2023-08-11T00:25:35.326Z [INFO]: Incoming GET request to /join.html?roomName=Mahesh
+2023-08-11T00:25:35.329Z [INFO]: Request to /join.html?roomName=Mahesh took 4.687999963760376ms
+2023-08-11T00:29:08.687Z [INFO]: Server running at port 3000
+2023-08-11T00:29:11.416Z [INFO]: Server running at port 3000
+2023-08-11T00:29:15.398Z [INFO]: Connected to the database
+2023-08-11T00:29:22.582Z [INFO]: Incoming GET request to /
+2023-08-11T00:29:22.591Z [INFO]: Request to / took 9.978200018405914ms
+2023-08-11T00:29:22.726Z [INFO]: Incoming GET request to /favicon.ico
+2023-08-11T00:29:22.728Z [INFO]: Request to /favicon.ico took 2.660199999809265ms
+2023-08-11T00:29:31.074Z [INFO]: Incoming GET request to /api/v1/join?roomName=Mahesh
+2023-08-11T00:29:31.075Z [INFO]: Request to /api/v1/join?roomName=Mahesh took 1.5950000286102295ms
+2023-08-11T00:30:22.203Z [INFO]: Incoming GET request to /api/v1/join?roomName=Mahesh
+2023-08-11T00:30:22.206Z [INFO]: Request to /api/v1/join?roomName=Mahesh took 2.8996999859809875ms
+2023-08-11T00:30:24.943Z [INFO]: Incoming GET request to /
+2023-08-11T00:30:24.946Z [INFO]: Request to / took 3.367200016975403ms
+2023-08-11T00:30:33.463Z [INFO]: Server running at port 3000
+2023-08-11T00:30:36.868Z [INFO]: Connected to the database
+2023-08-11T00:30:42.463Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Mahesh
+2023-08-11T00:30:42.467Z [INFO]: Request to /api/v1/video/join?roomName=Mahesh took 5.837000012397766ms
+2023-08-11T00:32:23.612Z [INFO]: Server running at port 3000
+2023-08-11T00:32:25.215Z [INFO]: Server running at port 3000
+2023-08-11T00:32:28.043Z [INFO]: Server running at port 3000
+2023-08-11T00:32:31.110Z [INFO]: Connected to the database
+2023-08-11T00:32:34.745Z [INFO]: Server running at port 3000
+2023-08-11T00:32:37.874Z [INFO]: Connected to the database
+2023-08-11T00:32:40.257Z [INFO]: Server running at port 3000
+2023-08-11T00:32:42.343Z [INFO]: Server running at port 3000
+2023-08-11T00:32:44.702Z [INFO]: Incoming GET request to /api/v1/video/join/Mahesh
+2023-08-11T00:32:44.706Z [INFO]: Request to /api/v1/video/join/Mahesh took 5.0932000279426575ms
+2023-08-11T00:32:45.529Z [INFO]: Connected to the database
+2023-08-11T00:32:49.295Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Mahesh
+2023-08-11T00:32:49.301Z [INFO]: Request to /api/v1/video/join?roomName=Mahesh took 6.435000002384186ms
+2023-08-11T00:32:49.309Z [INFO]: Incoming GET request to /join.html?roomName=Mahesh
+2023-08-11T00:32:49.312Z [INFO]: Request to /join.html?roomName=Mahesh took 3.5407999753952026ms
+2023-08-11T00:32:52.901Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Mahesh
+2023-08-11T00:32:52.904Z [INFO]: Request to /api/v1/video/join?roomName=Mahesh took 3.4793999791145325ms
+2023-08-11T00:32:52.910Z [INFO]: Incoming GET request to /join.html?roomName=Mahesh
+2023-08-11T00:32:52.911Z [INFO]: Request to /join.html?roomName=Mahesh took 1.7256999611854553ms
+2023-08-11T00:34:05.299Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:34:06.839Z [INFO]: Request to /api/v1/video/create-room took 1539.5508999824524ms
+2023-08-11T00:34:15.050Z [INFO]: Incoming GET request to /join?Ram
+2023-08-11T00:34:15.051Z [INFO]: Request to /join?Ram took 1.6280999779701233ms
+2023-08-11T00:35:07.423Z [INFO]: Server running at port 3000
+2023-08-11T00:35:09.116Z [INFO]: Server running at port 3000
+2023-08-11T00:35:17.803Z [INFO]: Server running at port 3000
+2023-08-11T00:35:24.911Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:35:29.493Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:35:33.819Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:35:41.426Z [INFO]: Incoming GET request to /
+2023-08-11T00:35:41.431Z [INFO]: Request to / took 6.547599971294403ms
+2023-08-11T00:35:46.104Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:35:47.705Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:35:47.960Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:35:50.554Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:35:54.871Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:36:08.750Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:36:08.751Z [INFO]: Request to /api/v1/video/create-room took 21046.36880004406ms
+2023-08-11T00:36:20.061Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Ram
+2023-08-11T00:36:20.064Z [INFO]: Request to /api/v1/video/join?roomName=Ram took 3.732800006866455ms
+2023-08-11T00:36:20.070Z [INFO]: Incoming GET request to /join.html?roomName=Ram
+2023-08-11T00:36:20.072Z [INFO]: Request to /join.html?roomName=Ram took 2.396400034427643ms
+2023-08-11T00:36:23.014Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:36:44.589Z [INFO]: Server running at port 3000
+2023-08-11T00:36:48.020Z [INFO]: Connected to the database
+2023-08-11T00:36:55.592Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T00:36:57.093Z [INFO]: Request to /api/v1/video/create-room took 1501.7217999696732ms
+2023-08-11T00:37:17.752Z [INFO]: Incoming GET request to /api/v1/video/join?e
+2023-08-11T00:37:17.755Z [INFO]: Request to /api/v1/video/join?e took 4.545800030231476ms
+2023-08-11T00:37:17.760Z [INFO]: Incoming GET request to /join.html?roomName=undefined
+2023-08-11T00:37:17.763Z [INFO]: Request to /join.html?roomName=undefined took 3.0886000394821167ms
+2023-08-11T00:38:56.709Z [INFO]: Server running at port 3000
+2023-08-11T00:39:00.252Z [INFO]: Connected to the database
+2023-08-11T00:39:04.993Z [INFO]: Incoming GET request to /join.html?roomName=undefined
+2023-08-11T00:39:04.997Z [INFO]: Request to /join.html?roomName=undefined took 5.798200011253357ms
+2023-08-11T00:39:06.268Z [INFO]: Incoming GET request to /join.html?roomName=undefined
+2023-08-11T00:39:06.269Z [INFO]: Request to /join.html?roomName=undefined took 2.654100000858307ms
+2023-08-11T00:39:06.593Z [INFO]: Incoming GET request to /join.html?roomName=undefined
+2023-08-11T00:39:06.595Z [INFO]: Request to /join.html?roomName=undefined took 1.6722000241279602ms
+2023-08-11T00:39:16.186Z [INFO]: Incoming GET request to /api/v1/video/join?e
+2023-08-11T00:39:16.194Z [INFO]: Request to /api/v1/video/join?e took 7.967700004577637ms
+2023-08-11T00:39:40.129Z [INFO]: Server running at port 3000
+2023-08-11T00:39:43.726Z [INFO]: Connected to the database
+2023-08-11T00:40:53.966Z [INFO]: Server running at port 3000
+2023-08-11T00:40:57.240Z [INFO]: Connected to the database
+2023-08-11T10:17:11.308Z [INFO]: Incoming GET request to /api/v1/video/join/Mahesh
+2023-08-11T10:17:11.317Z [INFO]: Request to /api/v1/video/join/Mahesh took 12.010500013828278ms
+2023-08-11T11:24:13.170Z [INFO]: Server running at port 3000
+2023-08-11T11:24:16.674Z [INFO]: Connected to the database
+2023-08-11T11:24:27.420Z [INFO]: Incoming GET request to /
+2023-08-11T11:24:27.456Z [INFO]: Request to / took 40.15649998188019ms
+2023-08-11T11:24:41.698Z [INFO]: Request to /api/v1/video/create-room took 0.9043999910354614ms
+2023-08-11T11:24:41.716Z [INFO]: Incoming POST request to /api/v1/video/create-room
+2023-08-11T11:24:41.719Z [INFO]: Request to /api/v1/video/create-room took 2.761299967765808ms
+2023-08-11T11:25:00.421Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T11:25:00.425Z [INFO]: Request to /api/v1/video/create-room took 4.383199989795685ms
+2023-08-11T11:25:11.164Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T11:25:11.165Z [INFO]: Request to /api/v1/video/create-room took 1.348800003528595ms
+2023-08-11T11:25:25.344Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T11:25:25.345Z [INFO]: Request to /api/v1/video/create-room took 1.6151999831199646ms
+2023-08-11T11:25:54.596Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T11:25:54.597Z [INFO]: Request to /api/v1/video/create-room took 1.3425999879837036ms
+2023-08-11T11:26:24.032Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-08-11T11:26:24.035Z [INFO]: Request to /api/v1/video/create-room took 2.34280002117157ms
+2023-08-11T11:28:08.053Z [INFO]: Server running at port 3000
+2023-08-11T11:28:11.173Z [INFO]: Connected to the database
+2023-08-11T11:28:14.861Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Akshay
+2023-08-11T11:28:14.907Z [INFO]: Request to /api/v1/video/create-room?roomName=Akshay took 46.523400008678436ms
+2023-08-11T11:29:35.325Z [INFO]: Server running at port 3000
+2023-08-11T11:29:38.417Z [INFO]: Connected to the database
+2023-08-11T11:29:39.566Z [INFO]: Server running at port 3000
+2023-08-11T11:29:42.614Z [INFO]: Connected to the database
+2023-08-11T11:29:47.153Z [INFO]: Server running at port 3000
+2023-08-11T11:29:50.556Z [INFO]: Server running at port 3000
+2023-08-11T11:29:52.382Z [INFO]: Server running at port 3000
+2023-08-11T11:29:55.414Z [INFO]: Connected to the database
+2023-08-11T11:30:00.389Z [INFO]: Server running at port 3000
+2023-08-11T11:30:03.401Z [INFO]: Connected to the database
+2023-08-11T11:30:06.494Z [INFO]: Server running at port 3000
+2023-08-11T11:30:09.545Z [INFO]: Connected to the database
+2023-08-11T11:30:54.413Z [INFO]: Incoming GET request to /api/v1/video/create-room?Akshay
+2023-08-11T11:30:54.424Z [INFO]: Request to /api/v1/video/create-room?Akshay took 16.048200011253357ms
+2023-08-11T11:31:21.156Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Akshay
+2023-08-11T11:31:21.158Z [INFO]: Request to /api/v1/video/create-room?roomName=Akshay took 2.5558000206947327ms
+2023-08-11T11:31:30.747Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Akshay
+2023-08-11T11:31:30.751Z [INFO]: Request to /api/v1/video/join?roomName=Akshay took 4.033399999141693ms
+2023-08-11T12:50:17.931Z [INFO]: Server running at port 3000
+2023-08-11T12:50:23.093Z [INFO]: Connected to the database
+2023-08-11T12:50:54.892Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Liviso
+2023-08-11T12:50:54.898Z [INFO]: Request to /api/v1/video/create-room?roomName=Liviso took 6.542099999962375ms
+2023-08-11T12:50:56.752Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Liviso
+2023-08-11T12:50:56.754Z [INFO]: Request to /api/v1/video/create-room?roomName=Liviso took 2.59879999991972ms
+2023-08-11T12:51:16.517Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Livis
+2023-08-11T12:51:16.520Z [INFO]: Request to /api/v1/video/join?roomName=Livis took 3.284899999969639ms
+2023-08-11T12:51:19.656Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Liviso
+2023-08-11T12:51:19.659Z [INFO]: Request to /api/v1/video/create-room?roomName=Liviso took 2.607399999978952ms
+2023-08-11T12:51:23.333Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Liviso
+2023-08-11T12:51:23.335Z [INFO]: Request to /api/v1/video/create-room?roomName=Liviso took 1.359500000020489ms
+2023-08-11T12:52:36.999Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Liviso
+2023-08-11T12:52:37.001Z [INFO]: Request to /api/v1/video/create-room?roomName=Liviso took 2.2179000000469387ms
+2023-08-11T12:52:59.416Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Liviso
+2023-08-11T12:52:59.419Z [INFO]: Request to /api/v1/video/join?roomName=Liviso took 3.6451999999117106ms
+2023-08-11T12:56:16.271Z [INFO]: Server running at port 3000
+2023-08-11T12:56:21.241Z [INFO]: Server running at port 3000
+2023-08-11T12:56:24.402Z [INFO]: Connected to the database
+2023-08-11T12:56:30.704Z [INFO]: Server running at port 3000
+2023-08-11T12:56:36.474Z [INFO]: Server running at port 3000
+2023-08-11T12:56:40.218Z [INFO]: Connected to the database
+2023-08-11T12:57:02.103Z [INFO]: Server running at port 3000
+2023-08-11T12:57:05.738Z [INFO]: Connected to the database
+2023-08-11T13:48:17.558Z [INFO]: Server running at port 3000
+2023-08-11T13:48:26.279Z [INFO]: Connected to the database
+2023-08-11T13:48:47.492Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Akshat
+2023-08-11T13:48:47.500Z [INFO]: Request to /api/v1/video/create-room?roomName=Akshat took 9.16220000013709ms
+2023-08-11T13:49:21.084Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Askhat
+2023-08-11T13:49:21.089Z [INFO]: Request to /api/v1/video/create-room?roomName=Askhat took 5.425800000317395ms
+2023-08-11T13:49:39.348Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Shop
+2023-08-11T13:49:39.351Z [INFO]: Request to /api/v1/video/create-room?roomName=Shop took 3.241900000721216ms
+2023-08-11T13:49:58.864Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Shop
+2023-08-11T13:49:58.868Z [INFO]: Request to /api/v1/video/join?roomName=Shop took 4.1489000003784895ms
+2023-08-11T15:57:25.739Z [INFO]: Server running at port 3000
+2023-08-11T15:57:26.673Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-11T15:57:29.949Z [INFO]: Connected to the database
+2023-08-11T15:57:32.506Z [ERROR]: Error: User not found
+2023-08-11T15:57:32.510Z [INFO]: Request to /api/v1/auth/login took 5840.7878000009805ms
+2023-08-11T15:57:38.990Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-11T15:57:39.436Z [INFO]: Request to /api/v1/auth/login took 445.27830000035465ms
+2023-08-11T15:57:54.606Z [INFO]: Incoming GET request to /
+2023-08-11T15:57:54.609Z [INFO]: Request to / took 2.933100000023842ms
+2023-08-11T15:58:03.837Z [INFO]: Incoming GET request to /api/v1/auth/logout
+2023-08-11T15:58:03.839Z [INFO]: Logged out successfully
+2023-08-11T15:58:03.840Z [INFO]: Request to /api/v1/auth/logout took 2.4259999990463257ms
+2023-08-11T15:58:08.271Z [INFO]: Incoming GET request to /
+2023-08-11T15:58:08.272Z [INFO]: Request to / took 1.5528999995440245ms
+2023-08-11T15:58:09.700Z [INFO]: Incoming GET request to /
+2023-08-11T15:58:09.701Z [INFO]: Request to / took 1.1782999988645315ms
+2023-08-11T15:58:09.943Z [INFO]: Incoming GET request to /
+2023-08-11T15:58:09.944Z [INFO]: Request to / took 1.499600000679493ms
+2023-08-11T15:58:10.193Z [INFO]: Incoming GET request to /
+2023-08-11T15:58:10.194Z [INFO]: Request to / took 1.1270000003278255ms
+2023-08-11T15:58:21.198Z [INFO]: Incoming GET request to /
+2023-08-11T15:58:21.201Z [INFO]: Request to / took 2.4543999992311ms
+2023-08-11T15:58:45.815Z [INFO]: Server running at port 3000
+2023-08-11T15:58:47.732Z [INFO]: Server running at port 3000
+2023-08-11T15:58:50.619Z [INFO]: Server running at port 3000
+2023-08-11T15:58:53.959Z [INFO]: Connected to the database
+2023-08-11T15:58:59.955Z [INFO]: Server running at port 3000
+2023-08-11T15:59:03.441Z [INFO]: Connected to the database
+2023-08-11T15:59:04.219Z [INFO]: Incoming GET request to /
+2023-08-11T15:59:04.230Z [INFO]: Request to / took 12.083300000056624ms
+2023-08-11T15:59:21.888Z [INFO]: Server running at port 3000
+2023-08-11T15:59:23.972Z [INFO]: Server running at port 3000
+2023-08-11T15:59:24.244Z [INFO]: Incoming GET request to /
+2023-08-11T15:59:24.250Z [INFO]: Request to / took 7.066199999302626ms
+2023-08-11T15:59:27.604Z [INFO]: Connected to the database
+2023-08-11T15:59:33.670Z [INFO]: Server running at port 3000
+2023-08-11T15:59:37.128Z [INFO]: Connected to the database
+2023-08-11T16:00:18.497Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-11T16:00:19.071Z [INFO]: Request to /api/v1/auth/login took 575.4692000001669ms
+2023-08-11T16:00:23.798Z [INFO]: Incoming GET request to /api/v1/auth/logout
+2023-08-11T16:00:23.799Z [INFO]: Logged out successfully
+2023-08-11T16:00:23.801Z [INFO]: Request to /api/v1/auth/logout took 3.25ms
+2023-08-11T16:00:28.024Z [INFO]: Incoming GET request to /api/v1/auth/logout
+2023-08-11T16:00:28.025Z [INFO]: Logged out successfully
+2023-08-11T16:00:28.026Z [INFO]: Request to /api/v1/auth/logout took 2.907700000330806ms
+2023-08-11T16:00:32.223Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-11T16:00:32.786Z [INFO]: Request to /api/v1/auth/login took 563.5977999996394ms
+2023-08-11T16:01:20.988Z [INFO]: Server running at port 3000
+2023-08-11T16:01:24.551Z [INFO]: Connected to the database
+2023-08-11T16:01:43.797Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-11T16:01:44.224Z [INFO]: OTP sent successfully
+2023-08-11T16:01:44.228Z [INFO]: Request to /api/v1/auth/register took 431.7001000009477ms
+2023-08-11T16:05:51.967Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-11T16:05:51.971Z [INFO]: OTP sent successfully
+2023-08-11T16:05:51.974Z [INFO]: Request to /api/v1/auth/register took 7.017699999734759ms
+2023-08-11T16:06:47.975Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-11T16:06:47.980Z [INFO]: OTP sent successfully
+2023-08-11T16:06:47.981Z [INFO]: Request to /api/v1/auth/register took 5.857999999076128ms
+2023-08-11T16:07:07.097Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-11T16:07:10.866Z [INFO]: User created successfully
+2023-08-11T16:07:10.867Z [INFO]: Request to /api/v1/auth/verify took 3770.342100000009ms
+2023-08-11T16:07:36.454Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-11T16:07:37.081Z [INFO]: User created successfully
+2023-08-11T16:07:37.082Z [INFO]: Request to /api/v1/auth/verify took 628.2775999996811ms
+2023-08-11T16:11:46.335Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-11T16:11:46.722Z [INFO]: User created successfully
+2023-08-11T16:11:46.724Z [INFO]: Request to /api/v1/auth/verify took 389.2448999993503ms
+2023-08-11T16:11:50.163Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-11T16:11:50.625Z [INFO]: User created successfully
+2023-08-11T16:11:50.626Z [INFO]: Request to /api/v1/auth/verify took 463.7004000004381ms
+2023-08-12T12:46:50.627Z [INFO]: Server running at port 3000
+2023-08-12T12:46:57.365Z [INFO]: Connected to the database
+2023-08-12T12:47:06.679Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=X
+2023-08-12T12:47:06.687Z [INFO]: Request to /api/v1/video/create-room?roomName=X took 8.497400000691414ms
+2023-08-12T12:47:23.641Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=Abcdef
+2023-08-12T12:47:23.645Z [INFO]: Request to /api/v1/video/create-room?roomName=Abcdef took 4.966499999165535ms
+2023-08-12T12:47:36.308Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=ABCD
+2023-08-12T12:47:36.311Z [INFO]: Request to /api/v1/video/create-room?roomName=ABCD took 3.1680000126361847ms
+2023-08-12T12:47:44.604Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=qwerty
+2023-08-12T12:47:44.606Z [INFO]: Request to /api/v1/video/create-room?roomName=qwerty took 2.670500010251999ms
+2023-08-12T12:48:18.466Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=qwerty
+2023-08-12T12:48:18.470Z [INFO]: Request to /api/v1/video/join?roomName=qwerty took 3.7014999985694885ms
+2023-08-12T12:49:25.094Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=TY
+2023-08-12T12:49:25.098Z [INFO]: Request to /api/v1/video/create-room?roomName=TY took 3.4816000014543533ms
+2023-08-12T12:49:41.164Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=rsmji
+2023-08-12T12:49:41.167Z [INFO]: Request to /api/v1/video/create-room?roomName=rsmji took 2.416500002145767ms
+2023-08-12T12:49:57.272Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=rsmji
+2023-08-12T12:49:57.274Z [INFO]: Request to /api/v1/video/join?roomName=rsmji took 2.228100001811981ms
+2023-08-12T12:52:43.177Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-12T12:52:43.799Z [INFO]: User created successfully
+2023-08-12T12:52:43.801Z [INFO]: Request to /api/v1/auth/verify took 623.7556000053883ms
+2023-08-12T12:52:51.911Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-12T12:52:52.441Z [ERROR]: Error: Invalid password
+2023-08-12T12:52:52.442Z [INFO]: Request to /api/v1/auth/login took 531.1520999968052ms
+2023-08-12T12:53:20.077Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-12T12:53:20.508Z [INFO]: Request to /api/v1/auth/login took 431.31909999251366ms
+2023-08-12T12:53:24.087Z [INFO]: Incoming GET request to /
+2023-08-12T12:53:24.090Z [INFO]: Request to / took 3.3400000035762787ms
+2023-08-12T12:53:29.005Z [INFO]: Incoming GET request to /
+2023-08-12T12:53:29.007Z [INFO]: Request to / took 1.9101999998092651ms
+2023-08-12T12:53:35.694Z [INFO]: Incoming GET request to /
+2023-08-12T12:53:35.697Z [INFO]: Request to / took 2.732200011610985ms
+2023-08-12T12:54:00.111Z [INFO]: Server running at port 3000
+2023-08-12T12:54:01.513Z [INFO]: Server running at port 3000
+2023-08-12T12:54:03.278Z [INFO]: Server running at port 3000
+2023-08-12T12:54:06.941Z [INFO]: Connected to the database
+2023-08-12T12:54:10.284Z [INFO]: Incoming GET request to /
+2023-08-12T12:54:10.292Z [INFO]: Request to / took 8.864999994635582ms
+2023-08-12T12:54:44.658Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-12T12:54:45.105Z [INFO]: Request to /api/v1/auth/login took 447.06190000474453ms
+2023-08-12T13:01:02.738Z [INFO]: Incoming GET request to /
+2023-08-12T13:01:02.748Z [INFO]: Request to / took 10.820199996232986ms
+2023-08-12T13:01:02.911Z [INFO]: Incoming GET request to /favicon.ico
+2023-08-12T13:01:02.920Z [INFO]: Request to /favicon.ico took 8.948299989104271ms
+2023-08-12T13:01:19.382Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=asdfghjkl
+2023-08-12T13:01:19.385Z [INFO]: Request to /api/v1/video/create-room?roomName=asdfghjkl took 2.877900004386902ms
+2023-08-12T13:01:33.180Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=asdfghjk
+2023-08-12T13:01:33.185Z [INFO]: Request to /api/v1/video/join?roomName=asdfghjk took 6.741699993610382ms
+2023-08-12T13:03:04.370Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=djbdjsdj
+2023-08-12T13:03:04.373Z [INFO]: Request to /api/v1/video/create-room?roomName=djbdjsdj took 2.667500004172325ms
+2023-08-12T13:03:20.125Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=djbdjsdj
+2023-08-12T13:03:20.128Z [INFO]: Request to /api/v1/video/join?roomName=djbdjsdj took 3.244599997997284ms
+2023-08-12T13:06:16.918Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=cnjfndcn
+2023-08-12T13:06:16.924Z [INFO]: Request to /api/v1/video/create-room?roomName=cnjfndcn took 5.589100003242493ms
+2023-08-12T13:06:49.959Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=cnjfndcn
+2023-08-12T13:06:49.962Z [INFO]: Request to /api/v1/video/join?roomName=cnjfndcn took 2.4062000066041946ms
+2023-08-12T13:11:19.113Z [INFO]: Server running at port 3000
+2023-08-12T13:11:24.510Z [INFO]: Connected to the database
+2023-08-12T13:13:35.147Z [INFO]: Server running at port 3000
+2023-08-12T13:13:38.796Z [INFO]: Connected to the database
+2023-08-12T13:19:19.706Z [INFO]: Server running at port 3000
+2023-08-12T13:19:28.549Z [INFO]: Connected to the database
+2023-08-12T13:21:07.763Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=onlyObjects
+2023-08-12T13:21:07.779Z [INFO]: Request to /api/v1/video/create-room?roomName=onlyObjects took 19.08269999921322ms
+2023-08-12T13:21:44.757Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=onlyObjects
+2023-08-12T13:21:44.775Z [INFO]: Request to /api/v1/video/join?roomName=onlyObjects took 17.689399987459183ms
+2023-08-12T13:25:46.892Z [INFO]: Server running at port 3000
+2023-08-12T13:25:51.966Z [INFO]: Server running at port 3000
+2023-08-12T13:26:00.756Z [INFO]: Connected to the database
+2023-08-14T19:20:22.418Z [INFO]: Server running at port 3000
+2023-08-14T19:20:26.225Z [INFO]: Connected to the database
+2023-08-14T19:21:28.966Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-14T19:21:29.313Z [INFO]: OTP sent successfully
+2023-08-14T19:21:29.323Z [INFO]: Request to /api/v1/auth/register took 357.9107999801636ms
+2023-08-14T19:22:38.093Z [INFO]: Server running at port 3000
+2023-08-14T19:22:50.903Z [INFO]: Connected to the database
+2023-08-14T19:22:55.094Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-14T19:22:55.238Z [INFO]: OTP sent successfully
+2023-08-14T19:22:55.242Z [INFO]: Request to /api/v1/auth/register took 149.2800999879837ms
+2023-08-14T19:25:26.513Z [INFO]: Server running at port 3000
+2023-08-14T19:25:29.945Z [INFO]: Connected to the database
+2023-08-14T19:25:45.584Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-14T19:25:45.717Z [INFO]: OTP sent successfully
+2023-08-14T19:25:45.728Z [INFO]: Request to /api/v1/auth/register took 144.87009996175766ms
+2023-08-14T19:26:05.365Z [INFO]: Server running at port 3000
+2023-08-14T19:26:08.665Z [INFO]: Connected to the database
+2023-08-14T19:26:10.561Z [INFO]: Server running at port 3000
+2023-08-14T19:26:13.711Z [INFO]: Connected to the database
+2023-08-14T19:26:16.572Z [INFO]: Incoming GET request to /api/v1/auth/register
+2023-08-14T19:26:16.717Z [INFO]: OTP sent successfully
+2023-08-14T19:26:16.722Z [INFO]: Request to /api/v1/auth/register took 151.36550003290176ms
+2023-08-14T19:26:46.575Z [INFO]: Incoming GET request to /api/v1/auth/verify
+2023-08-14T19:26:46.576Z [WARN]: Verification failed: Phone number or OTP missing
+2023-08-14T19:26:46.577Z [ERROR]: Error: Please provide a phone number and OTP
+2023-08-14T19:26:46.580Z [INFO]: Request to /api/v1/auth/verify took 5.108799993991852ms
+2023-08-14T19:27:27.159Z [INFO]: Incoming GET request to /api/v1/auth/login
+2023-08-14T19:27:27.162Z [ERROR]: Error: Please provide a phone number and password
+2023-08-14T19:27:27.164Z [INFO]: Request to /api/v1/auth/login took 4.633500039577484ms
+2023-08-14T19:29:07.198Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=simran
+2023-08-14T19:29:07.200Z [INFO]: Request to /api/v1/video/create-room?roomName=simran took 2.1396999955177307ms
+2023-08-14T19:29:44.258Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=simran
+2023-08-14T19:29:44.264Z [INFO]: Request to /api/v1/video/join?roomName=simran took 6.050999999046326ms

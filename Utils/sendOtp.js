@@ -1,11 +1,13 @@
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
+const constants = require('./constants');
+
+const accountSid = constants.TWILIO_ACCOUNT_SID;
+const authToken = constants.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
 function sendTwilioMessage(body, to) {
     return client.messages.create({
         body,
-        from: '+14176373495',
+        from: '+919336183391',
         to: `+91${to}`
     });
 }

@@ -1,10 +1,11 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const otpSchema = new Schema(
     {
         phone: {
             type: String,
-            required: true
+            required: true,
+            index: true 
         },
         otp: {
             type: String,
@@ -20,4 +21,7 @@ const otpSchema = new Schema(
     }
 );
 
-module.exports = model("Otp", otpSchema);
+// Add an index on the 'createdAt' field to optimize the removal of expired documents
+otpSchema.index({ createdAt: 1 }, { expireAfterSeconds: 300 });
+
+module.exports = model('Otp', otpSchema);

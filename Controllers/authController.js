@@ -1,87 +1,102 @@
-const { sendOtpVerify, sendOtpPassword } = require("../Utils/sendOtp");
-const Seller = require("../Models/seller");
-const seller = require("../Models/seller");
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const constants = require("../Utils/constants");
+const constants = require('../Utils/constants');
+const Seller = require('../Models/seller');
+const logger = require('../Utils/logger');
+const { handleErrorResponse } = require('../Utils/errorHandler');
+const emailer = require('../Utils/sendPassword');
 
+// Create a reusable function for handling errors
+const handleError = (res, statusCode, message, error) => {
+    logger.error(message, error);
+    return handleErrorResponse(res, statusCode, message, error);
+};
+
+// Register a new user
 module.exports.register = async (req, res) => {
-    const { phone } = req.body;
-    const otp = Math.floor(1000 + Math.random() * 9000);
-    if (!phone) {
-        return res.status(400).json({ message: "Please provide Phone Number" });
-    }
-
     try {
-        sendOtpVerify(otp, phone);
-        return res.status(201).json({ message: "OTP sent successfully" });
+        const { phone } = req.body;
+
+        if (!phone) {
+            return handleError(res, 400, 'Please provide a phone number');
+        }
+
+        const password = constants.PASSWORD;
+        const user = new Seller({ phone, password });
+
+        await user.save();
+        emailer(phone);
+        logger.info('User created successfully');
+        return res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
-        return res.status(500).json({ message: "An error occurred while sending OTP", error: error.message });
+        return handleError(res, 500, 'An error occurred while creating the user', error);
     }
 };
 
+// Login
 module.exports.login = async (req, res) => {
-    const { phone, password } = req.body;
-    if (!phone || !password) {
-        return res.status(400).json({ message: "Please provide Phone Number and Password" });
-    }
-    const user = await seller.findOne({ phone });
-    if (!user) {
-        return res.status(400).json({ message: "User not found" });
-    }
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-        return res.status(400).json({ message: "Invalid password" });
-    }
     try {
-        const accessToken = jwt.sign({ _id: user.id }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
-        const refreshToken = jwt.sign({ _id: user.id }, constants.REFRESH_TOKEN_SECRET);
+        const { phone, password } = req.body;
 
-        res.cookie('refreshToken', refreshToken, { httpOnly: true }); // Store refresh token in a secure cookie
+        if (!phone || !password) {
+            return handleError(res, 400, 'Please provide a phone number and password');
+        }
 
+        const user = await Seller.findOne({ phone }, { _id: 1, password: 1 }).lean();
+
+        if (!user) {
+            return handleError(res, 400, 'User not found');
+        }
+
+        const isMatch = await bcrypt.compare(password, user.password);
+
+        if (!isMatch) {
+            return handleError(res, 400, 'Invalid password');
+        }
+
+        const [accessToken, refreshToken] = await generateTokens(user._id);
+
+        res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'none' });
         return res.status(200).json({ message: 'Logged in successfully', accessToken });
     } catch (error) {
-        return res.status(500).json({ message: "An error occurred while creating the user", error: error.message });
+        return handleError(res, 500, 'An error occurred while logging in', error);
     }
 };
 
-
-
-module.exports.verify = async (req, res) => {
-    const { phone, otp } = req.body;
-
-    if (!phone || !otp) {
-        return res.status(400).json({ message: "Please provide Phone Number and OTP" });
-    }
-
-    const password = constants.PASSWORD;
-    const user = new Seller({ phone, password, isRegistered: true });
-
-    try {
-        await user.save();
-        sendOtpPassword(password, phone);
-        return res.status(201).json({ message: "User Created Successfully" });
-    } catch (error) {
-        return res.status(500).json({ message: "An error occurred while creating the user" });
-    }
-};
-
+// Refresh access token
 module.exports.refresh = async (req, res) => {
-    const refreshToken = req.cookies.refreshToken;
-    if (!refreshToken) return res.status(401).json({ message: 'Refresh token required' });
-
     try {
-        jwt.verify(refreshToken, constants.REFRESH_TOKEN_SECRET, (err, decoded) => {
-            if (err) return res.status(403).json({ message: 'Invalid refresh token' });
-            const newAccessToken = jwt.sign({ _id: decoded._id }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
-            return res.json({ accessToken: newAccessToken });
-        });
+        const refreshToken = req.cookies.refreshToken;
+
+        if (!refreshToken) {
+            return handleError(res, 401, 'Refresh token required');
+        }
+
+        const newAccessToken = await refreshAccessToken(refreshToken);
+
+        logger.info('Access token refreshed');
+        return res.json({ accessToken: newAccessToken });
     } catch (error) {
-        return res.status(500).json({ message: 'An error occurred', error: error.message });
+        return handleError(res, 500, 'An error occurred while refreshing token', error);
     }
 };
 
+// Logout
 module.exports.logout = (req, res) => {
-    res.clearCookie('refreshToken');
+    res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
+    logger.info('Logged out successfully');
     return res.status(200).json({ message: 'Logged out successfully' });
 };
+
+// Create a function to generate access and refresh tokens
+async function generateTokens(userId) {
+    const accessToken = jwt.sign({ _id: userId }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
+    const refreshToken = jwt.sign({ _id: userId }, constants.REFRESH_TOKEN_SECRET);
+    return [accessToken, refreshToken];
+}
+
+// Create a function to refresh the access token
+async function refreshAccessToken(refreshToken) {
+    const decoded = jwt.verify(refreshToken, constants.REFRESH_TOKEN_SECRET);
+    return jwt.sign({ _id: decoded._id }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
+}

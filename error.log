@@ -1,0 +1,41 @@
+2023-08-10T20:04:32.048Z [ERROR]: An error occurred while logging in: ip is not defined
+2023-08-10T20:04:54.646Z [ERROR]: An error occurred while logging in: ip is not defined
+2023-08-10T20:04:54.647Z [ERROR]: Error: An error occurred while logging in ip is not defined
+2023-08-10T20:11:47.051Z [ERROR]: Error connecting to the database: option poolsize is not supported
+2023-08-10T20:11:54.694Z [ERROR]: Error connecting to the database: option mapoolsize is not supported
+2023-08-10T20:11:57.271Z [ERROR]: Error connecting to the database: option maxpoolsizepoolsize is not supported
+2023-08-10T20:13:19.431Z [ERROR]: Error connecting to the database: option mapoolsize is not supported
+2023-08-10T20:13:25.636Z [ERROR]: Error connecting to the database: option maxpoolsizepoolsize is not supported
+2023-08-10T20:33:44.002Z [ERROR]: An error occurred while logging in: Cannot access 'queryTime' before initialization
+2023-08-10T20:35:07.846Z [ERROR]: An error occurred while logging in: Cannot access 'queryTime' before initialization
+2023-08-10T20:35:07.846Z [ERROR]: Error: An error occurred while logging in Cannot access 'queryTime' before initialization
+2023-08-10T20:37:09.997Z [ERROR]: An error occurred while logging in: Seller.findOne(...).select(...).lean(...).cache is not a function
+2023-08-10T20:37:09.998Z [ERROR]: Error: An error occurred while logging in Seller.findOne(...).select(...).lean(...).cache is not a function
+2023-08-10T20:37:55.465Z [ERROR]: An error occurred while logging in: Cannot access 'user' before initialization
+2023-08-10T20:37:55.466Z [ERROR]: Error: An error occurred while logging in Cannot access 'user' before initialization
+2023-08-10T21:21:51.691Z [ERROR]: An error occurred while logging in: Operation `sellers.findOne()` buffering timed out after 10000ms
+2023-08-10T21:21:51.693Z [ERROR]: Error: An error occurred while logging in Operation `sellers.findOne()` buffering timed out after 10000ms
+2023-08-10T21:23:09.642Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-10T21:27:34.398Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-10T22:12:07.610Z [ERROR]: Error: User not found
+2023-08-10T22:12:07.611Z [ERROR]: An error occurred while logging in: Cannot read properties of undefined (reading 'message')
+2023-08-10T22:12:07.612Z [ERROR]: Error: An error occurred while logging in Cannot read properties of undefined (reading 'message')
+2023-08-10T22:15:00.806Z [ERROR]: Error: User not found
+2023-08-10T22:16:02.852Z [ERROR]: An error occurred while logging in: Cannot access 'user' before initialization
+2023-08-10T22:16:02.853Z [ERROR]: Error: An error occurred while logging in Cannot access 'user' before initialization
+2023-08-10T22:16:54.356Z [ERROR]: Error: User not found
+2023-08-10T22:17:28.265Z [ERROR]: Error: User not found
+2023-08-11T00:13:45.796Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:14:51.021Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:16:46.266Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:18:14.966Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::12d7:723e:27017
+2023-08-11T00:19:32.361Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::12d7:723e:27017
+2023-08-11T00:35:46.104Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:35:47.960Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-08-11T00:35:50.554Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:35:54.871Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T00:36:08.750Z [ERROR]: Failed to create room: connect ETIMEDOUT 64:ff9b::36ae:781e:443
+2023-08-11T15:57:32.506Z [ERROR]: Error: User not found
+2023-08-12T12:52:52.441Z [ERROR]: Error: Invalid password
+2023-08-14T19:26:46.577Z [ERROR]: Error: Please provide a phone number and OTP
+2023-08-14T19:27:27.162Z [ERROR]: Error: Please provide a phone number and password

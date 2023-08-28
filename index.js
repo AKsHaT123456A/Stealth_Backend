@@ -1,68 +1,63 @@
 // jshint esversion:6
 
-// Importing modules
 const express = require("express");
 const helmet = require('helmet');
 const compression = require('compression');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-require("dotenv").config();
 const http = require('http');
-const socketIO = require('socket.io');
-const { generateToken04 } = require('./Utils/genToken');
 const constants = require("./Utils/constants");
+const socketSetup = require('./Utils/socketSetup');
 const dbconnect = require("./Connections/db");
 const authRoutes = require("./Routes/authRoute");
+const videoRoutes = require("./Routes/videoRoute");
 const { auth } = require("./Middleware/auth");
+const logger = require("./Utils/logger");
+const { timingMiddleware } = require("./Middleware/timingRequest");
 
-
-// Initializing the app and server state
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server);
 const apiPrefix = '/api/v1';
 
-// !Middleware setup
+// Middleware setup
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(timingMiddleware);
+
 // Security middlewares
-app.use(helmet());
-app.use(compression());
+app.use(helmet({
+    contentSecurityPolicy: false, // Disabling CSP as it might need further configuration
+}));
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
 app.use(cors());
-app.use(helmet.contentSecurityPolicy());
 
-//!Socket connection setup
-io.on('connection', (socket) => {
-    console.log('A user connected');
-    socket.on('click', async () => {
-        try {
-            console.log('User clicked on the link');
-            const userId = socket.id;
-            const token = await generateToken04(constants.APP_ID, userId, constants.APP_SECRET, 3600, '');
-            console.log('Token generated:', token);
-
-            socket.emit('token', token);
-        } catch (error) {
-            console.error('Error generating token:', error);
-        }
-    });
-
-    socket.on('disconnect', () => {
-        console.log('A user disconnected');
-    });
+// Request logging middleware
+app.use((req, res, next) => {
+    logger.info(`Incoming ${req.method} request to ${req.originalUrl}`);
+    logger.debug(`Request Headers: ${JSON.stringify(req.headers)}`);
+    logger.debug(`Request Body: ${JSON.stringify(req.body)}`);
+    next();
 });
+
+// Compression middleware
+app.use(compression());
+
+// Set up socket connection
+socketSetup(server);
 
 // Routes
-app.get("/", auth, (req, res) => {
-    res.send("Welcome!!!!");
+// Serve index.html for the root route
+app.get('/', auth, (req, res) => {
+    res.send("Welcome to Liviso!!!")
 });
 app.use(`${apiPrefix}/auth`, authRoutes);
+app.use(`${apiPrefix}/video`, videoRoutes);
 
 // Connect to the database
 dbconnect();
 
 // Start the server
 server.listen(constants.PORT, () => {
-    console.log(`Server running at port ${constants.PORT}`);
+    logger.info(`Server running at port ${constants.PORT}`);
 });

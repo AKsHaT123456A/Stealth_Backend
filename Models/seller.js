@@ -1,41 +1,40 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 const sellerSchema = mongoose.Schema({
     name: {
         type: String,
-        default: "",
+        default: '',
         trim: true
     },
     phone: {
         type: Number,
-        required: [true, "Enter Your Phone Number"],
-        minlength: [10, "Enter Valid Phone Number"],
-        maxlength: [10, "Enter Valid Phone Number"],
-        index: true,
-        unique:true
+        required: [true, 'Please enter your phone number'],
+        minlength: [10, 'Please enter a valid 10-digit phone number'],
+        maxlength: [10, 'Please enter a valid 10-digit phone number'],
+        index: true, // Indexing for faster queries
+        unique: true // Ensuring phone number uniqueness
     },
     shopName: {
         type: String,
-        default: "",
+        default: '',
         trim: true
     },
     webLink: {
         type: String,
-        default: ""
+        default: ''
     },
     socialLink: {
         type: String,
-        default: ""
+        default: ''
     },
     email: {
         type: String,
-        default: ""
+        default: ''
     },
     calls: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "callSchema"
+        ref: 'callSchema'
     }],
     isOpen: {
         type: Boolean,
@@ -43,12 +42,12 @@ const sellerSchema = mongoose.Schema({
     },
     shopLink: {
         type: String,
-        default: "",
-        uniques:true
+        default: '',
+        unique: true // Ensuring shop link uniqueness
     },
-    password:{
+    password: {
         type: String,
-        required: [true, "Enter Your Password"],
+        required: [true, 'Please enter your password']
     },
     clicks: {
         type: Number,
@@ -61,10 +60,14 @@ const sellerSchema = mongoose.Schema({
 });
 
 // Hash password before saving
-sellerSchema.pre("save", async function (next) {
-    if (this.isModified("password")) {
+sellerSchema.pre('save', async function (next) {
+    if (this.isModified('password')) {
         this.password = await bcrypt.hash(this.password, 10);
     }
     next();
 });
+
+// Add indexes for more efficient queries
+sellerSchema.index({ phone: 1, shopLink: 1 });
+
 module.exports = mongoose.model('Seller', sellerSchema);

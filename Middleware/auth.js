@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 module.exports.auth = function (req, res, next) {
     const accessToken = req.headers['auth-token']; // Get the access token from the headers
     const refreshToken = req.cookies.refreshToken; // Get the refresh token from the cookies
-
+    console.log(accessToken, refreshToken);
     if (!accessToken && !refreshToken) {
         return res.status(401).json({ message: 'Access Denied' });
     }
