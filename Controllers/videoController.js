@@ -1,6 +1,7 @@
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const logger = require('../Utils/logger');
 const io = require('../Utils/socketSetup');
+// const roomOwners = require('./roomOwners'); // Import the simulated roomOwners data or your data source
 
 // Create a video room
 module.exports.createRoom = async (req, res) => {
@@ -22,35 +23,35 @@ module.exports.join = (req, res) => {
     redirectToVideoRoom(res, roomName);
 };
 
-//TODO: // Send a call request to the room owner
-// module.exports.sendCallRequest = async (req, res) => {
-//     const recipientId = req.body.recipientId;
-//     const roomName = req.body.roomName;
+// Send a call request to the room owner
+module.exports.sendCallRequest = async (req, res) => {
+    const recipientId = req.body.recipientId;
+    const roomName = req.body.roomName;
 
-//     try {
-//         if (!isRegisteredUser(recipientId)) {
-//             return handleRecipientNotRegistered(res);
-//         }
+    try {
+        if (!isRegisteredUser(recipientId)) {
+            return handleRecipientNotRegistered(res);
+        }
 
-//         await notifyOwner(roomName);
-//         res.json({ message: 'Call request sent to owner' });
-//     } catch (error) {
-//         handleCallRequestError(res, error);
-//     }
-// };
+        await notifyOwner(roomName);
+        res.json({ message: 'Call request sent to owner' });
+    } catch (error) {
+        handleCallRequestError(res, error);
+    }
+};
 
-// // Helper function: Create a Twilio video room (to be implemented)
-// async function createVideoRoom(roomName) {
-//     // Uncomment and integrate Twilio video room creation
-//     // const room = await client.video.rooms.create({
-//     //     recordParticipantsOnConnect: true,
-//     //     statusCallback: 'http://example.org',
-//     //     type: 'peer-to-peer',
-//     //     uniqueName: roomName
-//     // });
+// Helper function: Create a Twilio video room (to be implemented)
+async function createVideoRoom(roomName) {
+    // Uncomment and integrate Twilio video room creation
+    // const room = await client.video.rooms.create({
+    //     recordParticipantsOnConnect: true,
+    //     statusCallback: 'http://example.org',
+    //     type: 'peer-to-peer',
+    //     uniqueName: roomName
+    // });
 
-//     return `http://localhost:3000/api/v1/video/join?roomName=${roomName}`;
-// }
+    return `http://localhost:3000/api/v1/video/join?roomName=${roomName}`;
+}
 
 // // Helper function: Notify the owner about room joining
 // function notifyOwner(roomName) {
