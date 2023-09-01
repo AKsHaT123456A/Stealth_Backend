@@ -6,7 +6,7 @@ router.get('/create-room', createRoom);
 router.get('/join', join);
 router.get('/manage', manageCall);
 router.get('/notify', sendCallRequest);
-router.get('/call', getCallHistory);
+router.post('/call', getCallHistory);
 // router.get("/send-call-request",sendCallRequest);
 
 module.exports = router;
