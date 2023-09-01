@@ -19,9 +19,9 @@ module.exports.createRoom = async (req, res) => {
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
     const videoCall = call.findOne({ roomName: roomName });
-    if(videoCall) {
-        call.isNotified = true;
-        call.save();
+    if (videoCall) {
+        videoCall.isNotified = true;
+        await videoCall.save();
         return res.json({ message: 'Call request sent to owner', isNotified: call.isNotified });
     }
     await call.create({ roomName: roomName, isNotified: true });
