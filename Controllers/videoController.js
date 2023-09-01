@@ -73,7 +73,7 @@ module.exports.manageCall = async (req, res) => {
         user.save();
         return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
     }
-    return res.json({ message: 'Call request not found', isAccepted: isAccepted, isRejected: isRejected, roomName: roomName });
+    return res.status(400).json({ message: 'Call request not found', isAccepted: isAccepted, isRejected: isRejected, roomName: roomName });
 
 
 }
