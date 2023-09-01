@@ -27,7 +27,7 @@ module.exports.join = async (req, res) => {
         videoCall.isNotified = true;
         await videoCall.save();
         redirectToVideoRoom(res, roomName);
-        return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
+        // return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
 
     // If no existing call was found, create a new one
