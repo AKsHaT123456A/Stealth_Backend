@@ -57,7 +57,7 @@ async function createVideoRoom(roomName) {
 
 
 module.exports.manageCall = async (req, res) => {
-    const { isAccepted, isRejected, roomName } = req.body;
+    const { isAccepted, isRejected, roomName } = req.query;
     console.log(isAccepted, isRejected, roomName);
     const user = await call.findOne({ roomName: roomName });
     if (!user) return res.json({ message: 'Call request not found' });
