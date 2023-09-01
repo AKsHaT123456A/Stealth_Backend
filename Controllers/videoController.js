@@ -28,15 +28,14 @@ module.exports.join = async (req, res) => {
 // Send a call request to the room owner
 module.exports.sendCallRequest = async (req, res) => {
     const roomName = req.body.roomName;
-
+    const userName = "Akshat"
     try {
         const user = await call.findOne({ roomName: roomName });
         // if (!isRegisteredUser(recipientId)) {
         //     return handleRecipientNotRegistered(res);
         // }
-
         // await notifyOwner(roomName);
-        res.json({ message: 'Call request sent to owner', isNotified: user.isNotified });
+        res.json({ message: 'Call request sent to owner', isNotified: user.isNotified ,userName:userName });
     } catch (error) {
         handleCallRequestError(res, error);
     }
@@ -74,7 +73,9 @@ module.exports.manageCall = async (req, res) => {
 }
 module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
+    console.log(roomName);
     const user = await call.findOne({ roomName: roomName });
+  console.log(user);
     if (!user) return res.json({ isRejected: true });
 
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
