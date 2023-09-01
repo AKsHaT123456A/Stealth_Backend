@@ -18,14 +18,15 @@ module.exports.createRoom = async (req, res) => {
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
-    
+    console.log(roomName);
     // Attempt to find an existing call with the given roomName
     let videoCall = await call.findOne({ roomName: roomName });
-
+    console.log(videoCall);
     if (videoCall) {
         // Update the existing videoCall and save it
         videoCall.isNotified = true;
         await videoCall.save();
+        redirectToVideoRoom(res, roomName);
         return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
 
@@ -72,6 +73,8 @@ module.exports.manageCall = async (req, res) => {
         user.save();
         return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
     }
+    return res.json({ message: 'Call request not found', isAccepted: isAccepted, isRejected: isRejected, roomName: roomName });
+
 
 }
 module.exports.getCallHistory = async (req, res) => {
