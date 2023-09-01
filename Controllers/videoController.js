@@ -18,13 +18,20 @@ module.exports.createRoom = async (req, res) => {
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
-    const videoCall = call.findOne({ roomName: roomName });
+    
+    // Attempt to find an existing call with the given roomName
+    let videoCall = await call.findOne({ roomName: roomName });
+
     if (videoCall) {
+        // Update the existing videoCall and save it
         videoCall.isNotified = true;
         await videoCall.save();
         return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
-    await call.create({ roomName: roomName, isNotified: true });
+
+    // If no existing call was found, create a new one
+    videoCall = new call({ roomName: roomName, isNotified: true });
+    await videoCall.save();
 
     redirectToVideoRoom(res, roomName);
 };
