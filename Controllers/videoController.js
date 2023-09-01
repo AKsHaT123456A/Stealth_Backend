@@ -22,7 +22,7 @@ module.exports.join = async (req, res) => {
     if (videoCall) {
         videoCall.isNotified = true;
         await videoCall.save();
-        return res.json({ message: 'Call request sent to owner', isNotified: call.isNotified });
+        return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
     await call.create({ roomName: roomName, isNotified: true });
 
