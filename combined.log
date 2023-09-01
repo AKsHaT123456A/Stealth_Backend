@@ -791,3 +791,99 @@
 2023-08-28T09:58:47.670Z [INFO]: Server running at port 3000
 2023-08-28T09:58:51.093Z [INFO]: Connected to the database
 2023-08-28T10:00:04.475Z [INFO]: Server running at port 3000
+2023-09-01T07:11:43.176Z [INFO]: Server running at port 3000
+2023-09-01T07:11:46.387Z [INFO]: Connected to the database
+2023-09-01T07:37:50.079Z [INFO]: Server running at port 3000
+2023-09-01T07:37:53.198Z [INFO]: Connected to the database
+2023-09-01T07:41:36.273Z [INFO]: Incoming GET request to /api/v1/create-room
+2023-09-01T07:41:36.284Z [INFO]: Request to /api/v1/create-room took 13.862500004470348ms
+2023-09-01T07:42:18.517Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-09-01T07:42:18.552Z [INFO]: Request to /api/v1/video/create-room took 32.875299997627735ms
+2023-09-01T07:43:34.701Z [INFO]: Incoming GET request to /api/v1/video/create-room
+2023-09-01T07:43:34.705Z [INFO]: Request to /api/v1/video/create-room took 3.4938000068068504ms
+2023-09-01T10:25:09.145Z [INFO]: Server running at port 3000
+2023-09-01T10:25:33.415Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:25:39.339Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c2:ca1e:27017
+2023-09-01T10:25:44.954Z [INFO]: Server running at port 3000
+2023-09-01T10:26:13.167Z [INFO]: Server running at port 3000
+2023-09-01T10:26:43.299Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
+2023-09-01T10:27:28.969Z [INFO]: Server running at port 3000
+2023-09-01T10:27:33.460Z [INFO]: Connected to the database
+2023-09-01T10:28:16.554Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:29:04.192Z [INFO]: Incoming GET request to /api/v1/join?roomName=1234
+2023-09-01T10:29:04.202Z [INFO]: Request to /api/v1/join?roomName=1234 took 9.926899999380112ms
+2023-09-01T10:29:17.795Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:29:17.798Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 2.615199998021126ms
+2023-09-01T10:29:23.561Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:29:23.562Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 1.6822999939322472ms
+2023-09-01T10:30:10.372Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:30:10.375Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 2.3695000037550926ms
+2023-09-01T10:30:54.643Z [INFO]: Server running at port 3000
+2023-09-01T10:31:01.362Z [INFO]: Server running at port 3000
+2023-09-01T10:31:03.077Z [INFO]: Server running at port 3000
+2023-09-01T10:31:06.041Z [INFO]: Connected to the database
+2023-09-01T10:31:07.056Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:31:24.830Z [INFO]: Server running at port 3000
+2023-09-01T10:31:33.500Z [INFO]: Connected to the database
+2023-09-01T10:31:34.641Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:31:34.980Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 339.3357999995351ms
+2023-09-01T10:37:07.334Z [INFO]: Server running at port 3000
+2023-09-01T10:37:08.265Z [INFO]: Server running at port 3000
+2023-09-01T10:37:09.799Z [INFO]: Server running at port 3000
+2023-09-01T10:37:13.480Z [INFO]: Connected to the database
+2023-09-01T10:37:14.413Z [INFO]: Server running at port 3000
+2023-09-01T10:37:17.445Z [INFO]: Connected to the database
+2023-09-01T10:37:23.033Z [INFO]: Server running at port 3000
+2023-09-01T10:37:24.813Z [INFO]: Server running at port 3000
+2023-09-01T10:37:27.845Z [INFO]: Connected to the database
+2023-09-01T10:37:37.335Z [INFO]: Server running at port 3000
+2023-09-01T10:37:40.247Z [INFO]: Connected to the database
+2023-09-01T10:37:56.112Z [INFO]: Server running at port 3000
+2023-09-01T10:37:59.004Z [INFO]: Server running at port 3000
+2023-09-01T10:38:02.081Z [INFO]: Connected to the database
+2023-09-01T10:38:03.691Z [INFO]: Server running at port 3000
+2023-09-01T10:38:06.614Z [INFO]: Connected to the database
+2023-09-01T10:38:18.331Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:38:18.672Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 341.6878999993205ms
+2023-09-01T10:38:25.458Z [INFO]: Incoming GET request to /api/v1/videonotify
+2023-09-01T10:38:25.460Z [INFO]: Request to /api/v1/videonotify took 1.9337000027298927ms
+2023-09-01T10:38:28.535Z [INFO]: Incoming GET request to /api/v1/video/notify
+2023-09-01T10:38:28.846Z [ERROR]: Failed to send call request Cannot read properties of null (reading 'isNotified')
+2023-09-01T10:38:28.846Z [ERROR]: Error: Failed to send call request Cannot read properties of null (reading 'isNotified')
+2023-09-01T10:38:28.849Z [INFO]: Request to /api/v1/video/notify took 314.30590000003576ms
+2023-09-01T10:38:51.838Z [INFO]: Incoming GET request to /api/v1/video/notify
+2023-09-01T10:38:52.250Z [INFO]: Request to /api/v1/video/notify took 411.3619000017643ms
+2023-09-01T10:39:13.429Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T10:39:13.737Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 308.104699999094ms
+2023-09-01T10:39:32.760Z [INFO]: Incoming GET request to /api/v1/video/notify
+2023-09-01T10:39:33.129Z [INFO]: Request to /api/v1/video/notify took 368.7621999979019ms
+2023-09-01T10:40:16.984Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:40:38.638Z [INFO]: Server running at port 3000
+2023-09-01T10:40:41.645Z [INFO]: Connected to the database
+2023-09-01T10:40:45.561Z [INFO]: Server running at port 3000
+2023-09-01T10:40:46.868Z [INFO]: Server running at port 3000
+2023-09-01T10:40:49.798Z [INFO]: Connected to the database
+2023-09-01T10:40:50.277Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:41:21.353Z [INFO]: Server running at port 3000
+2023-09-01T10:41:24.319Z [INFO]: Connected to the database
+2023-09-01T10:41:24.866Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:41:48.533Z [INFO]: Server running at port 3000
+2023-09-01T10:41:51.975Z [INFO]: Connected to the database
+2023-09-01T10:41:53.718Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:41:54.092Z [INFO]: Request to /api/v1/video/manage took 375.3039999976754ms
+2023-09-01T10:42:04.298Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:42:04.604Z [INFO]: Request to /api/v1/video/manage took 304.31109999865294ms
+2023-09-01T10:45:32.692Z [INFO]: Incoming GET request to /api/v1/join?roomName=Abcdef
+2023-09-01T10:45:32.695Z [INFO]: Request to /api/v1/join?roomName=Abcdef took 2.562700003385544ms
+2023-09-01T10:45:39.511Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
+2023-09-01T10:45:39.839Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 327.44739999622107ms
+2023-09-01T10:45:52.938Z [INFO]: Incoming GET request to /api/v1/video/notify
+2023-09-01T10:45:53.383Z [INFO]: Request to /api/v1/video/notify took 444.67329999804497ms
+2023-09-01T10:46:32.098Z [INFO]: Incoming GET request to /api/v1/video/nootify
+2023-09-01T10:46:32.100Z [INFO]: Request to /api/v1/video/nootify took 2.588899999856949ms
+2023-09-01T10:46:34.744Z [INFO]: Incoming GET request to /api/v1/video/notify
+2023-09-01T10:46:35.048Z [INFO]: Request to /api/v1/video/notify took 303.7069000005722ms
+2023-09-01T10:47:12.402Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:47:12.709Z [INFO]: Request to /api/v1/video/manage took 307.2832999974489ms
+2023-09-01T10:47:26.511Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T10:47:26.816Z [INFO]: Request to /api/v1/video/manage took 305.034500002861ms

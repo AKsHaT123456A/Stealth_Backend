@@ -39,3 +39,7 @@
 2023-08-12T12:52:52.441Z [ERROR]: Error: Invalid password
 2023-08-14T19:26:46.577Z [ERROR]: Error: Please provide a phone number and OTP
 2023-08-14T19:27:27.162Z [ERROR]: Error: Please provide a phone number and password
+2023-09-01T10:25:39.339Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c2:ca1e:27017
+2023-09-01T10:26:43.299Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
+2023-09-01T10:38:28.846Z [ERROR]: Failed to send call request Cannot read properties of null (reading 'isNotified')
+2023-09-01T10:38:28.846Z [ERROR]: Error: Failed to send call request Cannot read properties of null (reading 'isNotified')
