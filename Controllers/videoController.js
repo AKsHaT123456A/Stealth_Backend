@@ -72,9 +72,14 @@ module.exports.manageCall = async (req, res) => {
     }
 
 }
+module.exports.getCallHistory = async (req, res) => {
+    const { roomName } = req.query;
+    const user = await call.findOne({ roomName: roomName });
+    return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
+}
 // Helper function: Redirect to the video room page
 function redirectToVideoRoom(res, roomName) {
-    res.redirect(`http://localhost:5173/room/${roomName}`);
+    res.redirect(`https://stealth-frontend-ten.vercel.app/`);
 }
 
 // Helper function: Check if the recipient is a registered user
