@@ -18,6 +18,12 @@ module.exports.createRoom = async (req, res) => {
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
+    const call = call.findOne({ roomName: roomName });
+    if(call) {
+        call.isNotified = true;
+        call.save();
+        return res.json({ message: 'Call request sent to owner', isNotified: call.isNotified });
+    }
     await call.create({ roomName: roomName, isNotified: true });
 
     redirectToVideoRoom(res, roomName);
