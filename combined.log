@@ -937,3 +937,54 @@
 2023-09-01T11:45:39.983Z [INFO]: Request to /api/v1/video/call?roomName=Abcdef took 301.8423999994993ms
 2023-09-01T11:45:39.985Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Abcdef
 2023-09-01T11:45:40.291Z [INFO]: Request to /api/v1/video/call?roomName=Abcdef took 305.6346000060439ms
+2023-09-01T13:20:31.812Z [INFO]: Server running at port 3000
+2023-09-01T13:20:36.522Z [INFO]: Connected to the database
+2023-09-01T13:20:46.624Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:20:46.993Z [INFO]: Request to /api/v1/video/manage took 369.3805000036955ms
+2023-09-01T13:20:54.281Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:20:54.657Z [INFO]: Request to /api/v1/video/manage took 375.68479999899864ms
+2023-09-01T13:21:02.481Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=1234
+2023-09-01T13:21:02.799Z [INFO]: Request to /api/v1/video/join?roomName=1234 took 317.8332999944687ms
+2023-09-01T13:21:20.014Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:21:20.348Z [INFO]: Request to /api/v1/video/manage took 334.5832000002265ms
+2023-09-01T13:22:41.345Z [INFO]: Server running at port 3000
+2023-09-01T13:22:44.037Z [INFO]: Server running at port 3000
+2023-09-01T13:22:47.209Z [INFO]: Connected to the database
+2023-09-01T13:22:49.827Z [INFO]: Server running at port 3000
+2023-09-01T13:22:52.948Z [INFO]: Connected to the database
+2023-09-01T13:22:53.739Z [INFO]: Server running at port 3000
+2023-09-01T13:22:57.028Z [INFO]: Connected to the database
+2023-09-01T13:23:01.306Z [INFO]: Server running at port 3000
+2023-09-01T13:23:04.512Z [INFO]: Connected to the database
+2023-09-01T13:23:09.591Z [INFO]: Server running at port 3000
+2023-09-01T13:23:11.119Z [INFO]: Server running at port 3000
+2023-09-01T13:23:14.340Z [INFO]: Connected to the database
+2023-09-01T13:23:17.079Z [INFO]: Server running at port 3000
+2023-09-01T13:23:18.952Z [INFO]: Server running at port 3000
+2023-09-01T13:23:21.485Z [INFO]: Server running at port 3000
+2023-09-01T13:23:24.683Z [INFO]: Connected to the database
+2023-09-01T13:27:47.057Z [INFO]: Server running at port 3000
+2023-09-01T13:27:50.489Z [INFO]: Connected to the database
+2023-09-01T13:28:12.639Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
+2023-09-01T13:28:12.947Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 308.720400005579ms
+2023-09-01T13:28:24.644Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:28:25.019Z [INFO]: Request to /api/v1/video/manage took 374.7677000015974ms
+2023-09-01T13:28:44.165Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:28:44.574Z [INFO]: Request to /api/v1/video/manage took 409.9653999954462ms
+2023-09-01T13:28:56.270Z [INFO]: Server running at port 3000
+2023-09-01T13:29:00.252Z [INFO]: Server running at port 3000
+2023-09-01T13:29:01.818Z [INFO]: Server running at port 3000
+2023-09-01T13:29:05.158Z [INFO]: Connected to the database
+2023-09-01T13:29:06.034Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:29:06.492Z [INFO]: Request to /api/v1/video/manage took 458.1018999963999ms
+2023-09-01T13:29:23.640Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
+2023-09-01T13:29:24.000Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 359.9987000003457ms
+2023-09-01T13:29:31.637Z [INFO]: Incoming GET request to /api/v1/video/managef
+2023-09-01T13:29:31.639Z [INFO]: Request to /api/v1/video/managef took 1.6331999972462654ms
+2023-09-01T13:29:33.489Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:29:33.820Z [INFO]: Request to /api/v1/video/manage took 331.292199999094ms
+2023-09-01T13:29:45.700Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:29:46.022Z [INFO]: Request to /api/v1/video/manage took 322.1123000010848ms
+2023-09-01T13:30:03.237Z [INFO]: Incoming GET request to /api/v1/video/manage
+2023-09-01T13:30:03.628Z [INFO]: Request to /api/v1/video/manage took 391.50999999791384ms
+2023-09-01T19:43:16.259Z [INFO]: Server running at port 3000

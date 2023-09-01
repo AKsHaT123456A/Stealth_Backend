@@ -2,7 +2,6 @@ const call = require('../Models/call');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const logger = require('../Utils/logger');
 const io = require('../Utils/socketSetup');
-// const roomOwners = require('./roomOwners'); // Import the simulated roomOwners data or your data source
 
 // Create a video room
 module.exports.createRoom = async (req, res) => {
@@ -19,23 +18,19 @@ module.exports.createRoom = async (req, res) => {
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
-    const user = await call.create({ roomName: roomName, isNotified: true });
+    await call.create({ roomName: roomName, isNotified: true });
 
-    // notifyOwner(roomName);
     redirectToVideoRoom(res, roomName);
 };
 
 // Send a call request to the room owner
 module.exports.sendCallRequest = async (req, res) => {
-    const roomName = req.body.roomName;
+    const roomName = req.query.roomName;
     const userName = "Akshat"
     try {
         const user = await call.findOne({ roomName: roomName });
-        // if (!isRegisteredUser(recipientId)) {
-        //     return handleRecipientNotRegistered(res);
-        // }
-        // await notifyOwner(roomName);
-        res.json({ message: 'Call request sent to owner', isNotified: user.isNotified ,userName:userName });
+        if (!user) return res.json({ message: 'Call request not found' });
+        res.json({ message: 'Call request sent to owner', isNotified: user.isNotified, userName: userName });
     } catch (error) {
         handleCallRequestError(res, error);
     }
@@ -46,17 +41,12 @@ async function createVideoRoom(roomName) {
     return `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${roomName}`;
 }
 
-// Helper function: Notify the owner about room joining
-function notifyOwner(roomName) {
-    const owner = roomOwners[rooms[roomName].owner]; // Assuming you have a roomOwners object
-    io.notifyOwner(owner.id, roomName);
-}
-
 
 module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName } = req.body;
+    console.log(isAccepted, isRejected, roomName);
     const user = await call.findOne({ roomName: roomName });
-
+    if (!user) return res.json({ message: 'Call request not found' });
     if (isAccepted) {
         user.isAccepted = true;
         user.isNotified = false;
@@ -75,7 +65,7 @@ module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
     console.log(roomName);
     const user = await call.findOne({ roomName: roomName });
-  console.log(user);
+    console.log(user);
     if (!user) return res.json({ isRejected: true });
 
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
@@ -84,24 +74,6 @@ module.exports.getCallHistory = async (req, res) => {
 function redirectToVideoRoom(res, roomName) {
     res.redirect(`https://stealth-frontend-ten.vercel.app/`);
 }
-
-// Helper function: Check if the recipient is a registered user
-function isRegisteredUser(userId) {
-    return roomOwners[userId]?.registered || false;
-}
-
-// Helper function: Handle recipient not registered error
-function handleRecipientNotRegistered(res) {
-    return handleErrorResponse(res, 403, 'Recipient is not a registered user');
-}
-
-// Helper function: Handle errors during room creation
-function handleRoomCreationError(res, roomName, error) {
-    const errorMessage = `Failed to create room '${roomName}'`;
-    logger.error(errorMessage, error);
-    handleErrorResponse(res, 500, errorMessage, error);
-}
-
 // Helper function: Handle errors during call request
 function handleCallRequestError(res, error) {
     const errorMessage = 'Failed to send call request';
