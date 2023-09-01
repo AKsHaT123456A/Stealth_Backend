@@ -75,6 +75,8 @@ module.exports.manageCall = async (req, res) => {
 module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
     const user = await call.findOne({ roomName: roomName });
+    if (!user) return res.json({ isRejected: true });
+
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
 }
 // Helper function: Redirect to the video room page
