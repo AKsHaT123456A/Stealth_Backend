@@ -26,7 +26,7 @@ module.exports.join = async (req, res) => {
         // Update the existing videoCall and save it
         videoCall.isNotified = true;
         await videoCall.save();
-        redirectToVideoRoom(res, roomName);
+    return res.redirect(`https://stealth-frontend-ten.vercel.app/`);
         // return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
 
@@ -34,7 +34,8 @@ module.exports.join = async (req, res) => {
     videoCall = new call({ roomName: roomName, isNotified: true });
     await videoCall.save();
 
-    redirectToVideoRoom(res, roomName);
+    return res.redirect(`https://stealth-frontend-ten.vercel.app/`);
+
 };
 
 // Send a call request to the room owner
@@ -88,7 +89,6 @@ module.exports.getCallHistory = async (req, res) => {
 }
 // Helper function: Redirect to the video room page
 function redirectToVideoRoom(res, roomName) {
-    res.redirect(`https://stealth-frontend-ten.vercel.app/`);
 }
 // Helper function: Handle errors during call request
 function handleCallRequestError(res, error) {

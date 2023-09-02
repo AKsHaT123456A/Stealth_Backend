@@ -1008,3 +1008,18 @@
 2023-09-01T21:26:26.788Z [INFO]: Server running at port 3000
 2023-09-01T21:26:30.259Z [INFO]: Server running at port 3000
 2023-09-01T21:26:33.164Z [INFO]: Connected to the database
+2023-09-01T22:59:12.768Z [INFO]: Server running at port 3000
+2023-09-01T22:59:15.759Z [INFO]: Connected to the database
+2023-09-01T23:01:34.008Z [INFO]: Server running at port 3000
+2023-09-01T23:01:37.090Z [INFO]: Connected to the database
+2023-09-01T23:01:41.970Z [INFO]: Server running at port 3000
+2023-09-01T23:01:45.321Z [INFO]: Connected to the database
+2023-09-01T23:02:08.256Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
+2023-09-01T23:02:08.955Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 701.3372000008821ms
+2023-09-01T23:04:07.978Z [INFO]: Server running at port 3000
+2023-09-01T23:04:11.075Z [INFO]: Connected to the database
+2023-09-01T23:04:12.738Z [INFO]: Server running at port 3000
+2023-09-01T23:04:15.553Z [INFO]: Server running at port 3000
+2023-09-01T23:04:18.553Z [INFO]: Connected to the database
+2023-09-01T23:05:03.004Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
+2023-09-01T23:05:03.614Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 612.7006999999285ms
