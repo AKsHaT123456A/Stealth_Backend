@@ -6,8 +6,8 @@ const { apiLimiter } = require("../Utils/rateLimiter");
 const router = require("express").Router();
 
 // router.get("/verify", verify);
-router.get("/register", register);
-router.get("/login", apiLimiter, login);
+router.post("/register", register);
+router.post("/login", apiLimiter, login);
 router.get("/refresh-token", refresh);
 router.get("/logout", logout);
 router.post("/profile/:id", profile);
