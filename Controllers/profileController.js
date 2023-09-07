@@ -4,7 +4,7 @@ const constants = require("../Utils/constants");
 const profile = async (req, res) => {
     try {
         const { id } = req.params;
-        const { shopName } = req.body.shopName;
+        const shopName = req.body.shopName;
         const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${shopName}`;
         await seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink:shopLink, ...req.body } });
         return res.status(200).json({ message: "Profile Updated" });
