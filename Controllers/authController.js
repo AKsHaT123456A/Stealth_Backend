@@ -15,17 +15,17 @@ const handleError = (res, statusCode, message, error) => {
 // Register a new user
 module.exports.register = async (req, res) => {
     try {
-        const { phone } = req.body;
+        const { name, phone, email } = req.body;
 
         if (!phone) {
             return handleError(res, 400, 'Please provide a phone number');
         }
 
-        const password = constants.PASSWORD;
+        const password = 12345;
         const user = new Seller({ phone, password });
 
         await user.save();
-        emailer(phone);
+        emailer(email, password);
         logger.info('User created successfully');
         return res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
