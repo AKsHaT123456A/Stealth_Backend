@@ -8,7 +8,7 @@ const sellerSchema = mongoose.Schema({
         trim: true
     },
     phone: {
-        type: Number,
+        type: String,
         required: [true, 'Please enter your phone number'],
         minlength: [10, 'Please enter a valid 10-digit phone number'],
         maxlength: [10, 'Please enter a valid 10-digit phone number'],
