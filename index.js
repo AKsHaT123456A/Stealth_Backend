@@ -9,7 +9,7 @@ const http = require('http');
 const constants = require("./Utils/constants");
 const socketSetup = require('./Utils/socketSetup');
 const dbconnect = require("./Connections/db");
-// const authRoutes = require("./Routes/authRoute");
+const authRoutes = require("./Routes/authRoute");
 const videoRoutes = require("./Routes/videoRoute");
 const { auth } = require("./Middleware/auth");
 const logger = require("./Utils/logger");
@@ -51,7 +51,7 @@ socketSetup(server);
 app.get('/', auth, (req, res) => {
     res.send("Welcome to Liviso!!!")
 });
-// app.use(`${apiPrefix}/auth`, authRoutes);
+app.use(`${apiPrefix}/auth`, authRoutes);
 app.use(`${apiPrefix}/video`, videoRoutes);
 
 // Connect to the database

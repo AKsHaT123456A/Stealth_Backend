@@ -1023,3 +1023,5 @@
 2023-09-01T23:04:18.553Z [INFO]: Connected to the database
 2023-09-01T23:05:03.004Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=Abcdef
 2023-09-01T23:05:03.614Z [INFO]: Request to /api/v1/video/join?roomName=Abcdef took 612.7006999999285ms
+2023-09-07T19:57:14.642Z [INFO]: Server running at port 3000
+2023-09-07T19:57:20.162Z [INFO]: Connected to the database
