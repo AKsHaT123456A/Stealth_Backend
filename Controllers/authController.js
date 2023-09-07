@@ -57,7 +57,7 @@ module.exports.login = async (req, res) => {
         const [accessToken, refreshToken] = await generateTokens(user._id);
 
         res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'none' });
-        return res.status(200).json({ message: 'Logged in successfully', accessToken });
+        return res.status(200).json({ message: 'Logged in successfully', userId: user._id, accessToken });
     } catch (error) {
         return handleError(res, 500, 'An error occurred while logging in', error);
     }
