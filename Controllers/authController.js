@@ -27,7 +27,7 @@ module.exports.register = async (req, res) => {
         await user.save();
         emailer(email, password);
         logger.info('User created successfully');
-        return res.status(201).json({ message: 'User created successfully' });
+        return res.status(201).json({ message: 'User created successfully' ,userId: user._id});
     } catch (error) {
         return handleError(res, 500, 'An error occurred while creating the user', error);
     }
