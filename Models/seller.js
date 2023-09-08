@@ -43,7 +43,6 @@ const sellerSchema = mongoose.Schema({
     shopLink: {
         type: String,
         default: '',
-        unique: true // Ensuring shop link uniqueness
     },
     password: {
         type: String,
