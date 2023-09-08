@@ -26,15 +26,15 @@ module.exports.join = async (req, res) => {
         // Update the existing videoCall and save it
         videoCall.isNotified = true;
         await videoCall.save();
-    return res.redirect(`https://stealth-frontend-ten.vercel.app/`);
+
+    return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
         // return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
 
     // If no existing call was found, create a new one
     videoCall = new call({ roomName: roomName, isNotified: true });
     await videoCall.save();
-
-    return res.redirect(`https://stealth-frontend-ten.vercel.app/`);
+return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
 
 };
 
@@ -59,6 +59,7 @@ async function createVideoRoom(roomName) {
 
 module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName } = req.query;
+    console.log(req.query);
     console.log(isAccepted, isRejected, roomName);
     const user = await call.findOne({ roomName: roomName });
     if (!user) return res.json({ message: 'Call request not found' });
@@ -68,14 +69,10 @@ module.exports.manageCall = async (req, res) => {
         user.save();
         return res.json({ message: 'Call request accepted', isAccepted: user.isAccepted });
     }
-    if (isRejected) {
         user.isRejected = true;
         user.isNotified = false;
         user.save();
         return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
-    }
-    return res.status(400).json({ message: 'Call request not found', isAccepted: isAccepted, isRejected: isRejected, roomName: roomName });
-
 
 }
 module.exports.getCallHistory = async (req, res) => {
@@ -83,8 +80,6 @@ module.exports.getCallHistory = async (req, res) => {
     console.log(roomName);
     const user = await call.findOne({ roomName: roomName });
     console.log(user);
-    if (!user) return res.json({ isRejected: true });
-
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
 }
 // Helper function: Redirect to the video room page

@@ -1031,3 +1031,213 @@
 2023-09-07T21:53:46.858Z [INFO]: Connected to the database
 2023-09-07T21:54:30.762Z [INFO]: Incoming POST request to /api/v1/auth/login
 2023-09-07T21:54:31.151Z [INFO]: Request to /api/v1/auth/login took 390.008200019598ms
+2023-09-08T10:07:31.198Z [INFO]: Server running at port 3000
+2023-09-08T10:07:34.340Z [INFO]: Connected to the database
+2023-09-08T10:07:41.858Z [INFO]: Server running at port 3000
+2023-09-08T10:07:44.764Z [INFO]: Server running at port 3000
+2023-09-08T10:07:47.657Z [INFO]: Connected to the database
+2023-09-08T10:07:49.041Z [INFO]: Server running at port 3000
+2023-09-08T10:07:52.022Z [INFO]: Connected to the database
+2023-09-08T10:08:06.533Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=akshat
+2023-09-08T10:08:07.143Z [INFO]: Request to /api/v1/video/join?roomName=akshat took 611.1132999956608ms
+2023-09-08T10:08:26.463Z [INFO]: Server running at port 3000
+2023-09-08T10:08:27.704Z [INFO]: Server running at port 3000
+2023-09-08T10:08:30.694Z [INFO]: Connected to the database
+2023-09-08T10:08:43.936Z [INFO]: Server running at port 3000
+2023-09-08T10:08:46.850Z [INFO]: Connected to the database
+2023-09-08T10:08:48.336Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=akshat
+2023-09-08T10:08:48.961Z [INFO]: Request to /api/v1/video/join?roomName=akshat took 625.3770999908447ms
+2023-09-08T10:09:18.412Z [INFO]: Server running at port 3000
+2023-09-08T10:09:21.329Z [INFO]: Connected to the database
+2023-09-08T10:09:27.297Z [INFO]: Server running at port 3000
+2023-09-08T10:09:30.204Z [INFO]: Connected to the database
+2023-09-08T10:09:34.497Z [INFO]: Server running at port 3000
+2023-09-08T10:09:36.048Z [INFO]: Server running at port 3000
+2023-09-08T10:09:38.623Z [INFO]: Server running at port 3000
+2023-09-08T10:09:41.601Z [INFO]: Connected to the database
+2023-09-08T10:09:42.946Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=akshat
+2023-09-08T10:09:43.570Z [INFO]: Request to /api/v1/video/join?roomName=akshat took 624.7843999862671ms
+2023-09-08T10:12:22.397Z [INFO]: Server running at port 3000
+2023-09-08T10:12:25.740Z [INFO]: Connected to the database
+2023-09-08T10:12:31.910Z [INFO]: Server running at port 3000
+2023-09-08T10:12:34.942Z [INFO]: Connected to the database
+2023-09-08T10:12:43.263Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=akshat
+2023-09-08T10:12:43.882Z [INFO]: Request to /api/v1/video/join?roomName=akshat took 620.2247000038624ms
+2023-09-08T10:13:30.145Z [INFO]: Incoming GET request to /api/v1/video/create-room?roomName=akshat
+2023-09-08T10:13:30.155Z [INFO]: Request to /api/v1/video/create-room?roomName=akshat took 10.339700013399124ms
+2023-09-08T10:13:47.868Z [INFO]: Incoming GET request to /api/v1/video/join?roomName=akshat
+2023-09-08T10:13:48.570Z [INFO]: Request to /api/v1/video/join?roomName=akshat took 702.8212999999523ms
+2023-09-08T10:15:32.191Z [INFO]: Server running at port 3000
+2023-09-08T10:15:38.351Z [INFO]: Server running at port 3000
+2023-09-08T10:16:08.095Z [INFO]: Server running at port 3000
+2023-09-08T10:16:38.207Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
+2023-09-08T10:21:08.899Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=:akshat
+2023-09-08T10:21:08.943Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:21:41.617Z [INFO]: Server running at port 3000
+2023-09-08T10:21:44.663Z [INFO]: Connected to the database
+2023-09-08T10:21:52.655Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:21:53.005Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 350.52779999375343ms
+2023-09-08T10:21:53.007Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:21:53.304Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 297.2147000133991ms
+2023-09-08T10:22:04.727Z [INFO]: Server running at port 3000
+2023-09-08T10:22:07.687Z [INFO]: Connected to the database
+2023-09-08T10:22:08.567Z [INFO]: Server running at port 3000
+2023-09-08T10:22:11.458Z [INFO]: Connected to the database
+2023-09-08T10:22:13.012Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:24:55.459Z [INFO]: Server running at port 3000
+2023-09-08T10:24:58.567Z [INFO]: Connected to the database
+2023-09-08T10:25:00.001Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:00.335Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 335.5342999994755ms
+2023-09-08T10:25:00.339Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:00.654Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 315.886000007391ms
+2023-09-08T10:25:05.359Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:05.676Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 316.8923999965191ms
+2023-09-08T10:25:05.678Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:05.982Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 304.76910001039505ms
+2023-09-08T10:25:10.696Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:11.191Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 494.32249999046326ms
+2023-09-08T10:25:11.192Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:11.505Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 312.6415999829769ms
+2023-09-08T10:25:16.203Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:16.540Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 337.08649998903275ms
+2023-09-08T10:25:16.541Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:16.844Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 302.6089999973774ms
+2023-09-08T10:25:21.547Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:21.847Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 300.40139999985695ms
+2023-09-08T10:25:21.851Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:22.180Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 328.69849997758865ms
+2023-09-08T10:25:26.861Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:27.176Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 315.02730000019073ms
+2023-09-08T10:25:27.189Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:27.497Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 308.48230001330376ms
+2023-09-08T10:25:32.194Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:32.504Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 310.0633000135422ms
+2023-09-08T10:25:32.507Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:32.815Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 307.98530000448227ms
+2023-09-08T10:25:37.515Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:37.829Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 313.8134000003338ms
+2023-09-08T10:25:37.830Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:38.131Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 300.93380001187325ms
+2023-09-08T10:25:42.839Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:43.160Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 321.5088999867439ms
+2023-09-08T10:25:43.162Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:43.471Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 309.5300999879837ms
+2023-09-08T10:25:48.166Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:48.480Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 313.65049999952316ms
+2023-09-08T10:25:48.481Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:48.790Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 308.2509000003338ms
+2023-09-08T10:25:53.491Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:53.830Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 338.929800003767ms
+2023-09-08T10:25:53.831Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:54.145Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 313.7824999988079ms
+2023-09-08T10:25:58.841Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:59.160Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 318.63929998874664ms
+2023-09-08T10:25:59.162Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:25:59.480Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 317.54199999570847ms
+2023-09-08T10:26:03.968Z [INFO]: Incoming GET request to /api/v1/video/manage?roomName=akshat&isAccepted=true
+2023-09-08T10:26:03.970Z [INFO]: Request to /api/v1/video/manage?roomName=akshat&isAccepted=true took 1.8246999979019165ms
+2023-09-08T10:26:04.172Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:04.521Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 349.7563000023365ms
+2023-09-08T10:26:04.522Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:04.833Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 311.18050000071526ms
+2023-09-08T10:26:09.527Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:09.850Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 323.3305000066757ms
+2023-09-08T10:26:09.852Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:10.169Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 316.43389999866486ms
+2023-09-08T10:26:14.869Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:15.180Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 310.9133000075817ms
+2023-09-08T10:26:15.181Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:15.482Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 300.8561999797821ms
+2023-09-08T10:26:20.189Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:20.498Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 309.1597999930382ms
+2023-09-08T10:26:20.502Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:20.799Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 297.2470000088215ms
+2023-09-08T10:26:25.509Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:25.814Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 305.1608000099659ms
+2023-09-08T10:26:25.817Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:26.113Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 296.28410002589226ms
+2023-09-08T10:26:30.820Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:31.119Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 299.1153999865055ms
+2023-09-08T10:26:31.123Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:31.423Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 299.9868000149727ms
+2023-09-08T10:26:34.554Z [INFO]: Incoming GET request to /api/v1/video/manage?roomName=akshat&isAccepted=true
+2023-09-08T10:26:34.556Z [INFO]: Request to /api/v1/video/manage?roomName=akshat&isAccepted=true took 1.5108999907970428ms
+2023-09-08T10:26:36.135Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:36.451Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 315.9185999929905ms
+2023-09-08T10:26:36.452Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:36.782Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 329.78560000658035ms
+2023-09-08T10:26:39.585Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=akshat&isAccepted=true
+2023-09-08T10:26:39.890Z [INFO]: Request to /api/v1/video/manage?roomName=akshat&isAccepted=true took 304.18770000338554ms
+2023-09-08T10:26:41.462Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:41.772Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 309.87470000982285ms
+2023-09-08T10:26:41.789Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:42.092Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 303.07440000772476ms
+2023-09-08T10:26:46.784Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:47.117Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 333.3576999902725ms
+2023-09-08T10:26:47.118Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:47.415Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 296.2688999772072ms
+2023-09-08T10:26:52.130Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:52.442Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 311.82150000333786ms
+2023-09-08T10:26:52.444Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:52.747Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 303.0682999789715ms
+2023-09-08T10:26:57.465Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:57.757Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 292.20679998397827ms
+2023-09-08T10:26:57.760Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:26:58.062Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 301.88539999723434ms
+2023-09-08T10:27:03.072Z [INFO]: Server running at port 3000
+2023-09-08T10:27:03.106Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:27:04.215Z [INFO]: Server running at port 3000
+2023-09-08T10:27:04.290Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:27:06.491Z [INFO]: Server running at port 3000
+2023-09-08T10:27:07.854Z [INFO]: Server running at port 3000
+2023-09-08T10:27:09.020Z [INFO]: Server running at port 3000
+2023-09-08T10:27:13.464Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=akshat&isAccepted=true
+2023-09-08T10:27:30.389Z [INFO]: Server running at port 3000
+2023-09-08T10:27:49.072Z [INFO]: Server running at port 3000
+2023-09-08T10:28:13.650Z [INFO]: Connected to the database
+2023-09-08T10:28:16.092Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=akshat&isAccepted=true
+2023-09-08T10:28:16.415Z [INFO]: Request to /api/v1/video/manage?roomName=akshat&isAccepted=true took 323.8111000061035ms
+2023-09-08T10:28:51.130Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Akshat&isAccepted=true
+2023-09-08T10:28:51.444Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isAccepted=true took 314.1942000091076ms
+2023-09-08T10:29:34.935Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:29:35.235Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 299.6624000072479ms
+2023-09-08T10:29:35.236Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:29:35.535Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 299.0494999885559ms
+2023-09-08T10:29:38.732Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Akshat&isAccepted=true
+2023-09-08T10:29:39.033Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isAccepted=true took 301.10300001502037ms
+2023-09-08T10:29:40.248Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:29:40.538Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 289.7920999825001ms
+2023-09-08T10:29:40.544Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:29:40.845Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 301.17669999599457ms
+2023-09-08T10:29:46.729Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=:akshat
+2023-09-08T10:30:11.127Z [INFO]: Server running at port 3000
+2023-09-08T10:30:14.109Z [INFO]: Connected to the database
+2023-09-08T10:31:54.631Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:31:54.958Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 328.1942000091076ms
+2023-09-08T10:31:54.960Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:31:55.273Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 312.70700001716614ms
+2023-09-08T10:32:11.048Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=:akshat
+2023-09-08T10:32:22.024Z [INFO]: Server running at port 3000
+2023-09-08T10:32:24.974Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:26.444Z [INFO]: Connected to the database
+2023-09-08T10:32:28.362Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 3390.4034999907017ms
+2023-09-08T10:32:28.366Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:28.670Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 304.025200009346ms
+2023-09-08T10:32:33.376Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:33.693Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 316.60639998316765ms
+2023-09-08T10:32:33.694Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:34.006Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 311.99090000987053ms
+2023-09-08T10:32:35.585Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Akshat&isRejected=true
+2023-09-08T10:32:35.901Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isRejected=true took 316.58649998903275ms
+2023-09-08T10:32:38.699Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:39.022Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 323.07299998402596ms
+2023-09-08T10:32:39.026Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Akshat
+2023-09-08T10:32:39.331Z [INFO]: Request to /api/v1/video/call?roomName=Akshat took 305.6152000129223ms
+2023-09-08T10:33:19.982Z [INFO]: Server running at port 3000
+2023-09-08T10:33:23.583Z [INFO]: Server running at port 3000
+2023-09-08T10:33:26.578Z [INFO]: Connected to the database
+2023-09-08T10:33:55.718Z [INFO]: Server running at port 3000
+2023-09-08T10:33:58.689Z [INFO]: Connected to the database
+2023-09-08T10:34:42.833Z [INFO]: Server running at port 3000
+2023-09-08T10:34:46.169Z [INFO]: Server running at port 3000
+2023-09-08T10:34:49.173Z [INFO]: Connected to the database

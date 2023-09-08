@@ -43,3 +43,4 @@
 2023-09-01T10:26:43.299Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
 2023-09-01T10:38:28.846Z [ERROR]: Failed to send call request Cannot read properties of null (reading 'isNotified')
 2023-09-01T10:38:28.846Z [ERROR]: Error: Failed to send call request Cannot read properties of null (reading 'isNotified')
+2023-09-08T10:16:38.207Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017

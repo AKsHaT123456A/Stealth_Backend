@@ -22,7 +22,7 @@ module.exports.register = async (req, res) => {
         }
 
         const password = 12345;
-        const user = new Seller({ phone, password });
+        const user = new Seller({ phone, password});
 
         await user.save();
         emailer(email, password);
