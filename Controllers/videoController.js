@@ -27,14 +27,14 @@ module.exports.join = async (req, res) => {
         videoCall.isNotified = true;
         await videoCall.save();
 
-    return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
+        return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
         // return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
     }
 
     // If no existing call was found, create a new one
     videoCall = new call({ roomName: roomName, isNotified: true });
     await videoCall.save();
-return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
+    return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
 
 };
 
@@ -69,18 +69,23 @@ module.exports.manageCall = async (req, res) => {
         user.save();
         return res.json({ message: 'Call request accepted', isAccepted: user.isAccepted });
     }
-        user.isRejected = true;
-        user.isNotified = false;
-        user.save();
-        return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
+    user.isRejected = true;
+    user.isNotified = false;
+    user.save();
+    return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
 
 }
 module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
     console.log(roomName);
     const user = await call.findOne({ roomName: roomName });
-    console.log(user);
-    return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected });
+    if (!user) {
+        return res.json({ message: 'Call request not found' });
+    }
+
+    const phone = user.phone;
+    const call = await CallModel.findOne({ phone });
+    return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
 }
 // Helper function: Redirect to the video room page
 function redirectToVideoRoom(res, roomName) {
