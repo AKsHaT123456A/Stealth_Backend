@@ -44,3 +44,7 @@
 2023-09-01T10:38:28.846Z [ERROR]: Failed to send call request Cannot read properties of null (reading 'isNotified')
 2023-09-01T10:38:28.846Z [ERROR]: Error: Failed to send call request Cannot read properties of null (reading 'isNotified')
 2023-09-08T10:16:38.207Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
+2023-09-21T14:55:43.664Z [ERROR]: An error occurred while logging in Cannot access 'call' before initialization
+2023-09-21T14:55:43.665Z [ERROR]: Error: An error occurred while logging in Cannot access 'call' before initialization
+2023-09-21T15:01:54.762Z [ERROR]: Please provide a roomName
+2023-09-21T15:01:54.764Z [ERROR]: Error: Please provide a roomName

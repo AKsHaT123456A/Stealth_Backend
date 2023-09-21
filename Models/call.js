@@ -32,6 +32,10 @@ const callSchema = mongoose.Schema({
     isAccepted:{
         type:Boolean,
         default:false
+    },
+    token:{
+        type:String,
+        default:""
     }
 });
 

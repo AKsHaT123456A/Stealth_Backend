@@ -1,4 +1,4 @@
-const { register, login, refresh, logout } = require("../Controllers/authController");
+const { register, login, refresh, logout, createVideoRoom } = require("../Controllers/authController");
 const { profile, getprofile } = require("../Controllers/profileController");
 const { apiLimiter } = require("../Utils/rateLimiter");
 
@@ -12,5 +12,6 @@ router.get("/refresh-token", refresh);
 router.get("/logout", logout);
 router.post("/profile/:id", profile);
 router.get("/getprofile/:id", getprofile);
+router.get("/token",createVideoRoom)
 
 module.exports = router;

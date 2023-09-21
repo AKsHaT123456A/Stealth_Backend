@@ -5,44 +5,51 @@ const Seller = require('../Models/seller');
 const logger = require('../Utils/logger');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const emailer = require('../Utils/sendPassword');
+const CallModel = require('../Models/call'); // Renamed to avoid variable name conflict
 
-// Create a reusable function for handling errors
 const handleError = (res, statusCode, message, error) => {
     logger.error(message, error);
     return handleErrorResponse(res, statusCode, message, error);
 };
 
-// Register a new user
 module.exports.register = async (req, res) => {
     try {
-        const { name, phone, email } = req.body;
+        const { phone, password, email } = req.body;
 
-        if (!phone) {
-            return handleError(res, 400, 'Please provide a phone number');
+        if (!phone || !password) {
+            return handleError(res, 400, 'Please provide both phone and password');
         }
 
-        const password = 12345;
-        const user = new Seller({ phone, password});
+        // Hash the password before saving it
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new Seller({ phone, password: hashedPassword });
 
         await user.save();
-        emailer(email, password);
+        emailer(email, password); // Ensure this function is implemented securely
         logger.info('User created successfully');
-        return res.status(201).json({ message: 'User created successfully' ,userId: user._id});
+        return res.status(201).json({ message: 'User created successfully', userId: user._id });
     } catch (error) {
         return handleError(res, 500, 'An error occurred while creating the user', error);
     }
 };
 
-// Login
 module.exports.login = async (req, res) => {
     try {
-        const { phone, password } = req.body;
+        const { phone, password, token } = req.body;
 
         if (!phone || !password) {
-            return handleError(res, 400, 'Please provide a phone number and password');
+            return handleError(res, 400, 'Please provide both phone and password');
         }
 
         const user = await Seller.findOne({ phone }, { _id: 1, password: 1 }).lean();
+        const call = await CallModel.findOneAndUpdate({ phone });
+
+        if (call) {
+            call.token = token;
+            await call.save();
+        }
+
+        await CallModel.create({ token, phone });
 
         if (!user) {
             return handleError(res, 400, 'User not found');
@@ -63,7 +70,6 @@ module.exports.login = async (req, res) => {
     }
 };
 
-// Refresh access token
 module.exports.refresh = async (req, res) => {
     try {
         const refreshToken = req.cookies.refreshToken;
@@ -81,22 +87,42 @@ module.exports.refresh = async (req, res) => {
     }
 };
 
-// Logout
 module.exports.logout = (req, res) => {
     res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
     logger.info('Logged out successfully');
     return res.status(200).json({ message: 'Logged out successfully' });
 };
 
-// Create a function to generate access and refresh tokens
 async function generateTokens(userId) {
     const accessToken = jwt.sign({ _id: userId }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
     const refreshToken = jwt.sign({ _id: userId }, constants.REFRESH_TOKEN_SECRET);
     return [accessToken, refreshToken];
 }
 
-// Create a function to refresh the access token
 async function refreshAccessToken(refreshToken) {
     const decoded = jwt.verify(refreshToken, constants.REFRESH_TOKEN_SECRET);
     return jwt.sign({ _id: decoded._id }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
 }
+
+module.exports.createVideoRoom = async (req, res) => {
+    try {
+        const { roomName } = req.query;
+
+        if (!roomName) {
+            return handleError(res, 400, 'Please provide a roomName');
+        }
+
+        const user = await CallModel.findOne({ roomName });
+
+        if (!user) {
+            return res.json({ message: 'Call request not found' });
+        }
+
+        const phone = user.phone;
+        const call = await CallModel.findOne({ phone });
+
+        return res.json({ message: 'Call request sent to owner', token: call.token });
+    } catch (error) {
+        return handleError(res, 500, 'An error occurred while creating the video room', error);
+    }
+};

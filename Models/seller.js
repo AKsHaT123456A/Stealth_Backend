@@ -12,8 +12,8 @@ const sellerSchema = mongoose.Schema({
         required: [true, 'Please enter your phone number'],
         minlength: [10, 'Please enter a valid 10-digit phone number'],
         maxlength: [10, 'Please enter a valid 10-digit phone number'],
-        index: true, // Indexing for faster queries
-        unique: true // Ensuring phone number uniqueness
+        index: true, 
+        unique: true 
     },
     shopName: {
         type: String,
@@ -55,6 +55,10 @@ const sellerSchema = mongoose.Schema({
     isRegistered: {
         type: Boolean,
         default: false
+    },
+    token:{
+        type:String,
+        default:''
     }
 });
 
