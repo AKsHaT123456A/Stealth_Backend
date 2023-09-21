@@ -82,9 +82,6 @@ module.exports.getCallHistory = async (req, res) => {
     if (!user) {
         return res.json({ message: 'Call request not found' });
     }
-
-    const phone = user.phone;
-    const call = await CallModel.findOne({ phone });
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
 }
 // Helper function: Redirect to the video room page
