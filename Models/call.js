@@ -1,3 +1,4 @@
+// models/call.js
 const mongoose = require('mongoose');
 
 const callSchema = mongoose.Schema({
@@ -6,13 +7,6 @@ const callSchema = mongoose.Schema({
         default: "",
         trim: true
     },
-    // duration: {
-    //     type: Number,
-    //     required: [true, "Duration is required"],
-    //     min: [1, "Duration must be at least 1 minute"],
-    //     max: [60, "Duration cannot exceed 60 minutes (1 hour)"],
-    //     index: true
-    // },
     cusNumber: {
         type: Number,
         default: 0
@@ -21,23 +15,23 @@ const callSchema = mongoose.Schema({
         type: String,
         default: ""
     },
-    isNotified:{
-        type:Boolean,
-        default:false
+    isNotified: {
+        type: Boolean,
+        default: false
     },
-    isRejected:{
-        type:Boolean,
-        default:false
+    isRejected: {
+        type: Boolean,
+        default: false
     },
-    isAccepted:{
-        type:Boolean,
-        default:false
+    isAccepted: {
+        type: Boolean,
+        default: false
     },
-    token:{
-        type:String,
-        default:""
+    token: {
+        type: String,
+        default: ""
     }
 });
 
-const Call= mongoose.model('Call', callSchema);
-module.exports=Call
+const Call = mongoose.model('Call', callSchema);
+module.exports = Call;

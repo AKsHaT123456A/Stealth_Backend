@@ -1,4 +1,6 @@
+const Call = require('../Models/call');
 const call = require('../Models/call');
+const seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const logger = require('../Utils/logger');
 const io = require('../Utils/socketSetup');
@@ -79,14 +81,43 @@ module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
     console.log(roomName);
     const user = await call.findOne({ roomName: roomName });
+    const date = new Date();
+    await Call.findByIdAndUpdate(user._id, { date: date });
     if (!user) {
         return res.json({ message: 'Call request not found' });
     }
     return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
 }
-// Helper function: Redirect to the video room page
-function redirectToVideoRoom(res, roomName) {
-}
+module.exports.showCallHistory = async (req, res) => {
+    const { roomName, id } = req.query;
+
+    try {
+        const callInstance = await call.findOne({ roomName: roomName });
+
+        if (!callInstance) {
+            return res.json({ message: 'Call request not found' });
+        }
+
+        const user = await seller.findById(id);
+
+        if (!user) {
+            return res.json({ message: 'User not found' });
+        }
+
+        user.calls.addToSet(callInstance._id);
+        await user.save();
+
+        const userWithResponses = await seller.findById(id).populate({
+            path: 'calls',
+            select: 'roomName cusNumber date isNotified isRejected isAccepted'
+        });
+
+        return res.json({ message: userWithResponses.calls });
+    } catch (error) {
+        return res.status(500).json({ message: 'An error occurred while retrieving call history', error: error.message });
+    }
+};
+
 // Helper function: Handle errors during call request
 function handleCallRequestError(res, error) {
     const errorMessage = 'Failed to send call request';

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const sellerSchema = mongoose.Schema({
+const sellerSchema = new mongoose.Schema({
     name: {
         type: String,
         default: '',
@@ -12,8 +12,8 @@ const sellerSchema = mongoose.Schema({
         required: [true, 'Please enter your phone number'],
         minlength: [10, 'Please enter a valid 10-digit phone number'],
         maxlength: [10, 'Please enter a valid 10-digit phone number'],
-        index: true, 
-        unique: true 
+        index: true,
+        unique: true
     },
     shopName: {
         type: String,
@@ -34,7 +34,7 @@ const sellerSchema = mongoose.Schema({
     },
     calls: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'callSchema'
+        ref: 'Call'
     }],
     isOpen: {
         type: Boolean,
@@ -42,7 +42,7 @@ const sellerSchema = mongoose.Schema({
     },
     shopLink: {
         type: String,
-        default: '',
+        default: ''
     },
     password: {
         type: String,
@@ -56,9 +56,9 @@ const sellerSchema = mongoose.Schema({
         type: Boolean,
         default: false
     },
-    token:{
-        type:String,
-        default:''
+    token: {
+        type: String,
+        default: ''
     }
 });
 
@@ -73,4 +73,6 @@ sellerSchema.pre('save', async function (next) {
 // Add indexes for more efficient queries
 sellerSchema.index({ phone: 1, shopLink: 1 });
 
-module.exports = mongoose.model('Seller', sellerSchema);
+const Seller = mongoose.model('Seller', sellerSchema);
+
+module.exports = Seller;

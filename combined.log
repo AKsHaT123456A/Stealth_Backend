@@ -1728,3 +1728,92 @@
 2023-09-25T11:10:27.490Z [INFO]: Server running at port 3000
 2023-09-25T11:10:31.054Z [INFO]: Connected to the database
 2023-09-25T11:10:47.771Z [INFO]: Server running at port 3000
+2023-09-25T21:39:18.584Z [INFO]: Server running at port 3000
+2023-09-25T21:39:21.511Z [INFO]: Server running at port 3000
+2023-09-25T21:39:24.048Z [INFO]: Server running at port 3000
+2023-09-25T21:39:26.874Z [INFO]: Connected to the database
+2023-09-25T21:40:10.401Z [INFO]: Incoming GET request to /api/v1/video/getCalls
+2023-09-25T21:41:03.006Z [INFO]: Server running at port 3000
+2023-09-25T21:41:05.982Z [INFO]: Connected to the database
+2023-09-25T21:41:08.222Z [INFO]: Server running at port 3000
+2023-09-25T21:41:10.963Z [INFO]: Connected to the database
+2023-09-25T21:41:14.285Z [INFO]: Incoming GET request to /api/v1/video/getCalls
+2023-09-25T21:41:14.585Z [INFO]: Request to /api/v1/video/getCalls took 300.20589995384216ms
+2023-09-25T21:41:45.973Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:41:57.283Z [INFO]: Server running at port 3000
+2023-09-25T21:42:00.022Z [INFO]: Connected to the database
+2023-09-25T21:42:00.727Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:42:32.451Z [INFO]: Server running at port 3000
+2023-09-25T21:42:35.441Z [INFO]: Connected to the database
+2023-09-25T21:42:36.676Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:42:58.110Z [INFO]: Server running at port 3000
+2023-09-25T21:43:00.945Z [INFO]: Connected to the database
+2023-09-25T21:43:01.844Z [INFO]: Server running at port 3000
+2023-09-25T21:43:04.579Z [INFO]: Connected to the database
+2023-09-25T21:43:05.151Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:43:25.430Z [INFO]: Server running at port 3000
+2023-09-25T21:43:28.142Z [INFO]: Connected to the database
+2023-09-25T21:43:37.327Z [INFO]: Server running at port 3000
+2023-09-25T21:43:39.196Z [INFO]: Server running at port 3000
+2023-09-25T21:43:41.962Z [INFO]: Connected to the database
+2023-09-25T21:43:43.876Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:44:13.665Z [INFO]: Server running at port 3000
+2023-09-25T21:44:16.460Z [INFO]: Connected to the database
+2023-09-25T21:44:17.104Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:44:46.048Z [INFO]: Server running at port 3000
+2023-09-25T21:44:47.728Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:44:48.923Z [INFO]: Connected to the database
+2023-09-25T21:45:39.093Z [INFO]: Server running at port 3000
+2023-09-25T21:45:41.958Z [INFO]: Connected to the database
+2023-09-25T21:45:43.045Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:46:03.203Z [INFO]: Server running at port 3000
+2023-09-25T21:46:06.200Z [INFO]: Connected to the database
+2023-09-25T21:46:07.570Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:46:55.000Z [INFO]: Server running at port 3000
+2023-09-25T21:46:57.818Z [INFO]: Connected to the database
+2023-09-25T21:46:58.755Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:46:59.955Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1200.640499830246ms
+2023-09-25T21:47:27.903Z [INFO]: Server running at port 3000
+2023-09-25T21:47:32.931Z [INFO]: Server running at port 3000
+2023-09-25T21:47:37.250Z [INFO]: Server running at port 3000
+2023-09-25T21:48:03.310Z [INFO]: Server running at port 3000
+2023-09-25T21:48:14.020Z [INFO]: Server running at port 3000
+2023-09-25T21:48:16.902Z [INFO]: Connected to the database
+2023-09-25T21:48:19.487Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:48:20.689Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1204.8971002101898ms
+2023-09-25T21:49:14.019Z [INFO]: Server running at port 3000
+2023-09-25T21:49:25.028Z [INFO]: Server running at port 3000
+2023-09-25T21:49:55.186Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
+2023-09-25T21:50:18.465Z [INFO]: Server running at port 3000
+2023-09-25T21:50:21.540Z [INFO]: Connected to the database
+2023-09-25T21:50:25.845Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:50:27.114Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1270.1264998912811ms
+2023-09-25T21:50:36.922Z [INFO]: Server running at port 3000
+2023-09-25T21:50:39.801Z [INFO]: Connected to the database
+2023-09-25T21:50:42.899Z [INFO]: Server running at port 3000
+2023-09-25T21:51:08.351Z [INFO]: Server running at port 3000
+2023-09-25T21:51:09.666Z [INFO]: Server running at port 3000
+2023-09-25T21:51:13.830Z [INFO]: Server running at port 3000
+2023-09-25T21:51:44.008Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c3:e13e:27017
+2023-09-25T21:52:10.023Z [INFO]: Server running at port 3000
+2023-09-25T21:52:13.106Z [INFO]: Connected to the database
+2023-09-25T21:52:13.837Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:52:16.709Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 2872.054100036621ms
+2023-09-25T21:53:20.879Z [INFO]: Server running at port 3000
+2023-09-25T21:53:23.874Z [INFO]: Connected to the database
+2023-09-25T21:53:32.382Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:53:33.801Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1419.9567999839783ms
+2023-09-25T21:54:12.550Z [INFO]: Server running at port 3000
+2023-09-25T21:54:19.128Z [INFO]: Server running at port 3000
+2023-09-25T21:54:22.011Z [INFO]: Connected to the database
+2023-09-25T21:54:34.511Z [INFO]: Server running at port 3000
+2023-09-25T21:54:37.592Z [INFO]: Connected to the database
+2023-09-25T21:54:41.703Z [INFO]: Server running at port 3000
+2023-09-25T21:54:43.472Z [INFO]: Server running at port 3000
+2023-09-25T21:54:54.863Z [INFO]: Server running at port 3000
+2023-09-25T21:54:58.215Z [INFO]: Server running at port 3000
+2023-09-25T21:55:00.932Z [INFO]: Connected to the database
+2023-09-25T21:55:39.356Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:55:39.937Z [INFO]: Request to /api/v1/video/call?roomName=Aks&id=64fa4092617cd6820caa882b took 581.7653000354767ms
+2023-09-25T21:56:04.898Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
+2023-09-25T21:56:06.546Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1648.1976001262665ms

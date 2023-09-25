@@ -8,7 +8,7 @@ const router = require("express").Router();
 // router.get("/verify", verify);
 router.post("/register", register);
 router.post("/login", apiLimiter, login);
-router.get("/refresh-token", refresh);
+// router.get("/refresh-token", refresh);
 router.get("/logout", logout);
 router.post("/profile/:id", profile);
 router.get("/getprofile/:id", getprofile);

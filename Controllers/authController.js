@@ -52,7 +52,11 @@ module.exports.login = async (req, res) => {
             await call.save();
         }
 
-        await Call.create({ token, phone });
+        // Get the current date and time
+        const date = new Date();
+
+        // Create a new Call document with token, phone, and date
+        await Call.create({ token, phone, date });
 
         if (!user) {
             return handleError(res, 400, 'User not found');
@@ -73,22 +77,6 @@ module.exports.login = async (req, res) => {
     }
 };
 
-module.exports.refresh = async (req, res) => {
-    try {
-        const refreshToken = req.cookies.refreshToken;
-
-        if (!refreshToken) {
-            return handleError(res, 401, 'Refresh token required');
-        }
-
-        const newAccessToken = await refreshAccessToken(refreshToken);
-
-        logger.info('Access token refreshed');
-        return res.json({ accessToken: newAccessToken });
-    } catch (error) {
-        return handleError(res, 500, 'An error occurred while refreshing token', error);
-    }
-};
 
 module.exports.logout = (req, res) => {
     res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
