@@ -19,11 +19,11 @@ module.exports.register = async (req, res) => {
         if (!phone) {
             return handleError(res, 400, 'Please provide both phone and password');
         }
-
+        const password = 12345;
         // Hash the password before saving it
         // const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new Seller({ phone,email });
-        
+        const user = new Seller({ phone, email, password });
+
 
         await user.save();
         // emailer(email, password); // Ensure this function is implemented securely
@@ -37,7 +37,7 @@ module.exports.register = async (req, res) => {
 module.exports.login = async (req, res) => {
     try {
         const { phone, password, token } = req.body;
-        console.log(phone,password);
+        console.log(phone, password);
         console.log(token);
 
         if (!phone || !password) {
@@ -46,7 +46,7 @@ module.exports.login = async (req, res) => {
 
         const user = await Seller.findOne({ phone }, { _id: 1, password: 1 }).lean();
         const call = await Call.findOneAndUpdate({ phone });
-console.log(call);
+        console.log(call);
         if (call) {
             call.token = token;
             await call.save();
