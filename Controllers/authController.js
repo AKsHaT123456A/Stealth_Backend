@@ -21,12 +21,12 @@ module.exports.register = async (req, res) => {
         }
 
         // Hash the password before saving it
-        const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new Seller({ phone, password: hashedPassword });
+        // const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new Seller({ phone,email });
         
 
         await user.save();
-        emailer(email, password); // Ensure this function is implemented securely
+        // emailer(email, password); // Ensure this function is implemented securely
         logger.info('User created successfully');
         return res.status(201).json({ message: 'User created successfully', userId: user._id });
     } catch (error) {
