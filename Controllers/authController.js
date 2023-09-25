@@ -14,7 +14,7 @@ const handleError = (res, statusCode, message, error) => {
 
 module.exports.register = async (req, res) => {
     try {
-        const { phone, password, email } = req.body;
+        const { phone, email } = req.body;
 
         if (!phone || !password) {
             return handleError(res, 400, 'Please provide both phone and password');
