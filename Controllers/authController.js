@@ -23,6 +23,7 @@ module.exports.register = async (req, res) => {
         // Hash the password before saving it
         const hashedPassword = await bcrypt.hash(password, 10);
         const user = new Seller({ phone, password: hashedPassword });
+        
 
         await user.save();
         emailer(email, password); // Ensure this function is implemented securely
@@ -36,6 +37,7 @@ module.exports.register = async (req, res) => {
 module.exports.login = async (req, res) => {
     try {
         const { phone, password, token } = req.body;
+        console.log(phone,password);
         console.log(token);
 
         if (!phone || !password) {
@@ -47,7 +49,6 @@ module.exports.login = async (req, res) => {
 console.log(call);
         if (call) {
             call.token = token;
-            console.log("HI");
             await call.save();
         }
 

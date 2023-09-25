@@ -1721,3 +1721,10 @@
 2023-09-25T07:12:41.258Z [INFO]: Connected to the database
 2023-09-25T07:12:51.386Z [INFO]: Server running at port 3000
 2023-09-25T07:12:52.820Z [INFO]: Server running at port 3000
+2023-09-25T11:10:10.729Z [INFO]: Server running at port 3000
+2023-09-25T11:10:14.260Z [INFO]: Connected to the database
+2023-09-25T11:10:15.950Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-25T11:10:17.518Z [INFO]: Request to /api/v1/auth/login took 1569.9711999893188ms
+2023-09-25T11:10:27.490Z [INFO]: Server running at port 3000
+2023-09-25T11:10:31.054Z [INFO]: Connected to the database
+2023-09-25T11:10:47.771Z [INFO]: Server running at port 3000
