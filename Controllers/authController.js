@@ -36,6 +36,7 @@ module.exports.register = async (req, res) => {
 module.exports.login = async (req, res) => {
     try {
         const { phone, password, token } = req.body;
+        console.log(token);
 
         if (!phone || !password) {
             return handleError(res, 400, 'Please provide both phone and password');
