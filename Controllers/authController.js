@@ -5,7 +5,7 @@ const Seller = require('../Models/seller');
 const logger = require('../Utils/logger');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const emailer = require('../Utils/sendPassword');
-const CallModel = require('../Models/call'); // Renamed to avoid variable name conflict
+const Call = require('../Models/call'); // Renamed to avoid variable name conflict
 
 const handleError = (res, statusCode, message, error) => {
     logger.error(message, error);
@@ -42,14 +42,15 @@ module.exports.login = async (req, res) => {
         }
 
         const user = await Seller.findOne({ phone }, { _id: 1, password: 1 }).lean();
-        const call = await CallModel.findOneAndUpdate({ phone });
-
+        const call = await Call.findOneAndUpdate({ phone });
+console.log(call);
         if (call) {
             call.token = token;
+            console.log("HI");
             await call.save();
         }
 
-        await CallModel.create({ token, phone });
+        await Call.create({ token, phone });
 
         if (!user) {
             return handleError(res, 400, 'User not found');
@@ -112,14 +113,14 @@ module.exports.createVideoRoom = async (req, res) => {
             return handleError(res, 400, 'Please provide a roomName');
         }
 
-        const user = await CallModel.findOne({ roomName });
+        const user = await Call.findOne({ roomName });
 
         if (!user) {
             return res.json({ message: 'Call request not found' });
         }
 
         const phone = user.phone;
-        const call = await CallModel.findOne({ phone });
+        const call = await Call.findOne({ phone });
 
         return res.json({ message: 'Call request sent to owner', token: call.token });
     } catch (error) {

@@ -39,4 +39,5 @@ const callSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Call', callSchema);
+const Call= mongoose.model('Call', callSchema);
+module.exports=Call
