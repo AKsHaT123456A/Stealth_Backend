@@ -82,6 +82,7 @@ module.exports.getCallHistory = async (req, res) => {
     console.log(roomName);
     
     const user = await call.findOne({ roomName: roomName });
+    console.log(user);
     const date = new Date();
     const options = {
         year: 'numeric',
@@ -93,7 +94,7 @@ module.exports.getCallHistory = async (req, res) => {
         hour12: true
     };
     const formattedDate = date.toLocaleString('en-US', options);
-    await Call.findByIdAndUpdate(user._id, { date: formattedDate });
+    await Call.findByIdAndUpdate(user.id, { date: formattedDate });
     if (!user) {
         return res.json({ message: 'Call request not found' });
     }
