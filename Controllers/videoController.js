@@ -109,7 +109,7 @@ module.exports.showCallHistory = async (req, res) => {
 
         const userWithResponses = await seller.findById(id).populate({
             path: 'calls',
-            select: 'roomName cusNumber date isNotified isRejected isAccepted'
+            select: 'roomName cusNumber date isNotified isRejected isAccepted phone duration'
         });
 
         return res.json({ message: userWithResponses.calls });
