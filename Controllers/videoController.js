@@ -34,7 +34,7 @@ module.exports.join = async (req, res) => {
     }
 
     // If no existing call was found, create a new one
-    videoCall = new call({ roomName: roomName, isNotified: true });
+    videoCall = new call({ roomName, isNotified: true });
     await videoCall.save();
     return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
 
