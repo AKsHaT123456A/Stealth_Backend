@@ -117,6 +117,28 @@ module.exports.showCallHistory = async (req, res) => {
         return res.status(500).json({ message: 'An error occurred while retrieving call history', error: error.message });
     }
 };
+module.exports.updatePhone = async (req, res) => {
+    const { phone, roomName } = req.query;
+    console.log(roomName, phone);
+
+    try {
+        const room = await Call.findOneAndUpdate(
+            { roomName: roomName }, // Find the document with the specified roomName
+            { phone: phone }, // Update the phone field with the new value
+        );
+
+        if (!room) {
+            return res.status(404).json({ message: "Room not found" });
+        }
+
+        console.log(room);
+        return res.json({ message: "Phone number updated successfully" });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: "Internal server error" });
+    }
+}
+
 
 // Helper function: Handle errors during call request
 function handleCallRequestError(res, error) {

@@ -30,6 +30,14 @@ const callSchema = mongoose.Schema({
     token: {
         type: String,
         default: ""
+    },
+    phone:{
+        type: String,
+        default: ""
+    },
+    "duration":{
+        type: String,
+        default: ""
     }
 });
 

@@ -1817,3 +1817,48 @@
 2023-09-25T21:55:39.937Z [INFO]: Request to /api/v1/video/call?roomName=Aks&id=64fa4092617cd6820caa882b took 581.7653000354767ms
 2023-09-25T21:56:04.898Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b
 2023-09-25T21:56:06.546Z [INFO]: Request to /api/v1/video/getCalls?roomName=Aks&id=64fa4092617cd6820caa882b took 1648.1976001262665ms
+2023-09-26T15:06:29.574Z [INFO]: Server running at port 3000
+2023-09-26T15:06:32.686Z [INFO]: Connected to the database
+2023-09-26T15:06:52.457Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:06:52.753Z [INFO]: Request to /api/v1/video/getCallDetails took 296.78460001945496ms
+2023-09-26T15:08:27.295Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:08:27.575Z [INFO]: Request to /api/v1/video/getCallDetails took 280.7013998031616ms
+2023-09-26T15:17:36.180Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:17:38.249Z [INFO]: Request to /api/v1/video/getCallDetails took 2070.54390001297ms
+2023-09-26T15:17:58.156Z [INFO]: Server running at port 3000
+2023-09-26T15:18:03.816Z [INFO]: Server running at port 3000
+2023-09-26T15:18:05.511Z [INFO]: Server running at port 3000
+2023-09-26T15:18:11.859Z [INFO]: Server running at port 3000
+2023-09-26T15:18:14.845Z [INFO]: Connected to the database
+2023-09-26T15:18:17.001Z [INFO]: Server running at port 3000
+2023-09-26T15:18:20.098Z [INFO]: Server running at port 3000
+2023-09-26T15:18:22.972Z [INFO]: Connected to the database
+2023-09-26T15:18:36.213Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:18:36.563Z [INFO]: Request to /api/v1/video/getCallDetails took 352.28610014915466ms
+2023-09-26T15:18:45.720Z [INFO]: Server running at port 3000
+2023-09-26T15:18:49.369Z [INFO]: Server running at port 3000
+2023-09-26T15:18:55.914Z [INFO]: Server running at port 3000
+2023-09-26T15:18:59.011Z [INFO]: Connected to the database
+2023-09-26T15:19:04.439Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:19:04.736Z [INFO]: Request to /api/v1/video/getCallDetails took 297.9426999092102ms
+2023-09-26T15:19:54.796Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:19:55.070Z [INFO]: Request to /api/v1/video/getCallDetails took 273.89939999580383ms
+2023-09-26T15:21:11.598Z [INFO]: Request to /api/v1/video/getCallDetails took 5.24750018119812ms
+2023-09-26T15:21:11.604Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails
+2023-09-26T15:21:11.889Z [INFO]: Request to /api/v1/video/getCallDetails took 285.085599899292ms
+2023-09-26T15:21:26.527Z [INFO]: Server running at port 3000
+2023-09-26T15:21:29.912Z [INFO]: Connected to the database
+2023-09-26T15:22:24.494Z [INFO]: Request to /api/v1/video/getCallDetails?phone=1234567890&roomName=Liviso took 14.043999910354614ms
+2023-09-26T15:22:24.498Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=1234567890&roomName=Liviso
+2023-09-26T15:22:24.810Z [INFO]: Request to /api/v1/video/getCallDetails?phone=1234567890&roomName=Liviso took 312.1952998638153ms
+2023-09-26T15:22:51.479Z [INFO]: Server running at port 3000
+2023-09-26T15:22:54.913Z [INFO]: Connected to the database
+2023-09-26T15:23:05.242Z [INFO]: Request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso took 9.045199871063232ms
+2023-09-26T15:23:05.245Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso
+2023-09-26T15:23:05.539Z [INFO]: Request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso took 294.7674000263214ms
+2023-09-26T15:24:03.156Z [INFO]: Server running at port 3000
+2023-09-26T15:24:07.724Z [INFO]: Server running at port 3000
+2023-09-26T15:24:10.795Z [INFO]: Connected to the database
+2023-09-26T15:24:19.702Z [INFO]: Request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso took 11.676500082015991ms
+2023-09-26T15:24:19.710Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso
+2023-09-26T15:24:20.120Z [INFO]: Request to /api/v1/video/getCallDetails?phone=123456789&roomName=Liviso took 409.4361000061035ms
