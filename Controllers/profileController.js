@@ -16,11 +16,23 @@ const profile = async (req, res) => {
 const getprofile = async (req, res) => {
     try {
         const { id } = req.params;
-        const user = await seller.findById({ _id: id });
-        return res.status(200).json({ message: "Profile Updated", user });
+        
+        // Assuming 'seller' is your Mongoose model
+        const user = await seller.findById(id)
+            .populate({
+                path: 'calls',
+                select: '-_id -__v', // Exclude _id and __v fields
+            });
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        return res.status(200).json({ message: "Profile Retrieved", user });
     } catch (error) {
         return res.status(500).json({ message: "Something went wrong", error: error.message });
     }
-}
+};
+
 
 module.exports = { profile, getprofile };
