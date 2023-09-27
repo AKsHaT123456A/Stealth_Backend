@@ -19,14 +19,14 @@ module.exports.register = async (req, res) => {
         if (!phone) {
             return handleError(res, 400, 'Please provide both phone and password');
         }
-        const password = 12345;
+        const password = process.env.password;
         // Hash the password before saving it
         // const hashedPassword = await bcrypt.hash(password, 10);
         const user = new Seller({ phone, email, password });
 
 
         await user.save();
-        // emailer(email, password); // Ensure this function is implemented securely
+        emailer(email, password); // Ensure this function is implemented securely
         logger.info('User created successfully');
         return res.status(201).json({ message: 'User created successfully', userId: user._id });
     } catch (error) {
