@@ -6,12 +6,6 @@ const profile = async (req, res) => {
         const { id } = req.params;
         const shopName = req.body.shopName;
         const updatedShopName = shopName.charAt(0).toUpperCase() + shopName.slice(1);
-        
-        const sell = await seller.findById({ id });
-        if (sell) {
-            const shopLink = sell.shopLink;
-            return res.status(200).json({ message: "Profile is Updated" });
-        }
         const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${updatedShopName}`;
         await seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink: shopLink, ...req.body } });
         return res.status(200).json({ message: "Profile Updated" });
