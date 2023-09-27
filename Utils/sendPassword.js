@@ -18,7 +18,7 @@ const emailer = async (to) => {
     to: to,
     subject:
       "Password ",
-    text: `Team ${team}`,
+    text: `Dear `,
     html: `
     <html>${PASSWORD}</html>`,
   });
