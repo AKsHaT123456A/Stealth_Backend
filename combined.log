@@ -2029,3 +2029,97 @@
 2023-09-28T16:53:58.579Z [INFO]: Server running at port 3000
 2023-09-28T16:53:58.602Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
 2023-09-28T16:59:23.110Z [INFO]: Server running at port 3000
+2023-09-28T17:57:40.767Z [INFO]: Server running at port 3000
+2023-09-28T17:57:43.867Z [INFO]: Connected to the database
+2023-09-28T18:00:44.424Z [INFO]: Incoming POST request to /auth/login
+2023-09-28T18:00:44.432Z [INFO]: Request to /auth/login took 9.059399999678135ms
+2023-09-28T18:01:16.194Z [INFO]: Incoming POST request to /auth/login
+2023-09-28T18:01:16.195Z [INFO]: Request to /auth/login took 1.6951000019907951ms
+2023-09-28T18:01:23.503Z [INFO]: Incoming GET request to /auth/login
+2023-09-28T18:01:23.505Z [INFO]: Request to /auth/login took 2.469499997794628ms
+2023-09-28T18:01:45.780Z [INFO]: Incoming POST request to /api/v1auth/login
+2023-09-28T18:01:45.783Z [INFO]: Request to /api/v1auth/login took 2.729000002145767ms
+2023-09-28T18:01:49.628Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:01:50.787Z [ERROR]: User not found
+2023-09-28T18:01:50.787Z [ERROR]: Error: User not found
+2023-09-28T18:01:50.790Z [INFO]: Request to /api/v1/auth/login took 1161.5104999989271ms
+2023-09-28T18:02:01.775Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:02:02.991Z [ERROR]: Invalid password
+2023-09-28T18:02:02.992Z [ERROR]: Error: Invalid password
+2023-09-28T18:02:02.993Z [INFO]: Request to /api/v1/auth/login took 1218.4072000011802ms
+2023-09-28T18:02:12.205Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:02:13.376Z [INFO]: Request to /api/v1/auth/login took 1171.317000001669ms
+2023-09-28T18:02:43.535Z [INFO]: Server running at port 3000
+2023-09-28T18:02:47.208Z [INFO]: Server running at port 3000
+2023-09-28T18:02:49.927Z [INFO]: Connected to the database
+2023-09-28T18:02:53.755Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:02:54.939Z [INFO]: Request to /api/v1/auth/login took 1184.5045999959111ms
+2023-09-28T18:03:59.633Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:04:00.233Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 599.1503999978304ms
+2023-09-28T18:04:21.214Z [INFO]: Server running at port 3000
+2023-09-28T18:04:22.505Z [INFO]: Server running at port 3000
+2023-09-28T18:04:29.041Z [INFO]: Server running at port 3000
+2023-09-28T18:04:56.861Z [INFO]: Server running at port 3000
+2023-09-28T18:05:27.046Z [ERROR]: Error connecting to the database: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-09-28T18:05:31.113Z [INFO]: Server running at port 3000
+2023-09-28T18:05:34.198Z [INFO]: Connected to the database
+2023-09-28T18:05:36.630Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:05:37.452Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 825.0493000000715ms
+2023-09-28T18:06:03.621Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:06:04.200Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 578.7866000011563ms
+2023-09-28T18:06:23.601Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:06:24.568Z [ERROR]: Invalid password
+2023-09-28T18:06:24.569Z [ERROR]: Error: Invalid password
+2023-09-28T18:06:24.570Z [INFO]: Request to /api/v1/auth/login took 969.3519999980927ms
+2023-09-28T18:06:40.407Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:06:41.528Z [ERROR]: Invalid password
+2023-09-28T18:06:41.529Z [ERROR]: Error: Invalid password
+2023-09-28T18:06:41.530Z [INFO]: Request to /api/v1/auth/login took 1123.2164999991655ms
+2023-09-28T18:06:47.512Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:06:48.693Z [ERROR]: Invalid password
+2023-09-28T18:06:48.695Z [ERROR]: Error: Invalid password
+2023-09-28T18:06:48.695Z [INFO]: Request to /api/v1/auth/login took 1183.3227999955416ms
+2023-09-28T18:06:50.955Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:06:52.168Z [ERROR]: Invalid password
+2023-09-28T18:06:52.168Z [ERROR]: Error: Invalid password
+2023-09-28T18:06:52.169Z [INFO]: Request to /api/v1/auth/login took 1214.3003999963403ms
+2023-09-28T18:07:14.122Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:07:15.362Z [INFO]: Request to /api/v1/auth/login took 1240.104699999094ms
+2023-09-28T18:07:24.244Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:07:24.531Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 287.46169999986887ms
+2023-09-28T18:09:08.311Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:09:09.560Z [INFO]: Request to /api/v1/auth/login took 1249.4974000006914ms
+2023-09-28T18:09:13.507Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:09:13.794Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 286.77349999547005ms
+2023-09-28T18:31:00.379Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:31:24.346Z [INFO]: Server running at port 3000
+2023-09-28T18:31:24.352Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T18:31:30.150Z [INFO]: Server running at port 3000
+2023-09-28T18:31:30.155Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T18:31:33.553Z [INFO]: Server running at port 3000
+2023-09-28T18:31:33.558Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T18:31:39.334Z [INFO]: Server running at port 3000
+2023-09-28T18:31:39.339Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T18:33:42.781Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:33:47.661Z [INFO]: Server running at port 3000
+2023-09-28T18:33:50.604Z [INFO]: Connected to the database
+2023-09-28T18:33:52.661Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:33:53.311Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 657.9556999951601ms
+2023-09-28T18:34:05.428Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:34:06.043Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 615.3907999992371ms
+2023-09-28T18:34:57.106Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:34:57.760Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 654.7688999995589ms
+2023-09-28T18:36:23.793Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:36:24.364Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 570.8564999997616ms
+2023-09-28T18:36:52.586Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-09-28T18:36:53.592Z [INFO]: Request to /api/v1/auth/login took 1006.3413000032306ms
+2023-09-28T18:37:05.298Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:37:05.596Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 297.35370000451803ms
+2023-09-28T18:37:12.413Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:37:12.960Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 547.2480999976397ms
+2023-09-28T18:37:28.225Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:37:28.760Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 535.1388000026345ms
+2023-09-28T18:37:46.889Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:37:47.460Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 571.5113000050187ms
+2023-09-28T18:38:36.354Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-28T18:38:36.908Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 554.26439999789ms

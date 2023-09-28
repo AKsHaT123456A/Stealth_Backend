@@ -16,10 +16,11 @@ const updateProfile = async (req, res) => {
 
         // Update seller's profile
         const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, name: updatedShopName } });
+        console.log(seller);
         const phone = seller.phone;
-    
-        await Call.findOneAndUpdate({ phone: phone }, { $set: { roomName: updatedShopName } })
-
+        console.log(phone);
+        const call = await Call.findOneAndUpdate({ phone: phone }, { $set: { roomName: updatedShopName } });
+        console.log(call);
         return res.status(200).json({ message: "Profile Updated" });
     } catch (error) {
         console.error(error);
