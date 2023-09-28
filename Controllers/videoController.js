@@ -153,13 +153,13 @@ module.exports.showCallHistory = async (req, res) => {
 // Update phone number
 module.exports.updatePhone = async (req, res) => {
     const { phone, roomName, duration } = req.query;
-
+    console.log(duration);
     try {
         const room = await Call.findOneAndUpdate(
             { roomName: roomName },
-            { set: { phone: phone, duration: duration } },
+            { $set: { phone, duration } },
         );
-
+        console.log(room);
         if (!room) {
             return res.status(404).json({ message: "Room not found" });
         }

@@ -1,3 +1,4 @@
+const Call = require("../Models/call");
 const Seller = require("../Models/seller");
 const constants = require("../Utils/constants");
 
@@ -14,7 +15,7 @@ const updateProfile = async (req, res) => {
         const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${updatedShopName}`;
 
         // Update seller's profile
-        await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body } });
+        await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body ,name:shopLink} });
 
         return res.status(200).json({ message: "Profile Updated" });
     } catch (error) {
@@ -45,5 +46,16 @@ const getProfile = async (req, res) => {
         return res.status(500).json({ message: "Error retrieving profile", error: error.message });
     }
 };
-
-module.exports = { updateProfile, getProfile };
+const feedback = async (req, res) => {
+    try {
+        const { roomName, phone } = req.query;
+        const { emoji, feedback } = req.body;
+        if (!roomName || !phone) return res.status(400).json({ message: Error });
+        const call = await Call.findOneAndUpdate({ phone, roomName }, { $set: { emoji, feedback } });
+        return res.status(200).json({ call });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: "Error updating feedback", error: error.message });
+    }
+}
+module.exports = { updateProfile, getProfile,feedback };

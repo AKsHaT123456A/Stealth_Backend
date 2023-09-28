@@ -38,6 +38,14 @@ const callSchema = mongoose.Schema({
     "duration":{
         type: String,
         default: ""
+    },
+    feedback:{
+        type:String,
+        default:""
+    },
+    emoji:{
+        type:String,
+        default:""
     }
 });
 

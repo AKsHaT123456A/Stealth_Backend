@@ -1960,3 +1960,72 @@
 2023-09-28T15:22:32.046Z [INFO]: Server running at port 3000
 2023-09-28T15:22:34.299Z [INFO]: Server running at port 3000
 2023-09-28T15:22:37.112Z [INFO]: Connected to the database
+2023-09-28T16:40:57.860Z [INFO]: Server running at port 3000
+2023-09-28T16:41:00.826Z [INFO]: Connected to the database
+2023-09-28T16:42:58.285Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9336183391&roomName=Ko&duration=7
+2023-09-28T16:42:58.724Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9336183391&roomName=Ko&duration=7 took 445.80759999901056ms
+2023-09-28T16:44:19.409Z [INFO]: Server running at port 3000
+2023-09-28T16:44:22.512Z [INFO]: Connected to the database
+2023-09-28T16:44:48.601Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9336183391&roomName=Ko&duration=4
+2023-09-28T16:44:48.953Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9336183391&roomName=Ko&duration=4 took 356.83000000566244ms
+2023-09-28T16:45:26.237Z [INFO]: Server running at port 3000
+2023-09-28T16:45:37.999Z [INFO]: Server running at port 3000
+2023-09-28T16:45:40.975Z [INFO]: Connected to the database
+2023-09-28T16:48:08.956Z [INFO]: Server running at port 3000
+2023-09-28T16:48:13.713Z [INFO]: Server running at port 3000
+2023-09-28T16:48:39.996Z [INFO]: Server running at port 3000
+2023-09-28T16:48:48.821Z [INFO]: Server running at port 3000
+2023-09-28T16:48:58.176Z [INFO]: Server running at port 3000
+2023-09-28T16:49:16.270Z [INFO]: Server running at port 3000
+2023-09-28T16:49:19.034Z [INFO]: Server running at port 3000
+2023-09-28T16:49:22.414Z [INFO]: Server running at port 3000
+2023-09-28T16:49:28.156Z [INFO]: Server running at port 3000
+2023-09-28T16:49:42.056Z [INFO]: Server running at port 3000
+2023-09-28T16:50:09.249Z [INFO]: Server running at port 3000
+2023-09-28T16:50:13.655Z [INFO]: Server running at port 3000
+2023-09-28T16:50:16.917Z [INFO]: Server running at port 3000
+2023-09-28T16:50:18.713Z [INFO]: Server running at port 3000
+2023-09-28T16:50:22.584Z [INFO]: Server running at port 3000
+2023-09-28T16:50:43.806Z [INFO]: Server running at port 3000
+2023-09-28T16:50:47.505Z [INFO]: Server running at port 3000
+2023-09-28T16:50:52.684Z [INFO]: Server running at port 3000
+2023-09-28T16:50:56.350Z [INFO]: Server running at port 3000
+2023-09-28T16:51:13.380Z [INFO]: Server running at port 3000
+2023-09-28T16:51:19.424Z [INFO]: Server running at port 3000
+2023-09-28T16:51:22.935Z [INFO]: Server running at port 3000
+2023-09-28T16:51:28.255Z [INFO]: Server running at port 3000
+2023-09-28T16:51:30.895Z [INFO]: Server running at port 3000
+2023-09-28T16:51:33.019Z [INFO]: Server running at port 3000
+2023-09-28T16:51:38.641Z [INFO]: Server running at port 3000
+2023-09-28T16:51:47.052Z [INFO]: Server running at port 3000
+2023-09-28T16:51:47.076Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:51:50.091Z [INFO]: Server running at port 3000
+2023-09-28T16:52:24.521Z [INFO]: Server running at port 3000
+2023-09-28T16:52:31.852Z [INFO]: Server running at port 3000
+2023-09-28T16:52:35.478Z [INFO]: Server running at port 3000
+2023-09-28T16:52:39.823Z [INFO]: Server running at port 3000
+2023-09-28T16:52:44.310Z [INFO]: Server running at port 3000
+2023-09-28T16:52:48.105Z [INFO]: Server running at port 3000
+2023-09-28T16:52:59.981Z [INFO]: Server running at port 3000
+2023-09-28T16:52:59.991Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:02.572Z [INFO]: Server running at port 3000
+2023-09-28T16:53:02.581Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:08.671Z [INFO]: Server running at port 3000
+2023-09-28T16:53:08.681Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:12.429Z [INFO]: Server running at port 3000
+2023-09-28T16:53:12.448Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:15.288Z [INFO]: Server running at port 3000
+2023-09-28T16:53:15.301Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:28.267Z [INFO]: Server running at port 3000
+2023-09-28T16:53:28.274Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:29.576Z [INFO]: Server running at port 3000
+2023-09-28T16:53:29.584Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:31.749Z [INFO]: Server running at port 3000
+2023-09-28T16:53:31.755Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:39.096Z [INFO]: Server running at port 3000
+2023-09-28T16:53:39.105Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:46.366Z [INFO]: Server running at port 3000
+2023-09-28T16:53:46.384Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:53:58.579Z [INFO]: Server running at port 3000
+2023-09-28T16:53:58.602Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-28T16:59:23.110Z [INFO]: Server running at port 3000
