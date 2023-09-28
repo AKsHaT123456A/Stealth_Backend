@@ -20,7 +20,7 @@ module.exports.register = async (req, res) => {
             return handleError(res, 400, 'Please provide both phone and email');
         }
 
-        const password = process.env.password; // Ensure you handle passwords securely
+        const password = process.env.password;
         const user = new Seller({ phone, email, password });
 
         await user.save();

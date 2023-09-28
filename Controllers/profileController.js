@@ -15,7 +15,9 @@ const updateProfile = async (req, res) => {
         const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${updatedShopName}`;
 
         // Update seller's profile
-        await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body ,name:shopLink} });
+        const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, name: updatedShopName } });
+        const phone = seller.phone;
+        await Call.findOneAndUpdate({ phone: phone }, { $set: { roomName: roomName } })
 
         return res.status(200).json({ message: "Profile Updated" });
     } catch (error) {
@@ -58,4 +60,4 @@ const feedback = async (req, res) => {
         return res.status(500).json({ message: "Error updating feedback", error: error.message });
     }
 }
-module.exports = { updateProfile, getProfile,feedback };
+module.exports = { updateProfile, getProfile, feedback };
