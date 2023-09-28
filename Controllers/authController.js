@@ -16,14 +16,12 @@ module.exports.register = async (req, res) => {
     try {
         const { phone, email } = req.body;
 
-        if (!phone) {
-            return handleError(res, 400, 'Please provide both phone and password');
+        if (!phone || !email) {
+            return handleError(res, 400, 'Please provide both phone and email');
         }
-        const password = process.env.password;
-        // Hash the password before saving it
-        // const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new Seller({ phone, email, password });
 
+        const password = process.env.password; // Ensure you handle passwords securely
+        const user = new Seller({ phone, email, password });
 
         await user.save();
         emailer(email, password); // Ensure this function is implemented securely
@@ -37,25 +35,20 @@ module.exports.register = async (req, res) => {
 module.exports.login = async (req, res) => {
     try {
         const { phone, password, token } = req.body;
-        console.log(phone, password);
-        console.log(token);
 
         if (!phone || !password) {
             return handleError(res, 400, 'Please provide both phone and password');
         }
 
-        const user = await Seller.findOne({ phone }, { _id: 1, password: 1 }).lean();
+        const user = await Seller.findOne({ phone }).select('+password').lean();
         const call = await Call.findOneAndUpdate({ phone });
-        console.log(call);
+
         if (call) {
             call.token = token;
             await call.save();
         }
 
-        // Get the current date and time
         const date = new Date();
-
-        // Create a new Call document with token, phone, and date
         await Call.create({ token, phone, date });
 
         if (!user) {
@@ -77,7 +70,25 @@ module.exports.login = async (req, res) => {
     }
 };
 
+module.exports.forgetPassword = async (req, res) => {
+    try {
+        const { phone, password } = req.body;
 
+        if (!phone || !password) {
+            return handleError(res, 400, 'Please provide both phone and new password');
+        }
+
+        const user = await Seller.findOneAndUpdate({ phone }, { password });
+
+        if (!user) {
+            return handleError(res, 400, 'User not found');
+        }
+
+        return res.status(200).json({ message: 'Password updated successfully' });
+    } catch (error) {
+        return handleError(res, 500, 'An error occurred while updating the password', error);
+    }
+};
 module.exports.logout = (req, res) => {
     res.clearCookie('refreshToken', { httpOnly: true, secure: true, sameSite: 'none' });
     logger.info('Logged out successfully');
@@ -88,11 +99,6 @@ async function generateTokens(userId) {
     const accessToken = jwt.sign({ _id: userId }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
     const refreshToken = jwt.sign({ _id: userId }, constants.REFRESH_TOKEN_SECRET);
     return [accessToken, refreshToken];
-}
-
-async function refreshAccessToken(refreshToken) {
-    const decoded = jwt.verify(refreshToken, constants.REFRESH_TOKEN_SECRET);
-    return jwt.sign({ _id: decoded._id }, constants.ACCESS_TOKEN_SECRET, { expiresIn: constants.TOKEN_EXPIRATION });
 }
 
 module.exports.createVideoRoom = async (req, res) => {

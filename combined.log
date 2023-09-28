@@ -1874,3 +1874,89 @@
 2023-09-26T17:53:10.629Z [INFO]: Connected to the database
 2023-09-26T17:53:11.274Z [INFO]: Incoming GET request to /api/v1/auth/getProfile/64fa4092617cd6820caa882b
 2023-09-26T17:53:13.690Z [INFO]: Request to /api/v1/auth/getProfile/64fa4092617cd6820caa882b took 2415.754299879074ms
+2023-09-28T03:35:15.988Z [INFO]: Server running at port 3000
+2023-09-28T03:35:20.616Z [INFO]: Connected to the database
+2023-09-28T03:35:26.821Z [INFO]: Server running at port 3000
+2023-09-28T03:35:28.949Z [INFO]: Server running at port 3000
+2023-09-28T03:35:32.233Z [INFO]: Connected to the database
+2023-09-28T03:35:34.814Z [INFO]: Server running at port 3000
+2023-09-28T03:35:39.319Z [INFO]: Server running at port 3000
+2023-09-28T03:35:42.578Z [INFO]: Server running at port 3000
+2023-09-28T03:35:45.868Z [INFO]: Connected to the database
+2023-09-28T03:35:52.618Z [INFO]: Server running at port 3000
+2023-09-28T03:35:55.842Z [INFO]: Connected to the database
+2023-09-28T03:36:26.106Z [INFO]: Incoming GET request to /api/v1/auth/forget-password
+2023-09-28T03:36:26.113Z [INFO]: Request to /api/v1/auth/forget-password took 8.05240000039339ms
+2023-09-28T03:36:30.561Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-09-28T03:36:46.713Z [INFO]: Server running at port 3000
+2023-09-28T03:37:17.672Z [INFO]: Server running at port 3000
+2023-09-28T03:37:50.119Z [INFO]: Server running at port 3000
+2023-09-28T03:37:53.613Z [INFO]: Connected to the database
+2023-09-28T03:37:55.373Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-09-28T03:37:55.866Z [INFO]: Request to /api/v1/auth/forget-password took 495.3775000004098ms
+2023-09-28T03:38:37.290Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-09-28T03:38:37.771Z [INFO]: Request to /api/v1/auth/forget-password took 481.26669999957085ms
+2023-09-28T03:39:53.468Z [INFO]: Server running at port 3000
+2023-09-28T03:39:55.525Z [INFO]: Server running at port 3000
+2023-09-28T03:39:59.323Z [INFO]: Server running at port 3000
+2023-09-28T03:40:22.823Z [INFO]: Server running at port 3000
+2023-09-28T03:40:53.001Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c2:ca1e:27017
+2023-09-28T03:41:38.934Z [INFO]: Server running at port 3000
+2023-09-28T03:41:43.249Z [INFO]: Connected to the database
+2023-09-28T03:41:46.612Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-09-28T03:41:47.142Z [INFO]: Request to /api/v1/auth/forget-password took 533.1376999998465ms
+2023-09-28T03:42:50.824Z [INFO]: Server running at port 3000
+2023-09-28T03:42:54.408Z [INFO]: Connected to the database
+2023-09-28T03:42:55.030Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-09-28T03:42:57.294Z [INFO]: Request to /api/v1/auth/forget-password took 2265.0493999999017ms
+2023-09-28T03:43:20.114Z [INFO]: Server running at port 3000
+2023-09-28T03:43:23.643Z [INFO]: Connected to the database
+2023-09-28T03:45:49.755Z [INFO]: Server running at port 3000
+2023-09-28T03:45:53.117Z [INFO]: Connected to the database
+2023-09-28T03:45:54.147Z [INFO]: Server running at port 3000
+2023-09-28T03:45:55.982Z [INFO]: Server running at port 3000
+2023-09-28T03:45:58.087Z [INFO]: Server running at port 3000
+2023-09-28T03:46:01.765Z [INFO]: Connected to the database
+2023-09-28T03:46:10.168Z [INFO]: Server running at port 3000
+2023-09-28T03:46:12.906Z [INFO]: Server running at port 3000
+2023-09-28T03:46:16.480Z [INFO]: Server running at port 3000
+2023-09-28T03:46:19.396Z [INFO]: Server running at port 3000
+2023-09-28T03:46:22.773Z [INFO]: Connected to the database
+2023-09-28T03:48:29.385Z [INFO]: Server running at port 3000
+2023-09-28T03:48:31.106Z [INFO]: Server running at port 3000
+2023-09-28T03:48:34.366Z [INFO]: Connected to the database
+2023-09-28T03:48:43.471Z [INFO]: Server running at port 3000
+2023-09-28T03:48:47.401Z [INFO]: Server running at port 3000
+2023-09-28T03:48:50.582Z [INFO]: Connected to the database
+2023-09-28T03:48:51.674Z [INFO]: Server running at port 3000
+2023-09-28T03:48:53.285Z [INFO]: Server running at port 3000
+2023-09-28T03:48:56.595Z [INFO]: Connected to the database
+2023-09-28T03:49:03.338Z [INFO]: Server running at port 3000
+2023-09-28T03:49:06.134Z [INFO]: Server running at port 3000
+2023-09-28T03:49:07.485Z [INFO]: Server running at port 3000
+2023-09-28T03:49:10.362Z [INFO]: Server running at port 3000
+2023-09-28T03:49:13.554Z [INFO]: Connected to the database
+2023-09-28T03:49:15.136Z [INFO]: Server running at port 3000
+2023-09-28T03:49:18.076Z [INFO]: Server running at port 3000
+2023-09-28T03:49:19.247Z [INFO]: Server running at port 3000
+2023-09-28T03:49:20.177Z [INFO]: Server running at port 3000
+2023-09-28T03:49:23.386Z [INFO]: Connected to the database
+2023-09-28T03:51:31.434Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9336183391&roomName=akshat&duration=15
+2023-09-28T03:51:31.814Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9336183391&roomName=akshat&duration=15 took 384.8435999993235ms
+2023-09-28T03:55:57.245Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9336183391&roomName=akshat&duration=7
+2023-09-28T03:55:57.942Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9336183391&roomName=akshat&duration=7 took 696.4153999993578ms
+2023-09-28T04:03:46.681Z [INFO]: Server running at port 3000
+2023-09-28T04:03:50.150Z [INFO]: Connected to the database
+2023-09-28T04:16:29.827Z [INFO]: Server running at port 3000
+2023-09-28T04:16:34.945Z [INFO]: Server running at port 3000
+2023-09-28T04:16:38.845Z [INFO]: Connected to the database
+2023-09-28T04:17:07.156Z [INFO]: Server running at port 3000
+2023-09-28T04:17:11.194Z [INFO]: Connected to the database
+2023-09-28T15:10:49.147Z [INFO]: Server running at port 3000
+2023-09-28T15:10:52.213Z [INFO]: Connected to the database
+2023-09-28T15:17:40.700Z [INFO]: Server running at port 3000
+2023-09-28T15:17:42.629Z [INFO]: Server running at port 3000
+2023-09-28T15:17:45.491Z [INFO]: Connected to the database
+2023-09-28T15:22:32.046Z [INFO]: Server running at port 3000
+2023-09-28T15:22:34.299Z [INFO]: Server running at port 3000
+2023-09-28T15:22:37.112Z [INFO]: Connected to the database

@@ -1,9 +1,14 @@
 const Call = require('../Models/call');
-const call = require('../Models/call');
-const seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
-const logger = require('../Utils/logger');
-const io = require('../Utils/socketSetup');
+
+async function createVideoRoom(roomName) {
+    return `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${roomName}`;
+}
+
+// Function to find a call by room name
+async function findCallByRoomName(roomName) {
+    return await Call.findOne({ roomName: roomName });
+}
 
 // Create a video room
 module.exports.createRoom = async (req, res) => {
@@ -20,91 +25,106 @@ module.exports.createRoom = async (req, res) => {
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
     const roomName = req.query.roomName;
-    console.log(roomName);
-    // Attempt to find an existing call with the given roomName
-    let videoCall = await call.findOne({ roomName: roomName });
-    console.log(videoCall);
-    if (videoCall) {
-        // Update the existing videoCall and save it
-        videoCall.isNotified = true;
-        await videoCall.save();
 
-        return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
-        // return res.json({ message: 'Call request sent to owner', isNotified: videoCall.isNotified });
+    try {
+        let videoCall = await findCallByRoomName(roomName);
+
+        if (!videoCall) {
+            videoCall = new Call({ roomName, isNotified: true });
+            await videoCall.save();
+        } else {
+            videoCall.isNotified = true;
+            await videoCall.save();
+        }
+
+        res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
+    } catch (error) {
+        handleErrorResponse(res, roomName, error);
     }
-
-    // If no existing call was found, create a new one
-    videoCall = new call({ roomName, isNotified: true });
-    await videoCall.save();
-    return res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
-
 };
 
 // Send a call request to the room owner
 module.exports.sendCallRequest = async (req, res) => {
     const roomName = req.query.roomName;
-    const userName = "Akshat"
+    const userName = "Akshat";
+
     try {
-        const user = await call.findOne({ roomName: roomName });
-        if (!user) return res.json({ message: 'Call request not found' });
+        const user = await findCallByRoomName(roomName);
+
+        if (!user) {
+            return res.json({ message: 'Call request not found' });
+        }
+
         res.json({ message: 'Call request sent to owner', isNotified: user.isNotified, userName: userName });
     } catch (error) {
-        handleCallRequestError(res, error);
+        handleErrorResponse(res, roomName, error);
     }
 };
 
-// Helper function: Create a Twilio video room (to be implemented)
-async function createVideoRoom(roomName) {
-    return `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${roomName}`;
-}
-
-
+// Manage call request
 module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName } = req.query;
-    console.log(req.query);
-    console.log(isAccepted, isRejected, roomName);
-    const user = await call.findOne({ roomName: roomName });
-    if (!user) return res.json({ message: 'Call request not found' });
-    if (isAccepted) {
-        user.isAccepted = true;
-        user.isNotified = false;
-        user.save();
-        return res.json({ message: 'Call request accepted', isAccepted: user.isAccepted });
-    }
-    user.isRejected = true;
-    user.isNotified = false;
-    user.save();
-    return res.json({ message: 'Call request rejected', isRejected: user.isRejected });
 
-}
+    try {
+        const user = await findCallByRoomName(roomName);
+
+        if (!user) {
+            return res.json({ message: 'Call request not found' });
+        }
+
+        user.isAccepted = Boolean(isAccepted);
+        user.isRejected = Boolean(isRejected);
+        user.isNotified = false;
+
+        await user.save();
+
+        const message = isAccepted ? 'Call request accepted' : 'Call request rejected';
+
+        res.json({ message, isAccepted: user.isAccepted });
+    } catch (error) {
+        handleErrorResponse(res, roomName, error);
+    }
+};
+
+// Get call history
 module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
-    console.log(roomName);
-    
-    const user = await call.findOne({ roomName: roomName });
-    console.log(user);
-    const date = new Date();
-    const options = {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-        hour12: true
-    };
-    const formattedDate = date.toLocaleString('en-US', options);
-    await Call.findByIdAndUpdate(user.id, { date: formattedDate });
-    if (!user) {
-        return res.json({ message: 'Call request not found' });
+
+    try {
+        if (!roomName) {
+            return res.json({ message: 'Room name not found' });
+        }
+        const user = await findCallByRoomName(roomName);
+
+        if (!user) {
+            return res.json({ message: 'Call request not found' });
+        }
+
+        const date = new Date();
+        const options = {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true
+        };
+        const formattedDate = date.toLocaleString('en-In', options);
+        await Call.findByIdAndUpdate(user.id, { date: formattedDate });
+
+        res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
+    } catch (error) {
+        handleErrorResponse(res, roomName, error);
     }
-    return res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
-}
+};
+
+// Show call history
 module.exports.showCallHistory = async (req, res) => {
     const { roomName, id } = req.query;
 
     try {
-        const callInstance = await call.findOne({ roomName: roomName });
+        const callInstance = await findCallByRoomName(roomName);
 
         if (!callInstance) {
             return res.json({ message: 'Call request not found' });
@@ -124,37 +144,29 @@ module.exports.showCallHistory = async (req, res) => {
             select: 'roomName cusNumber date isNotified isRejected isAccepted phone duration'
         });
 
-        return res.json({ message: userWithResponses.calls });
+        res.json({ message: userWithResponses.calls });
     } catch (error) {
-        return res.status(500).json({ message: 'An error occurred while retrieving call history', error: error.message });
+        handleErrorResponse(res, roomName, error);
     }
 };
+
+// Update phone number
 module.exports.updatePhone = async (req, res) => {
-    const { phone, roomName } = req.query;
-    console.log(roomName, phone);
+    const { phone, roomName, duration } = req.query;
 
     try {
         const room = await Call.findOneAndUpdate(
-            { roomName: roomName }, // Find the document with the specified roomName
-            { phone: phone }, // Update the phone field with the new value
+            { roomName: roomName },
+            { set: { phone: phone, duration: duration } },
         );
 
         if (!room) {
             return res.status(404).json({ message: "Room not found" });
         }
 
-        console.log(room);
-        return res.json({ message: "Phone number updated successfully" });
+        res.json({ message: "Phone number updated successfully" });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Internal server error" });
     }
-}
-
-
-// Helper function: Handle errors during call request
-function handleCallRequestError(res, error) {
-    const errorMessage = 'Failed to send call request';
-    logger.error(errorMessage, error);
-    handleErrorResponse(res, 500, errorMessage, error);
-}
+};

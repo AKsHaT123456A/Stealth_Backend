@@ -50,3 +50,4 @@
 2023-09-21T15:01:54.764Z [ERROR]: Error: Please provide a roomName
 2023-09-25T21:49:55.186Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::35f:2bfa:27017
 2023-09-25T21:51:44.008Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c3:e13e:27017
+2023-09-28T03:40:53.001Z [ERROR]: Error connecting to the database: connect ETIMEDOUT 64:ff9b::22c2:ca1e:27017
