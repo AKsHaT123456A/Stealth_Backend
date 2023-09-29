@@ -37,7 +37,7 @@ module.exports.join = async (req, res) => {
             await videoCall.save();
         }
 
-        res.redirect(`https://stealth-frontend-ten.vercel.app/?roomCode=${roomName}`);
+        res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}`);
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }
