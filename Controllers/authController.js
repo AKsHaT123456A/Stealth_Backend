@@ -40,16 +40,16 @@ module.exports.login = async (req, res) => {
             return handleError(res, 400, 'Please provide both phone and password');
         }
 
-        const user = await Seller.findOne({ phone }).select('+password').lean();
-        const call = await Call.findOne({ phone } );
+        const user = await Seller.findOne({ phone }).select('+password +shopName').lean();
+        const call = await Call.findOne({ phone });
 
         if (call) {
             call.token = token;
             await call.save();
         }
-
-        const date = new Date();
-        await Call.create({ token, phone, date });
+        const roomName = user.shopName;
+        // const date = new Date();
+        await Call.create({ token, phone, roomName});
 
         if (!user) {
             return handleError(res, 400, 'User not found');
