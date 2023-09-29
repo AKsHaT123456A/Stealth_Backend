@@ -41,7 +41,7 @@ module.exports.login = async (req, res) => {
         }
 
         const user = await Seller.findOne({ phone }).select('+password').lean();
-        const call = await Call.findOneAndUpdate({ phone });
+        const call = await Call.findOne({ phone } );
 
         if (call) {
             call.token = token;
