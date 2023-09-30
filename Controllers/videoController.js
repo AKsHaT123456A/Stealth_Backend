@@ -46,7 +46,6 @@ module.exports.join = async (req, res) => {
 // Send a call request to the room owner
 module.exports.sendCallRequest = async (req, res) => {
     const roomName = req.query.roomName;
-    const userName = "Akshat";
 
     try {
         const user = await findCallByRoomName(roomName);

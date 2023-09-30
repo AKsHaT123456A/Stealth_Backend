@@ -2123,3 +2123,21 @@
 2023-09-28T18:37:47.460Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 571.5113000050187ms
 2023-09-28T18:38:36.354Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
 2023-09-28T18:38:36.908Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 554.26439999789ms
+2023-09-29T13:24:58.300Z [INFO]: Server running at port 3000
+2023-09-29T13:25:01.314Z [INFO]: Connected to the database
+2023-09-29T13:25:59.387Z [INFO]: Incoming POST request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268
+2023-09-29T13:26:00.844Z [INFO]: Request to /api/v1/auth/profile/6515bd7e097a73a6cd8d0268 took 1457.3453999981284ms
+2023-09-29T13:27:23.561Z [INFO]: Incoming POST request to /api/v1/auth/getprofile/65166bdddbba41906bd22bda
+2023-09-29T13:27:23.564Z [INFO]: Request to /api/v1/auth/getprofile/65166bdddbba41906bd22bda took 2.796299997717142ms
+2023-09-29T13:27:27.263Z [INFO]: Incoming GET request to /api/v1/auth/getprofile/65166bdddbba41906bd22bda
+2023-09-29T13:27:27.882Z [INFO]: Request to /api/v1/auth/getprofile/65166bdddbba41906bd22bda took 619.5307000018656ms
+2023-09-29T14:25:04.827Z [INFO]: Server running at port 3000
+2023-09-29T14:25:06.283Z [INFO]: Server running at port 3000
+2023-09-29T14:25:09.265Z [INFO]: Connected to the database
+2023-09-29T14:26:59.772Z [INFO]: Server running at port 3000
+2023-09-29T14:27:02.964Z [INFO]: Server running at port 3000
+2023-09-29T14:27:06.002Z [INFO]: Connected to the database
+2023-09-29T14:27:16.964Z [INFO]: Server running at port 3000
+2023-09-29T14:27:19.930Z [INFO]: Connected to the database
+2023-09-29T14:27:28.079Z [INFO]: Server running at port 3000
+2023-09-29T14:27:30.989Z [INFO]: Connected to the database

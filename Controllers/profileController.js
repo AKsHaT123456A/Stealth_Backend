@@ -32,8 +32,6 @@ const updateProfile = async (req, res) => {
 const getProfile = async (req, res) => {
     try {
         const { id } = req.params;
-
-        // Retrieve seller's profile including populated calls
         const user = await Seller.findById(id)
             .populate({
                 path: 'calls',
@@ -44,7 +42,7 @@ const getProfile = async (req, res) => {
             return res.status(404).json({ message: "User not found" });
         }
 
-        return res.status(200).json({ message: "Profile Retrieved", user });
+        return res.status(201).json({ message: "Profile Retrieved", user });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Error retrieving profile", error: error.message });
