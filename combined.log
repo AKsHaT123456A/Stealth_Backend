@@ -2141,3 +2141,107 @@
 2023-09-29T14:27:19.930Z [INFO]: Connected to the database
 2023-09-29T14:27:28.079Z [INFO]: Server running at port 3000
 2023-09-29T14:27:30.989Z [INFO]: Connected to the database
+2023-09-30T08:33:57.667Z [INFO]: Server running at port 3000
+2023-09-30T08:34:00.589Z [INFO]: Connected to the database
+2023-09-30T08:34:05.225Z [INFO]: Server running at port 3000
+2023-09-30T08:34:08.326Z [INFO]: Server running at port 3000
+2023-09-30T08:34:12.021Z [INFO]: Connected to the database
+2023-09-30T08:34:32.699Z [INFO]: Server running at port 3000
+2023-09-30T08:34:34.911Z [INFO]: Connected to the database
+2023-09-30T08:34:59.529Z [INFO]: Server running at port 3000
+2023-09-30T08:35:01.871Z [INFO]: Server running at port 3000
+2023-09-30T08:35:04.147Z [INFO]: Server running at port 3000
+2023-09-30T08:35:06.486Z [INFO]: Connected to the database
+2023-09-30T08:35:08.848Z [INFO]: Server running at port 3000
+2023-09-30T08:35:10.548Z [INFO]: Server running at port 3000
+2023-09-30T08:35:11.894Z [INFO]: Server running at port 3000
+2023-09-30T08:35:13.809Z [INFO]: Server running at port 3000
+2023-09-30T08:35:15.627Z [INFO]: Server running at port 3000
+2023-09-30T08:35:20.314Z [INFO]: Server running at port 3000
+2023-09-30T08:35:22.505Z [INFO]: Connected to the database
+2023-09-30T08:35:26.602Z [INFO]: Server running at port 3000
+2023-09-30T08:35:29.045Z [INFO]: Connected to the database
+2023-09-30T08:35:37.843Z [INFO]: Server running at port 3000
+2023-09-30T08:35:40.750Z [INFO]: Server running at port 3000
+2023-09-30T08:35:42.001Z [INFO]: Server running at port 3000
+2023-09-30T08:35:44.153Z [INFO]: Connected to the database
+2023-09-30T08:35:48.387Z [INFO]: Server running at port 3000
+2023-09-30T08:35:50.512Z [INFO]: Server running at port 3000
+2023-09-30T08:35:51.573Z [INFO]: Server running at port 3000
+2023-09-30T08:35:53.797Z [INFO]: Connected to the database
+2023-09-30T08:36:14.010Z [INFO]: Server running at port 3000
+2023-09-30T08:36:16.219Z [INFO]: Connected to the database
+2023-09-30T08:36:21.595Z [INFO]: Server running at port 3000
+2023-09-30T08:36:24.490Z [INFO]: Connected to the database
+2023-09-30T08:36:43.928Z [INFO]: Server running at port 3000
+2023-09-30T08:36:47.506Z [INFO]: Server running at port 3000
+2023-09-30T08:36:49.662Z [INFO]: Connected to the database
+2023-09-30T08:37:09.789Z [INFO]: Server running at port 3000
+2023-09-30T08:37:12.063Z [INFO]: Connected to the database
+2023-09-30T08:37:18.406Z [INFO]: Server running at port 3000
+2023-09-30T08:37:21.052Z [INFO]: Server running at port 3000
+2023-09-30T08:37:23.324Z [INFO]: Connected to the database
+2023-09-30T08:38:42.942Z [INFO]: Server running at port 3000
+2023-09-30T08:38:45.907Z [INFO]: Connected to the database
+2023-09-30T08:38:52.393Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:38:52.395Z [ERROR]: An error occurred while creating the user Cannot access 'password' before initialization
+2023-09-30T08:38:52.395Z [ERROR]: Error: An error occurred while creating the user Cannot access 'password' before initialization
+2023-09-30T08:38:52.399Z [INFO]: Request to /api/v1/auth/register took 6.194799989461899ms
+2023-09-30T08:39:08.262Z [INFO]: Server running at port 3000
+2023-09-30T08:39:10.557Z [INFO]: Connected to the database
+2023-09-30T08:39:12.853Z [INFO]: Server running at port 3000
+2023-09-30T08:39:15.130Z [INFO]: Connected to the database
+2023-09-30T08:39:18.916Z [INFO]: Server running at port 3000
+2023-09-30T08:39:21.260Z [INFO]: Connected to the database
+2023-09-30T08:39:21.920Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:39:22.234Z [INFO]: User created successfully
+2023-09-30T08:39:45.915Z [INFO]: Server running at port 3000
+2023-09-30T08:39:48.271Z [INFO]: Connected to the database
+2023-09-30T08:39:50.576Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:39:50.585Z [ERROR]: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:50.585Z [ERROR]: Error: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:50.590Z [INFO]: Request to /api/v1/auth/register took 14.92679999768734ms
+2023-09-30T08:39:57.435Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:39:57.437Z [ERROR]: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:57.438Z [ERROR]: Error: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:57.441Z [INFO]: Request to /api/v1/auth/register took 5.593899995088577ms
+2023-09-30T08:40:03.230Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:40:03.547Z [INFO]: User created successfully
+2023-09-30T08:40:03.548Z [INFO]: Request to /api/v1/auth/register took 318.41019999980927ms
+2023-09-30T08:41:02.816Z [INFO]: Server running at port 3000
+2023-09-30T08:41:05.270Z [INFO]: Connected to the database
+2023-09-30T08:41:08.200Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:41:08.521Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123322" }
+2023-09-30T08:41:08.522Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123322" }
+2023-09-30T08:41:08.526Z [INFO]: Request to /api/v1/auth/register took 326.3357999920845ms
+2023-09-30T08:41:15.111Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:41:15.426Z [INFO]: User created successfully
+2023-09-30T08:41:15.427Z [INFO]: Request to /api/v1/auth/register took 316.2140000015497ms
+2023-09-30T08:41:44.932Z [INFO]: Server running at port 3000
+2023-09-30T08:41:47.332Z [INFO]: Connected to the database
+2023-09-30T08:42:37.951Z [INFO]: Server running at port 3000
+2023-09-30T08:42:40.422Z [INFO]: Connected to the database
+2023-09-30T08:42:43.546Z [INFO]: Server running at port 3000
+2023-09-30T08:42:45.979Z [INFO]: Connected to the database
+2023-09-30T08:42:49.610Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:42:49.933Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123321" }
+2023-09-30T08:42:49.934Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123321" }
+2023-09-30T08:42:49.938Z [INFO]: Request to /api/v1/auth/register took 329.0278000086546ms
+2023-09-30T08:42:58.153Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T08:42:58.467Z [INFO]: User created successfully
+2023-09-30T08:42:58.469Z [INFO]: Request to /api/v1/auth/register took 316.1662999987602ms
+2023-09-30T09:28:11.016Z [INFO]: Server running at port 3000
+2023-09-30T09:28:13.902Z [INFO]: Connected to the database
+2023-09-30T09:28:41.942Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T09:28:42.250Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336113321" }
+2023-09-30T09:28:42.251Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336113321" }
+2023-09-30T09:28:42.260Z [INFO]: Request to /api/v1/auth/register took 319.2651000022888ms
+2023-09-30T09:28:49.428Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T09:28:49.729Z [INFO]: User created successfully
+2023-09-30T09:28:49.731Z [INFO]: Request to /api/v1/auth/register took 302.7737999856472ms
+2023-09-30T09:33:02.830Z [INFO]: Server running at port 3000
+2023-09-30T09:33:10.544Z [INFO]: Connected to the database
+2023-09-30T09:33:15.924Z [INFO]: Incoming POST request to /api/v1/auth/register
+2023-09-30T09:33:16.228Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336111321" }
+2023-09-30T09:33:16.229Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336111321" }
+2023-09-30T09:33:16.238Z [INFO]: Request to /api/v1/auth/register took 314.9391999989748ms

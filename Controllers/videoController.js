@@ -1,4 +1,5 @@
 const Call = require('../Models/call');
+const Seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 
 async function createVideoRoom(roomName) {
@@ -111,8 +112,8 @@ module.exports.getCallHistory = async (req, res) => {
         };
         const formattedDate = date.toLocaleString('en-In', options);
         await Call.findByIdAndUpdate(user.id, { date: formattedDate });
-
-        res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token });
+        const seller = await Seller.findOne({ roomName });
+        res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token, isOpen: seller.isOpen });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }
@@ -169,3 +170,18 @@ module.exports.updatePhone = async (req, res) => {
         return res.status(500).json({ message: "Internal server error" });
     }
 };
+module.exports.isOpenFunction = async (req, res) => {
+    const { id } = req.params;
+    const { isOpen } = req.body;
+    try {
+        const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { isOpen } });
+        if (!seller) {
+            return res.status(404).json({ message: "Seller not found" });
+        }
+        res.json({ message: "Status updated successfully" });
+    }
+    catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: "Internal server error" });
+    }
+}

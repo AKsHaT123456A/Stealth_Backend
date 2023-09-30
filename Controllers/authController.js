@@ -6,6 +6,7 @@ const logger = require('../Utils/logger');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 const emailer = require('../Utils/sendPassword');
 const Call = require('../Models/call'); // Renamed to avoid variable name conflict
+const password = require('../Utils/randomPassword');
 
 const handleError = (res, statusCode, message, error) => {
     logger.error(message, error);
@@ -20,11 +21,11 @@ module.exports.register = async (req, res) => {
             return handleError(res, 400, 'Please provide both phone and email');
         }
 
-        const password = process.env.password;
-        const user = new Seller({ phone, email, password });
+        const pass = password;
+        const user = new Seller({ phone, email, password:pass });
 
         await user.save();
-        emailer(email, password); // Ensure this function is implemented securely
+        emailer(email, pass); // Ensure this function is implemented securely
         logger.info('User created successfully');
         return res.status(201).json({ message: 'User created successfully', userId: user._id });
     } catch (error) {

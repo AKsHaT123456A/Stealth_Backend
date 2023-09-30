@@ -59,7 +59,11 @@ const sellerSchema = new mongoose.Schema({
     token: {
         type: String,
         default: ''
-    }
+    },
+    isOpen: {
+        type: Boolean,
+        default: false
+    },
 });
 
 // Hash password before saving

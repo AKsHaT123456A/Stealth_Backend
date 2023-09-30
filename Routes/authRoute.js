@@ -1,5 +1,6 @@
 const { register, login, refresh, logout, createVideoRoom, forgetPassword } = require("../Controllers/authController");
 const { getProfile, updateProfile, feedback } = require("../Controllers/profileController");
+const { isOpenFunction } = require("../Controllers/videoController");
 const { apiLimiter } = require("../Utils/rateLimiter");
 
 
@@ -13,6 +14,7 @@ router.post("/forget-password", forgetPassword);
 router.get("/logout", logout);
 router.post("/profile/:id", updateProfile);
 router.get("/getprofile/:id", getProfile);
+router.get("/isOpen/:id",isOpenFunction);
 router.get("/token", createVideoRoom)
 router.post("/feedback", feedback)
 module.exports = router;

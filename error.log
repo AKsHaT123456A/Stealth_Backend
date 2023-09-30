@@ -80,3 +80,17 @@
 2023-09-28T18:31:30.155Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
 2023-09-28T18:31:33.558Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
 2023-09-28T18:31:39.339Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-09-30T08:38:52.395Z [ERROR]: An error occurred while creating the user Cannot access 'password' before initialization
+2023-09-30T08:38:52.395Z [ERROR]: Error: An error occurred while creating the user Cannot access 'password' before initialization
+2023-09-30T08:39:50.585Z [ERROR]: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:50.585Z [ERROR]: Error: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:57.437Z [ERROR]: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:39:57.438Z [ERROR]: Error: An error occurred while creating the user Seller validation failed: phone: Please enter a valid 10-digit phone number
+2023-09-30T08:41:08.521Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123322" }
+2023-09-30T08:41:08.522Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123322" }
+2023-09-30T08:42:49.933Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123321" }
+2023-09-30T08:42:49.934Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336123321" }
+2023-09-30T09:28:42.250Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336113321" }
+2023-09-30T09:28:42.251Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336113321" }
+2023-09-30T09:33:16.228Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336111321" }
+2023-09-30T09:33:16.229Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "9336111321" }

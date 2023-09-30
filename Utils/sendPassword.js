@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const fs = require("fs");
-const { PASSWORD } = require("./constants");
-const emailer = async (to) => {
+const {PASSWORD} = require("./constants.js")
+const emailer = async (to,password) => {
 
   let transporter = nodemailer.createTransport({
     service: "gmail",
