@@ -172,7 +172,7 @@ module.exports.updatePhone = async (req, res) => {
 };
 module.exports.isOpenFunction = async (req, res) => {
     const { id } = req.params;
-    const { isOpen } = req.body;
+    const { isOpen } = req.query;
     try {
         const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { isOpen } });
         if (!seller) {
