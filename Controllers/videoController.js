@@ -159,7 +159,7 @@ module.exports.showCallHistory = async (req, res) => {
         user.calls.addToSet(callInstance._id);
         await user.save();
 
-        const userWithResponses = await seller.findById(id).populate({
+        const userWithResponses = await Seller.findById(id).populate({
             path: 'calls',
             select: 'roomName cusNumber date isNotified isRejected isAccepted phone duration'
         });
