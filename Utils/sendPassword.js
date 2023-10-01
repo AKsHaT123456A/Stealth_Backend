@@ -9,8 +9,8 @@ const emailer = async (to, password,phone) => {
     port: 465,
     secure: true,
     auth: {
-      user: "testingapi0201@gmail.com",
-      pass: "znzonnhqoftknajv",
+      user: process.env.TEST_EMAIL,
+      pass: process.env.pass,
     },
   });
   let info = await transporter.sendMail({
