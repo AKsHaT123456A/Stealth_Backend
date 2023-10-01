@@ -187,7 +187,7 @@ module.exports.isOpenFunction = async (req, res) => {
     }
 };
 module.exports.reset = async (req, res) => {
-    const { roomName, phone } = req.query;
+    const { roomName, phone } = req.params;
     try {
         const room = await Call.findOneAndUpdate(
             { roomName: roomName, phone: phone },

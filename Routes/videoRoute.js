@@ -8,7 +8,7 @@ router.post('/manage', manageCall);
 router.get('/notify', sendCallRequest);
 router.get('/call', getCallHistory);
 router.get("/getCalls",showCallHistory);
-router.get("/reset",reset);
+router.get("/reset/:roomName/:phone",reset);
 router.get("/getCallDetails",updatePhone);
 // router.get("/send-call-request",sendCallRequest);
 
