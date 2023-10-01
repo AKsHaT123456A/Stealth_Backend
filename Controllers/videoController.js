@@ -113,6 +113,7 @@ module.exports.getCallHistory = async (req, res) => {
         const formattedDate = date.toLocaleString('en-In', options);
         await Call.findByIdAndUpdate(user.id, { date: formattedDate });
         const seller = await Seller.findOne({ roomName });
+
         res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token, isOpen: seller.isOpen });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
@@ -130,7 +131,7 @@ module.exports.showCallHistory = async (req, res) => {
             return res.json({ message: 'Call request not found' });
         }
 
-        const user = await seller.findById(id);
+        const user = await Seller.findById(id);
 
         if (!user) {
             return res.json({ message: 'User not found' });
@@ -184,4 +185,21 @@ module.exports.isOpenFunction = async (req, res) => {
         console.error(error);
         return res.status(500).json({ message: "Internal server error" });
     }
+};
+module.exports.reset = async (req, res) => {
+    const { roomName, phone } = req.query;
+    try {
+        const room = await Call.findOneAndUpdate(
+            { roomName: roomName, phone: phone },
+            { $set: { isAccepted: false, isRejected: false } },
+        );
+        if (!room) {
+            return res.status(404).json({ message: "Room not found" });
+        }
+
+        res.json({ message: "reset successfully" });
+    } catch (error) {
+        return res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+
 }

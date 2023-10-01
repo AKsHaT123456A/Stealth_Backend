@@ -15,10 +15,6 @@ const callSchema = mongoose.Schema({
         type: String,
         default: ""
     },
-    isNotified: {
-        type: Boolean,
-        default: false
-    },
     isRejected: {
         type: Boolean,
         default: false
@@ -35,7 +31,7 @@ const callSchema = mongoose.Schema({
         type: String,
         default: ""
     },
-    "duration":{
+    duration:{
         type: String,
         default: ""
     },

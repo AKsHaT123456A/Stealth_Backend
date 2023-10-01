@@ -146,3 +146,4 @@
 2023-10-01T07:21:05.205Z [INFO]: Incoming POST request to /api/v1/auth/register
 2023-10-01T07:21:05.825Z [INFO]: User created successfully
 2023-10-01T07:21:05.845Z [INFO]: Request to /api/v1/auth/register took 639.5423000156879ms
+2023-10-01T08:54:29.486Z [INFO]: Server running at port 3000
