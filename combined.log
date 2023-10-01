@@ -147,3 +147,88 @@
 2023-10-01T07:21:05.825Z [INFO]: User created successfully
 2023-10-01T07:21:05.845Z [INFO]: Request to /api/v1/auth/register took 639.5423000156879ms
 2023-10-01T08:54:29.486Z [INFO]: Server running at port 3000
+2023-10-01T09:37:46.582Z [INFO]: Server running at port 3000
+2023-10-01T09:37:49.597Z [INFO]: Connected to the database
+2023-10-01T09:40:01.371Z [INFO]: Server running at port 3000
+2023-10-01T09:40:04.398Z [INFO]: Connected to the database
+2023-10-01T09:40:05.726Z [INFO]: Server running at port 3000
+2023-10-01T09:40:08.562Z [INFO]: Connected to the database
+2023-10-01T09:40:11.501Z [INFO]: Server running at port 3000
+2023-10-01T09:40:13.342Z [INFO]: Server running at port 3000
+2023-10-01T09:40:16.336Z [INFO]: Connected to the database
+2023-10-01T09:40:22.140Z [INFO]: Server running at port 3000
+2023-10-01T09:40:25.019Z [INFO]: Connected to the database
+2023-10-01T09:40:59.906Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:41:00.864Z [ERROR]: Error: TypeError: Cannot read properties of null (reading 'isOpen')
+2023-10-01T09:43:05.675Z [INFO]: Server running at port 3000
+2023-10-01T09:43:06.943Z [INFO]: Server running at port 3000
+2023-10-01T09:43:10.164Z [INFO]: Connected to the database
+2023-10-01T09:43:13.303Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:43:14.412Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 1112.6689999997616ms
+2023-10-01T09:43:14.415Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:43:15.248Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 833.0166999995708ms
+2023-10-01T09:43:42.462Z [INFO]: Server running at port 3000
+2023-10-01T09:43:44.183Z [INFO]: Server running at port 3000
+2023-10-01T09:43:45.988Z [INFO]: Server running at port 3000
+2023-10-01T09:43:47.432Z [INFO]: Server running at port 3000
+2023-10-01T09:43:50.529Z [INFO]: Connected to the database
+2023-10-01T09:43:53.495Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:43:54.465Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 969.9477999806404ms
+2023-10-01T09:43:54.467Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:43:55.353Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 886.5739000141621ms
+2023-10-01T09:45:36.310Z [INFO]: Server running at port 3000
+2023-10-01T09:45:36.425Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:45:40.209Z [INFO]: Connected to the database
+2023-10-01T09:45:42.897Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 6473.113700002432ms
+2023-10-01T09:45:42.900Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:45:43.797Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 896.8299999833107ms
+2023-10-01T09:47:17.964Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:47:18.809Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 845.492300003767ms
+2023-10-01T09:47:18.811Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:47:19.677Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 866.4441999793053ms
+2023-10-01T09:47:49.241Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:47:50.119Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 877.4461999833584ms
+2023-10-01T09:47:50.120Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:47:50.966Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 846.1764000058174ms
+2023-10-01T09:48:11.726Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:12.636Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 910.8865000009537ms
+2023-10-01T09:48:12.659Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:13.560Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 901.5726000070572ms
+2023-10-01T09:48:13.563Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:14.399Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 836.0283000171185ms
+2023-10-01T09:48:17.672Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:18.531Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 858.5751999914646ms
+2023-10-01T09:48:18.816Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:19.654Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 837.3781000077724ms
+2023-10-01T09:48:19.674Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:20.615Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 942.7809999883175ms
+2023-10-01T09:48:23.538Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:24.396Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 857.6525000035763ms
+2023-10-01T09:48:24.679Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:25.522Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 842.8768000006676ms
+2023-10-01T09:48:25.714Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:26.561Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 847.1278000175953ms
+2023-10-01T09:48:29.781Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:30.613Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 832.7024999856949ms
+2023-10-01T09:48:30.771Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:31.656Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 885.2882000207901ms
+2023-10-01T09:48:31.774Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:32.610Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 836.3835999965668ms
+2023-10-01T09:48:35.784Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:36.644Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 860.2233000099659ms
+2023-10-01T09:48:36.778Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:37.620Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 842.7730000019073ms
+2023-10-01T09:48:37.776Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:38.616Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 839.7994999885559ms
+2023-10-01T09:48:41.772Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:42.608Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 835.3242000043392ms
+2023-10-01T09:48:42.784Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:43.657Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 873.0333999991417ms
+2023-10-01T09:48:43.785Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:44.616Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 830.6711000204086ms
+2023-10-01T09:48:47.783Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:48.697Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 913.8837000131607ms
+2023-10-01T09:48:48.772Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:49.680Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 907.2245999872684ms
+2023-10-01T09:48:49.799Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta
+2023-10-01T09:48:50.757Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta took 958.0329999923706ms

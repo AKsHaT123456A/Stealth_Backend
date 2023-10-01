@@ -66,8 +66,8 @@ module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName } = req.query;
 
     try {
-        const user = await findCallByRoomName(roomName);
-
+        const user = await Call.findOne({ roomName: roomName });
+        console.log(user);
         if (!user) {
             return res.json({ message: 'Call request not found' });
         }
@@ -89,17 +89,21 @@ module.exports.manageCall = async (req, res) => {
 // Get call history
 module.exports.getCallHistory = async (req, res) => {
     const { roomName } = req.query;
+    console.log(roomName);
 
     try {
         if (!roomName) {
             return res.json({ message: 'Room name not found' });
         }
-        const user = await findCallByRoomName(roomName);
 
-        if (!user) {
-            return res.json({ message: 'Call request not found' });
+        // Find the call history by roomName
+        const callHistory = await findCallByRoomName(roomName);
+
+        if (!callHistory) {
+            return res.json({ message: 'Call history not found' });
         }
 
+        // Update the date field in the call history
         const date = new Date();
         const options = {
             year: 'numeric',
@@ -111,14 +115,29 @@ module.exports.getCallHistory = async (req, res) => {
             hour12: true
         };
         const formattedDate = date.toLocaleString('en-In', options);
-        await Call.findByIdAndUpdate(user.id, { date: formattedDate });
-        const seller = await Seller.findOne({ roomName });
 
-        res.json({ isAccepted: user.isAccepted, isRejected: user.isRejected, token: user.token, isOpen: seller.isOpen });
+        // Update the date field in the call history record
+        await Call.findByIdAndUpdate(callHistory.id, { date: formattedDate });
+
+        // Find the seller information based on roomName
+        const seller = await Seller.findOne({ shopName:roomName });
+
+        if (!seller) {
+            return res.json({ message: 'Seller not found' });
+        }
+
+        // Respond with the relevant information
+        res.json({
+            isAccepted: callHistory.isAccepted,
+            isRejected: callHistory.isRejected,
+            token: callHistory.token,
+            isOpen: seller.isOpen
+        });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }
 };
+
 
 // Show call history
 module.exports.showCallHistory = async (req, res) => {

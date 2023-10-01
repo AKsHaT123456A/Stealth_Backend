@@ -6,3 +6,4 @@
 2023-10-01T07:03:51.574Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "1211111121" }
 2023-10-01T07:06:51.636Z [ERROR]: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "1211113121" }
 2023-10-01T07:06:51.637Z [ERROR]: Error: An error occurred while creating the user E11000 duplicate key error collection: stealthDb.sellers index: phone_1 dup key: { phone: "1211113121" }
+2023-10-01T09:41:00.864Z [ERROR]: Error: TypeError: Cannot read properties of null (reading 'isOpen')
