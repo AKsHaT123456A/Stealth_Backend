@@ -14,7 +14,6 @@ router.post("/forget-password", forgetPassword);
 router.get("/logout", logout);
 router.post("/profile/:id", updateProfile);
 router.get("/getprofile/:id", getProfile);
-router.get("/updateprofile/:id", updatedProfile);
 router.get("/isOpen/:id",isOpenFunction);
 router.get("/token", createVideoRoom)
 router.post("/feedback", feedback)
