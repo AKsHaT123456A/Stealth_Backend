@@ -30,7 +30,11 @@ module.exports.join = async (req, res) => {
 
     const roomName = req.query.roomName;
     const id = req.params.id;
-    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}&id=${id}`);
+    const seller = await Seller.findById(id).select('+phone');
+    console.log(seller);
+    const phone = seller.phone;
+    console.log(phone);
+    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}&id=${id}&phone=${phone}`);
 };
 
 // Send a call request to the room owner
@@ -121,7 +125,7 @@ module.exports.getCallHistory = async (req, res) => {
             isAccepted: callHistory.isAccepted,
             isRejected: callHistory.isRejected,
             token: callHistory.token,
-            // isOpen: seller.isOpen
+            isOpen: seller.isOpen
         });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
@@ -169,17 +173,16 @@ module.exports.updatePhone = async (req, res) => {
     const { id, roomName, duration, token, phone } = req.query;
     console.log(duration);
     try {
-        let videoCall = await Call.findOne({ roomName, userId: id, phone: phone });
+        let videoCall = await Call.findOne({ roomName, userId: id, phone });
         console.log(videoCall);
-        if (!videoCall) {
-            console.log("HI");
-            videoCall = new Call({ roomName, phone, duration, token, userId: id });
-            await videoCall.save();
-        } else {
-            videoCall.isNotified = true;
-            await videoCall.save();
+        if (videoCall) {
+            const _id = videoCall._id;
+            await Call.findByIdAndUpdate({ _id }, { $set: { ...req.body } });
+            return res.json({ message: 'Phone number updated successfully' });
         }
-        return res.json({ message: 'Phone number updated successfully' });
+        videoCall = new Call({ roomName, phone, duration, token, userId: id });
+        await videoCall.save();
+        return res.json({ message: 'Phone number saved successfully' });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Internal server error" });

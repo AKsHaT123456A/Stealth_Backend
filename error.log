@@ -13,3 +13,8 @@
 2023-10-03T16:25:26.337Z [ERROR]: Error: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-gkfubtg-shard-00-00.ax3mell.mongodb.net
 2023-10-03T16:25:53.380Z [ERROR]: Error connecting to the database: connection 1 to 34.195.225.62:27017 closed
 2023-10-03T16:26:04.100Z [ERROR]: Error: MongooseError: Operation `calls.findOne()` buffering timed out after 10000ms
+2023-10-03T17:15:42.316Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T17:15:46.508Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T17:15:49.511Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T17:15:52.136Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T17:23:34.812Z [ERROR]: Error: MongooseError: Operation `calls.findOne()` buffering timed out after 10000ms
