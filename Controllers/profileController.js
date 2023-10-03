@@ -12,7 +12,7 @@ const updateProfile = async (req, res) => {
         const updatedShopName = shopName.charAt(0).toUpperCase() + shopName.slice(1);
 
         // Construct shopLink
-        const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${updatedShopName}`;
+        const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${updatedShopName}`;
 
         // Update seller's profile
         const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, name: updatedShopName } });
