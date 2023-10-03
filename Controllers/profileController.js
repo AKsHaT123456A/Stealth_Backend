@@ -13,6 +13,7 @@ const updateProfile = async (req, res) => {
 
         // Construct shopLink
         const shopLink = `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${updatedShopName}`;
+        console.log(shopLink);
 
         // Update seller's profile
         const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, name: updatedShopName } });
