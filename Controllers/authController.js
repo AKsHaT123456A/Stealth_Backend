@@ -43,14 +43,6 @@ module.exports.login = async (req, res) => {
         const user = await Seller.findOne({ phone }).select('+password +shopName').lean();
         const call = await Call.findOne({ phone });
 
-        if (call) {
-            call.token = token;
-            await call.save();
-        }
-        const roomName = user.shopName;
-        // const date = new Date();
-        await Call.create({ token, phone, roomName, userId: user._id });
-
         if (!user) {
             return handleError(res, 400, 'User not found');
         }
@@ -64,6 +56,14 @@ module.exports.login = async (req, res) => {
         const [accessToken, refreshToken] = await generateTokens(user._id);
 
         res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'none' });
+        if (call) {
+            call.token = token;
+            await call.save();
+            return res.status(200).json({ message: 'Logged in successfully', userId: user._id, accessToken });
+        }
+        const roomName = user.shopName;
+        // const date = new Date();
+        await Call.create({ token, phone, roomName, userId: user._id });
         return res.status(200).json({ message: 'Logged in successfully', userId: user._id, accessToken });
     } catch (error) {
         return handleError(res, 500, 'An error occurred while logging in', error);
