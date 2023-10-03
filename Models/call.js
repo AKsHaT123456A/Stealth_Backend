@@ -19,6 +19,10 @@ const callSchema = mongoose.Schema({
         type: Boolean,
         default: false
     },
+    userId:{
+        type: String,
+        default: ""
+    },
     isAccepted: {
         type: Boolean,
         default: false

@@ -3,12 +3,12 @@ const Seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 
 async function createVideoRoom(roomName) {
-    return `https://stealth-zys3.onrender.com/api/v1/video/join?roomName=${roomName}`;
+    return `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${roomName}`;
 }
 
 // Function to find a call by room name
-async function findCallByRoomName(roomName) {
-    return await Call.findOne({ roomName: roomName });
+async function findCallByRoomName(roomName, phone) {
+    return await Call.findOne({ roomName: roomName, phone: phone });
 }
 
 // Create a video room
@@ -16,7 +16,9 @@ module.exports.createRoom = async (req, res) => {
     const roomName = req.query.roomName;
 
     try {
-        const joinLink = await createVideoRoom(roomName);
+        const seller = await Room.findOne({ shopName: roomName });
+        const id = seller.id;
+        const joinLink = await createVideoRoom(roomName, id);
         res.json({ joinLink });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
@@ -25,23 +27,10 @@ module.exports.createRoom = async (req, res) => {
 
 // Join the video room and notify the owner
 module.exports.join = async (req, res) => {
+
     const roomName = req.query.roomName;
-
-    try {
-        let videoCall = await findCallByRoomName(roomName);
-
-        if (!videoCall) {
-            videoCall = new Call({ roomName, isNotified: true });
-            await videoCall.save();
-        } else {
-            videoCall.isNotified = true;
-            await videoCall.save();
-        }
-
-        res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}`);
-    } catch (error) {
-        handleErrorResponse(res, roomName, error);
-    }
+    const id = req.params.id;
+    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/${id}?roomCode=${roomName}`);
 };
 
 // Send a call request to the room owner
@@ -88,7 +77,7 @@ module.exports.manageCall = async (req, res) => {
 
 // Get call history
 module.exports.getCallHistory = async (req, res) => {
-    const { roomName } = req.query;
+    const { roomName, phone } = req.query;
     console.log(roomName);
 
     try {
@@ -97,7 +86,7 @@ module.exports.getCallHistory = async (req, res) => {
         }
 
         // Find the call history by roomName
-        const callHistory = await findCallByRoomName(roomName);
+        const callHistory = await findCallByRoomName(roomName, phone);
 
         if (!callHistory) {
             return res.json({ message: 'Call history not found' });
@@ -120,7 +109,7 @@ module.exports.getCallHistory = async (req, res) => {
         await Call.findByIdAndUpdate(callHistory.id, { date: formattedDate });
 
         // Find the seller information based on roomName
-        const seller = await Seller.findOne({ shopName:roomName });
+        const seller = await Seller.findOne({ shopName: roomName });
 
         if (!seller) {
             return res.json({ message: 'Seller not found' });
@@ -138,33 +127,37 @@ module.exports.getCallHistory = async (req, res) => {
     }
 };
 
-
 // Show call history
 module.exports.showCallHistory = async (req, res) => {
-    const { roomName, id } = req.query;
-
+    const { roomName } = req.query;
     try {
-        const callInstance = await findCallByRoomName(roomName);
-
-        if (!callInstance) {
-            return res.json({ message: 'Call request not found' });
+        if (!roomName) {
+            return res.json({ message: 'Room name not found' });
         }
 
-        const user = await Seller.findById(id);
+        // Find all call history documents with the specified roomName
+        const callHistoryList = await Call.find({ roomName });
+        if (!callHistoryList || callHistoryList.length === 0) {
+            return res.json({ message: 'Call history not found' });
+        }
+        // Find the seller information based on roomName
+        const seller = await Seller.findOne({ shopName: roomName });
 
-        if (!user) {
-            return res.json({ message: 'User not found' });
+        if (!seller) {
+            return res.json({ message: 'Seller not found' });
         }
 
-        user.calls.addToSet(callInstance._id);
-        await user.save();
+        // Add each call history document to the user's calls Set
+        for (const callHistory of callHistoryList) {
+            seller.calls.addToSet(callHistory);
+        }
 
-        const userWithResponses = await Seller.findById(id).populate({
-            path: 'calls',
-            select: 'roomName cusNumber date isNotified isRejected isAccepted phone duration'
+        // Save the updated user document
+        await seller.save();
+        // Respond with the relevant information
+        return res.json({
+            callHistoryList
         });
-
-        res.json({ message: userWithResponses.calls });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }
@@ -172,19 +165,20 @@ module.exports.showCallHistory = async (req, res) => {
 
 // Update phone number
 module.exports.updatePhone = async (req, res) => {
-    const { phone, roomName, duration } = req.query;
+    const { phone, roomName, duration, token } = req.query;
     console.log(duration);
     try {
-        const room = await Call.findOneAndUpdate(
-            { roomName: roomName },
-            { $set: { phone, duration } },
-        );
-        console.log(room);
-        if (!room) {
-            return res.status(404).json({ message: "Room not found" });
+        let videoCall = await findCallByRoomName(roomName, phone);
+        console.log(videoCall);
+        if (!videoCall) {
+            console.log("HI");
+            videoCall = new Call({ roomName, phone, duration, token, isNotified: true });
+            await videoCall.save();
+        } else {
+            videoCall.isNotified = true;
+            await videoCall.save();
         }
-
-        res.json({ message: "Phone number updated successfully" });
+        return res.json({ message: 'Phone number updated successfully' });
     } catch (error) {
         console.error(error);
         return res.status(500).json({ message: "Internal server error" });
