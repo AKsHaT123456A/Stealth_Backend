@@ -2,7 +2,7 @@ const Call = require('../Models/call');
 const Seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 
-async function createVideoRoom(roomName) {
+async function createVideoRoom(roomName,id) {
     return `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${roomName}`;
 }
 
