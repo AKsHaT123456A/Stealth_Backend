@@ -77,8 +77,9 @@ module.exports.forgetPassword = async (req, res) => {
         if (!phone || !password) {
             return handleError(res, 400, 'Please provide both phone and new password');
         }
+        hashedPassword = await bcrypt.hash(password, 10);
 
-        const user = await Seller.findOneAndUpdate({ phone }, { password });
+        const user = await Seller.findOneAndUpdate({ phone }, { password: hashedPassword });
 
         if (!user) {
             return handleError(res, 400, 'User not found');

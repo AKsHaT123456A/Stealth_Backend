@@ -2166,3 +2166,31 @@
 2023-10-03T18:07:06.158Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=Ramulal&id=651c3ab3c92dcafb8fa20bf2
 2023-10-03T18:07:06.511Z [INFO]: Request to /api/v1/video/getCallDetails?id=651c3ab3c92dcafb8fa20bf2&phone=9999988888&roomName=Ramulal took 772.3343000002205ms
 2023-10-03T18:07:07.159Z [INFO]: Request to /api/v1/video/call?roomName=Ramulal&id=651c3ab3c92dcafb8fa20bf2 took 1001.0962999984622ms
+2023-10-03T19:10:20.231Z [INFO]: Server running at port 3000
+2023-10-03T19:10:23.857Z [INFO]: Connected to the database
+2023-10-03T19:10:25.171Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-10-03T19:10:25.697Z [INFO]: Request to /api/v1/auth/forget-password took 530.6681999973953ms
+2023-10-03T19:10:34.056Z [INFO]: Incoming POST request to /api/v1/auth/login
+2023-10-03T19:10:35.196Z [INFO]: Request to /api/v1/auth/login took 1140.7690000012517ms
+2023-10-03T19:13:21.073Z [INFO]: Server running at port 3000
+2023-10-03T19:13:22.345Z [INFO]: Server running at port 3000
+2023-10-03T19:13:25.678Z [INFO]: Connected to the database
+2023-10-03T19:13:34.120Z [INFO]: Server running at port 3000
+2023-10-03T19:13:37.487Z [INFO]: Connected to the database
+2023-10-03T19:13:53.313Z [INFO]: Server running at port 3000
+2023-10-03T19:13:55.177Z [INFO]: Server running at port 3000
+2023-10-03T19:13:58.644Z [INFO]: Connected to the database
+2023-10-03T19:14:06.913Z [INFO]: Server running at port 3000
+2023-10-03T19:14:08.077Z [INFO]: Server running at port 3000
+2023-10-03T19:14:13.139Z [ERROR]: Error connecting to the database: queryTxt ETIMEOUT cluster0.ax3mell.mongodb.net
+2023-10-03T19:14:15.637Z [INFO]: Server running at port 3000
+2023-10-03T19:14:15.651Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T19:14:17.752Z [INFO]: Server running at port 3000
+2023-10-03T19:14:17.760Z [ERROR]: Error connecting to the database: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ax3mell.mongodb.net
+2023-10-03T19:16:32.940Z [INFO]: Server running at port 3000
+2023-10-03T19:16:35.692Z [INFO]: Server running at port 3000
+2023-10-03T19:16:38.914Z [INFO]: Connected to the database
+2023-10-03T19:16:55.807Z [INFO]: Server running at port 3000
+2023-10-03T19:16:58.971Z [INFO]: Connected to the database
+2023-10-03T19:17:00.640Z [INFO]: Server running at port 3000
+2023-10-03T19:17:03.809Z [INFO]: Connected to the database

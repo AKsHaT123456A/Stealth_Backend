@@ -47,10 +47,6 @@ const callSchema = mongoose.Schema({
         type:String,
         default:""
     },
-    sellerId:{
-        type:String,
-        default:""
-    }
 });
 
 const Call = mongoose.model('Call', callSchema);

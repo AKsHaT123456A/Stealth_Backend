@@ -56,7 +56,7 @@ module.exports.sendCallRequest = async (req, res) => {
 
 // Manage call request
 module.exports.manageCall = async (req, res) => {
-    const { isAccepted, isRejected, roomName ,phone} = req.query;
+    const { isAccepted, isRejected, roomName, phone } = req.query;
 
     try {
         const user = await Call.findOne({ roomName, phone });
@@ -177,7 +177,15 @@ module.exports.updatePhone = async (req, res) => {
         console.log(videoCall);
         if (videoCall) {
             const _id = videoCall._id;
-            await Call.findByIdAndUpdate({ _id }, { $set: { ...req.body } });
+            const updateObject = {
+                duration,
+                roomName
+            };
+            if (token) {
+                updateObject.token = token;
+            }
+
+            await Call.findByIdAndUpdate({ _id }, { $set: updateObject });
             return res.json({ message: 'Phone number updated successfully' });
         }
         videoCall = new Call({ roomName, phone, duration, token, userId: id });
@@ -188,6 +196,7 @@ module.exports.updatePhone = async (req, res) => {
         return res.status(500).json({ message: "Internal server error" });
     }
 };
+
 module.exports.isOpenFunction = async (req, res) => {
     const { id } = req.params;
     const { isOpen } = req.query;
