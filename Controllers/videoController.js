@@ -184,7 +184,10 @@ module.exports.updatePhone = async (req, res) => {
             if (token) {
                 updateObject.token = token;
             }
-
+            let prevCall = await Call.findOne({ roomName, userId: id });
+            if (prevCall) {
+                updateObject.token=prevCall.token;
+            }
             await Call.findByIdAndUpdate({ _id }, { $set: updateObject });
             return res.json({ message: 'Phone number updated successfully' });
         }
