@@ -3,7 +3,7 @@ const { createRoom, join, sendCallRequest, manageCall, getCallHistory, showCallH
 const router = require('express').Router();
 
 router.get('/create-room', createRoom);
-router.get('/join', join);
+router.get('/join/:id', join);
 router.post('/manage', manageCall);
 router.get('/notify', sendCallRequest);
 router.get('/call', getCallHistory);

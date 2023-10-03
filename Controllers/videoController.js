@@ -30,9 +30,7 @@ module.exports.join = async (req, res) => {
 
     const roomName = req.query.roomName;
     const id = req.params.id;
-    const seller = Seller.findById(id);
-    const phone = seller.phone;
-    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}&phone=${phone}`);
+    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}&id=${id}`);
 };
 
 // Send a call request to the room owner
@@ -57,7 +55,7 @@ module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName } = req.query;
 
     try {
-        const user = await Call.findOne({ roomName: roomName });
+        const user = await Call.findOne({ roomName, phone });
         console.log(user);
         if (!user) {
             return res.json({ message: 'Call request not found' });
@@ -79,8 +77,8 @@ module.exports.manageCall = async (req, res) => {
 
 // Get call history
 module.exports.getCallHistory = async (req, res) => {
-    const { roomName, phone } = req.query;
-    console.log(roomName);
+    const { roomName, id } = req.query;
+    console.log(roomName, id);
 
     try {
         if (!roomName) {
@@ -88,7 +86,8 @@ module.exports.getCallHistory = async (req, res) => {
         }
 
         // Find the call history by roomName
-        const callHistory = await findCallByRoomName(roomName, phone);
+        const callHistory = await Call.findOne({ roomName, userId: id });
+        console.log(callHistory);
 
         if (!callHistory) {
             return res.json({ message: 'Call history not found' });
@@ -122,7 +121,7 @@ module.exports.getCallHistory = async (req, res) => {
             isAccepted: callHistory.isAccepted,
             isRejected: callHistory.isRejected,
             token: callHistory.token,
-            //todo: isOpen: seller.isOpen
+            // isOpen: seller.isOpen
         });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
@@ -167,14 +166,14 @@ module.exports.showCallHistory = async (req, res) => {
 
 // Update phone number
 module.exports.updatePhone = async (req, res) => {
-    const { phone, roomName, duration, token } = req.query;
+    const { id, roomName, duration, token, phone } = req.query;
     console.log(duration);
     try {
-        let videoCall = await findCallByRoomName(roomName, phone);
+        let videoCall = await Call.findOne({ roomName, userId: id, phone: phone });
         console.log(videoCall);
         if (!videoCall) {
             console.log("HI");
-            videoCall = new Call({ roomName, phone, duration, token, isNotified: true });
+            videoCall = new Call({ roomName, phone, duration, token, userId: id });
             await videoCall.save();
         } else {
             videoCall.isNotified = true;
@@ -205,12 +204,13 @@ module.exports.reset = async (req, res) => {
     const { roomName, phone } = req.params;
     try {
         const room = await Call.findOneAndUpdate(
-            { roomName: roomName, phone: phone },
+            { roomName: roomName, userId: phone },
             { $set: { isAccepted: false, isRejected: false } },
         );
         if (!room) {
             return res.status(404).json({ message: "Room not found" });
         }
+        console.log(room);
 
         res.json({ message: "reset successfully" });
     } catch (error) {

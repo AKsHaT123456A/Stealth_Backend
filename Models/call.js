@@ -46,6 +46,10 @@ const callSchema = mongoose.Schema({
     emoji:{
         type:String,
         default:""
+    },
+    sellerId:{
+        type:String,
+        default:""
     }
 });
 

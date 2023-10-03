@@ -24,7 +24,7 @@ module.exports.register = async (req, res) => {
         const user = new Seller({ phone, email, password: pass });
 
         await user.save();
-        emailer(email, pass, phone); 
+        emailer(email, pass, phone);
         logger.info('User created successfully');
         return res.status(201).json({ message: 'User created successfully', userId: user._id });
     } catch (error) {
@@ -49,7 +49,7 @@ module.exports.login = async (req, res) => {
         }
         const roomName = user.shopName;
         // const date = new Date();
-        await Call.create({ token, phone, roomName });
+        await Call.create({ token, phone, roomName, userId: user._id });
 
         if (!user) {
             return handleError(res, 400, 'User not found');
