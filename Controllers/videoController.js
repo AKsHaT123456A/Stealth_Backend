@@ -120,7 +120,7 @@ module.exports.getCallHistory = async (req, res) => {
             isAccepted: callHistory.isAccepted,
             isRejected: callHistory.isRejected,
             token: callHistory.token,
-            isOpen: seller.isOpen
+            //todo: isOpen: seller.isOpen
         });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
