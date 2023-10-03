@@ -2,8 +2,8 @@ const Call = require('../Models/call');
 const Seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 
-async function createVideoRoom(roomName,id) {
-    return `https://stealth-zys3.onrender.com/api/v1/video/join/?roomName=${roomName}`;
+async function createVideoRoom(roomName, id) {
+    return `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${roomName}`;
 }
 
 // Function to find a call by room name
@@ -30,7 +30,9 @@ module.exports.join = async (req, res) => {
 
     const roomName = req.query.roomName;
     const id = req.params.id;
-    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}`);
+    const seller = Seller.findById(id);
+    const phone = seller.phone;
+    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}&phone=${phone}`);
 };
 
 // Send a call request to the room owner
@@ -138,7 +140,7 @@ module.exports.showCallHistory = async (req, res) => {
         // Find all call history documents with the specified roomName
         const callHistoryList = await Call.find({ roomName });
         if (!callHistoryList || callHistoryList.length === 0) {
-            return res.json({ message: 'Call history not found' });
+            return res.json({ message: [] });
         }
         // Find the seller information based on roomName
         const seller = await Seller.findOne({ shopName: roomName });

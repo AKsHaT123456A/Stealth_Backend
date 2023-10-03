@@ -854,3 +854,36 @@
 2023-10-01T21:04:57.700Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta&phone=3456789 took 925.6026000082493ms
 2023-10-01T21:05:05.539Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=VehliJanta&phone=3456789
 2023-10-01T21:05:06.548Z [INFO]: Request to /api/v1/video/call?roomName=VehliJanta&phone=3456789 took 1009.2793000042439ms
+2023-10-03T14:49:04.693Z [INFO]: Server running at port 3000
+2023-10-03T14:49:08.560Z [INFO]: Connected to the database
+2023-10-03T14:55:42.237Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined
+2023-10-03T14:55:49.272Z [INFO]: Request to /api/v1/video/call?roomName=undefined took 7035.352400001138ms
+2023-10-03T14:55:49.276Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined
+2023-10-03T14:55:49.624Z [INFO]: Request to /api/v1/video/call?roomName=undefined took 347.31550000049174ms
+2023-10-03T15:00:41.054Z [INFO]: Incoming GET request to /api/v1/video/join/?roomName=RajatSareeBhandar
+2023-10-03T15:00:41.064Z [INFO]: Request to /api/v1/video/join/?roomName=RajatSareeBhandar took 9.321699999272823ms
+2023-10-03T15:00:58.239Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=RajatSareeBhandar
+2023-10-03T15:00:58.727Z [INFO]: Request to /api/v1/video/call?roomName=RajatSareeBhandar took 488.3235999997705ms
+2023-10-03T15:00:58.729Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=RajatSareeBhandar
+2023-10-03T15:00:59.142Z [INFO]: Request to /api/v1/video/call?roomName=RajatSareeBhandar took 413.22079999931157ms
+2023-10-03T15:02:06.069Z [INFO]: Server running at port 3000
+2023-10-03T15:02:07.467Z [INFO]: Server running at port 3000
+2023-10-03T15:02:10.924Z [INFO]: Connected to the database
+2023-10-03T15:02:52.771Z [INFO]: Server running at port 3000
+2023-10-03T15:02:58.294Z [INFO]: Server running at port 3000
+2023-10-03T15:03:02.128Z [INFO]: Server running at port 3000
+2023-10-03T15:03:04.913Z [INFO]: Server running at port 3000
+2023-10-03T15:03:06.627Z [INFO]: Server running at port 3000
+2023-10-03T15:03:08.644Z [INFO]: Server running at port 3000
+2023-10-03T15:03:16.271Z [INFO]: Server running at port 3000
+2023-10-03T15:03:21.111Z [INFO]: Server running at port 3000
+2023-10-03T15:03:24.028Z [INFO]: Server running at port 3000
+2023-10-03T15:03:27.655Z [INFO]: Connected to the database
+2023-10-03T15:03:33.069Z [INFO]: Server running at port 3000
+2023-10-03T15:03:54.993Z [INFO]: Server running at port 3000
+2023-10-03T15:03:59.442Z [INFO]: Server running at port 3000
+2023-10-03T15:04:02.154Z [INFO]: Server running at port 3000
+2023-10-03T15:04:15.001Z [INFO]: Connected to the database
+2023-10-03T15:04:22.573Z [INFO]: Server running at port 3000
+2023-10-03T15:04:23.473Z [INFO]: Server running at port 3000
+2023-10-03T15:04:33.214Z [INFO]: Connected to the database
