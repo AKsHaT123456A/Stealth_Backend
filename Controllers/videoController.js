@@ -3,7 +3,7 @@ const Seller = require('../Models/seller');
 const { handleErrorResponse } = require('../Utils/errorHandler');
 
 async function createVideoRoom(roomName,id) {
-    return `https://stealth-zys3.onrender.com/api/v1/video/join/${id}?roomName=${roomName}`;
+    return `https://stealth-zys3.onrender.com/api/v1/video/join/?roomName=${roomName}`;
 }
 
 // Function to find a call by room name
@@ -30,7 +30,7 @@ module.exports.join = async (req, res) => {
 
     const roomName = req.query.roomName;
     const id = req.params.id;
-    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/${id}?roomCode=${roomName}`);
+    res.redirect(`https://starlit-dasik-f4ad0d.netlify.app/?roomCode=${roomName}`);
 };
 
 // Send a call request to the room owner
