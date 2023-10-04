@@ -56,10 +56,11 @@ module.exports.sendCallRequest = async (req, res) => {
 
 // Manage call request
 module.exports.manageCall = async (req, res) => {
-    const { isAccepted, isRejected, roomName, phone } = req.query;
+    const { isAccepted, isRejected, roomName, id } = req.query;
+    console.log(roomName,id);
 
     try {
-        const user = await Call.findOne({ roomName, phone });
+        const user = await Call.findOne({ roomName, userId: id });
         console.log(user);
         if (!user) {
             return res.json({ message: 'Call request not found' });
@@ -186,7 +187,7 @@ module.exports.updatePhone = async (req, res) => {
             }
             let prevCall = await Call.findOne({ roomName, userId: id });
             if (prevCall) {
-                updateObject.token=prevCall.token;
+                updateObject.token = prevCall.token;
             }
             await Call.findByIdAndUpdate({ _id }, { $set: updateObject });
             return res.json({ message: 'Phone number updated successfully' });

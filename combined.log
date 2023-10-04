@@ -2204,3 +2204,20 @@
 2023-10-04T07:36:54.957Z [INFO]: Server running at port 3000
 2023-10-04T07:36:56.940Z [INFO]: Server running at port 3000
 2023-10-04T07:36:59.195Z [INFO]: Server running at port 3000
+2023-10-04T08:45:56.129Z [INFO]: Server running at port 3000
+2023-10-04T08:46:02.487Z [INFO]: Connected to the database
+2023-10-04T08:46:50.168Z [INFO]: Incoming GET request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042
+2023-10-04T08:46:50.177Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042 took 10.484099999070168ms
+2023-10-04T08:46:54.846Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042
+2023-10-04T08:46:55.228Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042 took 381.9096000045538ms
+2023-10-04T08:47:14.577Z [INFO]: Server running at port 3000
+2023-10-04T08:47:16.873Z [INFO]: Server running at port 3000
+2023-10-04T08:47:18.104Z [INFO]: Server running at port 3000
+2023-10-04T08:47:22.054Z [INFO]: Server running at port 3000
+2023-10-04T08:47:27.813Z [INFO]: Connected to the database
+2023-10-04T08:47:28.566Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042
+2023-10-04T08:47:31.769Z [INFO]: Request to /api/v1/video/manage?roomName=Akshat&isRejected=true&id=651d183c245b4e2c97c07042 took 3203.201700001955ms
+2023-10-04T08:47:45.501Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Heeralal&isRejected=true&id=651d183c245b4e2c97c07042
+2023-10-04T08:47:46.572Z [INFO]: Request to /api/v1/video/manage?roomName=Heeralal&isRejected=true&id=651d183c245b4e2c97c07042 took 1071.1353999972343ms
+2023-10-04T08:48:01.122Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Heeralal&isAccepted=true&id=651d183c245b4e2c97c07042
+2023-10-04T08:48:01.985Z [INFO]: Request to /api/v1/video/manage?roomName=Heeralal&isAccepted=true&id=651d183c245b4e2c97c07042 took 862.6738999933004ms
