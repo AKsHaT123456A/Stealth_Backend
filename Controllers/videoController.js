@@ -57,7 +57,7 @@ module.exports.sendCallRequest = async (req, res) => {
 // Manage call request
 module.exports.manageCall = async (req, res) => {
     const { isAccepted, isRejected, roomName, id } = req.query;
-    console.log(roomName,id);
+    console.log(roomName, id);
 
     try {
         const user = await Call.findOne({ roomName, userId: id });
