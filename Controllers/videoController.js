@@ -68,7 +68,6 @@ module.exports.manageCall = async (req, res) => {
 
         user.isAccepted = Boolean(isAccepted);
         user.isRejected = Boolean(isRejected);
-        user.isNotified = false;
 
         await user.save();
 
@@ -125,7 +124,7 @@ module.exports.getCallHistory = async (req, res) => {
         res.json({
             isAccepted: callHistory.isAccepted,
             isRejected: callHistory.isRejected,
-            token: callHistory.token,
+            token: seller.token,
             isOpen: seller.isOpen
         });
     } catch (error) {

@@ -35,6 +35,7 @@ module.exports.register = async (req, res) => {
 module.exports.login = async (req, res) => {
     try {
         const { phone, password, token } = req.body;
+        console.log(phone, password, token);
 
         if (!phone || !password) {
             return handleError(res, 400, 'Please provide both phone and password');
@@ -53,7 +54,10 @@ module.exports.login = async (req, res) => {
         }
 
         const [accessToken, refreshToken] = await generateTokens(user._id);
-
+        const id = user._id;
+        console.log(id);
+        const seller = await Seller.findByIdAndUpdate(id, { $set: { token } });
+        console.log(seller);
         res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'none' });
         if (call) {
             call.token = token;
@@ -63,7 +67,6 @@ module.exports.login = async (req, res) => {
         const roomName = user.shopName;
         // const date = new Date();
         await Call.create({ token, phone, roomName, userId: user._id });
-        await Seller.findByIdAndUpdate({ _id: user._id }, { $set: {token} });
         return res.status(200).json({ message: 'Logged in successfully', userId: user._id, accessToken });
     } catch (error) {
         return handleError(res, 500, 'An error occurred while logging in', error);

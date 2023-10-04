@@ -27,10 +27,6 @@ const callSchema = mongoose.Schema({
         type: Boolean,
         default: false
     },
-    token: {
-        type: String,
-        default: ""
-    },
     phone:{
         type: String,
         default: ""
