@@ -142,15 +142,15 @@ module.exports.showCallHistory = async (req, res) => {
         }
 
         // Find all call history documents with the specified roomName
-        const callHistoryList = await Call.find({ roomName, userId: id });
+        const callHistoryList = await Call.find({ roomName, id });
         if (!callHistoryList || callHistoryList.length === 0) {
-            return res.json({ message: [] });
+            return res.status(400).json({ message: [], roomName, id });
         }
         // Find the seller information based on roomName
         const seller = await Seller.findOne({ shopName: roomName });
 
         if (!seller) {
-            return res.json({ message: 'Seller not found' });
+            return res.jstatus(400).json({ message: 'Seller not found' });
         }
 
         // Add each call history document to the user's calls Set
@@ -161,7 +161,7 @@ module.exports.showCallHistory = async (req, res) => {
         // Save the updated user document
         await seller.save();
         // Respond with the relevant information
-        return res.json({
+        return res.status(400).json({
             callHistoryList
         });
     } catch (error) {
