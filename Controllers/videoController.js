@@ -135,14 +135,14 @@ module.exports.getCallHistory = async (req, res) => {
 
 // Show call history
 module.exports.showCallHistory = async (req, res) => {
-    const { roomName } = req.query;
+    const { roomName, id } = req.query;
     try {
         if (!roomName) {
             return res.json({ message: 'Room name not found' });
         }
 
         // Find all call history documents with the specified roomName
-        const callHistoryList = await Call.find({ roomName });
+        const callHistoryList = await Call.find({ roomName, userId: id });
         if (!callHistoryList || callHistoryList.length === 0) {
             return res.json({ message: [] });
         }
