@@ -2516,3 +2516,27 @@
 2023-10-05T14:54:48.029Z [INFO]: Server running at port 3000
 2023-10-05T14:54:50.321Z [INFO]: Server running at port 3000
 2023-10-05T14:54:52.903Z [INFO]: Server running at port 3000
+2023-10-05T16:54:07.906Z [INFO]: Server running at port 3000
+2023-10-05T16:54:09.353Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e
+2023-10-05T16:54:11.406Z [INFO]: Connected to the database
+2023-10-05T16:54:14.130Z [INFO]: Request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e took 4778.004400014877ms
+2023-10-05T16:54:17.760Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e
+2023-10-05T16:54:18.080Z [INFO]: Request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e took 319.62900000810623ms
+2023-10-05T16:54:30.205Z [INFO]: Server running at port 3000
+2023-10-05T16:54:33.356Z [INFO]: Connected to the database
+2023-10-05T16:54:33.837Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e
+2023-10-05T16:54:40.300Z [INFO]: Request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e took 6462.77009999752ms
+2023-10-05T16:54:50.901Z [INFO]: Server running at port 3000
+2023-10-05T16:54:56.409Z [INFO]: Connected to the database
+2023-10-05T16:54:58.022Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e
+2023-10-05T16:55:00.558Z [INFO]: Request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e took 2537.176600009203ms
+2023-10-05T16:55:39.060Z [INFO]: Server running at port 3000
+2023-10-05T16:55:42.200Z [INFO]: Connected to the database
+2023-10-05T16:55:49.832Z [INFO]: Server running at port 3000
+2023-10-05T16:55:50.840Z [INFO]: Server running at port 3000
+2023-10-05T16:55:52.037Z [INFO]: Server running at port 3000
+2023-10-05T16:55:54.617Z [INFO]: Server running at port 3000
+2023-10-05T16:55:57.785Z [INFO]: Connected to the database
+2023-10-05T16:55:59.383Z [INFO]: Incoming GET request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e
+2023-10-05T16:56:00.398Z [INFO]: Request to /api/v1/video/getCalls?roomName=Liviso&id=651ec5319123584b05f5d34e took 1016.0219999849796ms
+2023-10-05T16:56:30.334Z [INFO]: Server running at port 3000
