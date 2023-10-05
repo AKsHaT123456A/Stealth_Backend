@@ -16,7 +16,7 @@ const updateProfile = async (req, res) => {
         console.log(shopLink);
 
         // Update seller's profile
-        const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, name: updatedShopName, shopName: updatedShopName } });
+        const seller = await Seller.findByIdAndUpdate({ _id: id }, { $set: { shopLink, ...req.body, shopName: updatedShopName } });
         console.log(seller);
         const phone = seller.phone;
         console.log(phone);

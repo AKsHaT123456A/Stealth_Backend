@@ -81,8 +81,8 @@ module.exports.manageCall = async (req, res) => {
 
 // Get call history
 module.exports.getCallHistory = async (req, res) => {
-    const { roomName, id } = req.query;
-    console.log(roomName, id);
+    const { roomName, id, phone } = req.query;
+    console.log(roomName, id, phone);
 
     try {
         if (!roomName) {
@@ -90,13 +90,8 @@ module.exports.getCallHistory = async (req, res) => {
         }
 
         // Find the call history by roomName
-        const callHistory = await Call.findOne({ roomName, userId: id });
+        const callHistory = await Call.findOne({ roomName, userId: id, phone: phone });
         console.log(callHistory);
-
-        if (!callHistory) {
-            return res.json({ message: 'Call history not found' });
-        }
-
         // Update the date field in the call history
         const date = new Date();
         const options = {
@@ -109,12 +104,18 @@ module.exports.getCallHistory = async (req, res) => {
             hour12: true
         };
         const formattedDate = date.toLocaleString('en-In', options);
-
+        if (!callHistory) {
+            if (phone) {
+                await Call({ date: formattedDate, roomName, userId: id, phone }).save();
+                return res.json({ message: 'Call is created' });
+            }
+        }
         // Update the date field in the call history record
-        await Call.findByIdAndUpdate(callHistory.id, { date: formattedDate });
+        await Call.findByIdAndUpdate(callHistory._id, { date: formattedDate, phone: phone });
 
         // Find the seller information based on roomName
         const seller = await Seller.findOne({ shopName: roomName });
+        console.log(seller);
 
         if (!seller) {
             return res.json({ message: 'Seller not found' });
@@ -181,18 +182,12 @@ module.exports.updatePhone = async (req, res) => {
                 duration,
                 roomName
             };
-            if (token) {
-                updateObject.token = token;
-            }
-            let prevCall = await Call.findOne({ roomName, userId: id });
-            if (prevCall) {
-                updateObject.token = prevCall.token;
-            }
             await Call.findByIdAndUpdate({ _id }, { $set: updateObject });
             return res.json({ message: 'Phone number updated successfully' });
         }
         videoCall = new Call({ roomName, phone, duration, token, userId: id });
         await videoCall.save();
+        // console.log(videoCall);
         return res.json({ message: 'Phone number saved successfully' });
     } catch (error) {
         console.error(error);

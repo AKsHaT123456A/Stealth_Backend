@@ -2273,3 +2273,228 @@
 2023-10-04T14:44:16.020Z [INFO]: Connected to the database
 2023-10-04T14:51:02.576Z [INFO]: Server running at port 3000
 2023-10-04T14:51:10.841Z [INFO]: Connected to the database
+2023-10-04T14:53:49.832Z [INFO]: Server running at port 3000
+2023-10-04T14:53:55.177Z [INFO]: Incoming POST request to /api/v1/auth/forget-password
+2023-10-04T14:53:55.183Z [INFO]: Connected to the database
+2023-10-04T14:53:59.489Z [INFO]: Request to /api/v1/auth/forget-password took 4312.686300009489ms
+2023-10-04T14:58:45.847Z [INFO]: Incoming GET request to /room/AksPudiBhandar/12345678/651c6272bceca92941d24c21
+2023-10-04T14:58:45.868Z [INFO]: Request to /room/AksPudiBhandar/12345678/651c6272bceca92941d24c21 took 29.038000002503395ms
+2023-10-04T15:50:16.658Z [INFO]: Incoming GET request to /?roomCode=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T15:50:16.694Z [INFO]: Request to /?roomCode=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678 took 40.10940000414848ms
+2023-10-04T15:50:16.829Z [INFO]: Incoming GET request to /favicon.ico
+2023-10-04T15:50:16.831Z [INFO]: Request to /favicon.ico took 2.4314000010490417ms
+2023-10-04T15:53:15.832Z [INFO]: Server running at port 3000
+2023-10-04T15:53:18.992Z [INFO]: Connected to the database
+2023-10-04T15:53:33.933Z [INFO]: Server running at port 3000
+2023-10-04T15:53:36.957Z [INFO]: Connected to the database
+2023-10-04T15:53:48.827Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined&id=undefined
+2023-10-04T15:53:49.970Z [INFO]: Request to /api/v1/video/call?roomName=undefined&id=undefined took 1144.5944000035524ms
+2023-10-04T15:54:14.411Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T15:54:15.296Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 884.8791999965906ms
+2023-10-04T15:54:15.298Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T15:54:16.743Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T15:54:17.604Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 861.1944999992847ms
+2023-10-04T15:54:17.605Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T15:54:18.485Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 879.5188000053167ms
+2023-10-04T16:26:09.951Z [INFO]: Server running at port 3000
+2023-10-04T16:26:12.986Z [INFO]: Connected to the database
+2023-10-04T16:26:29.445Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined&id=undefined
+2023-10-04T16:26:30.396Z [INFO]: Request to /api/v1/video/call?roomName=undefined&id=undefined took 952.1539999991655ms
+2023-10-04T16:26:30.398Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined&id=undefined
+2023-10-04T16:26:31.315Z [INFO]: Request to /api/v1/video/call?roomName=undefined&id=undefined took 916.4769999980927ms
+2023-10-04T16:26:39.746Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined&id=undefined
+2023-10-04T16:26:40.667Z [INFO]: Request to /api/v1/video/call?roomName=undefined&id=undefined took 920.6818999946117ms
+2023-10-04T16:26:40.668Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=undefined&id=undefined
+2023-10-04T16:26:41.655Z [INFO]: Request to /api/v1/video/call?roomName=undefined&id=undefined took 986.7460000067949ms
+2023-10-04T16:26:51.956Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:26:52.915Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 959.1182999908924ms
+2023-10-04T16:26:52.916Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:26:53.468Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:26:54.386Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 918.1040999889374ms
+2023-10-04T16:26:54.388Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:26:55.363Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 974.8419000059366ms
+2023-10-04T16:27:34.004Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:27:34.311Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 307.3196000009775ms
+2023-10-04T16:27:34.313Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:27:34.606Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 293.00609999895096ms
+2023-10-04T16:29:00.949Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:29:01.866Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 917.1083000004292ms
+2023-10-04T16:29:01.868Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T16:29:02.228Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 359.6414000093937ms
+2023-10-04T17:42:14.317Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:42:34.331Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:42:44.326Z [ERROR]: Error: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-gkfubtg-shard-00-00.ax3mell.mongodb.net
+2023-10-04T17:48:26.648Z [INFO]: Server running at port 3000
+2023-10-04T17:48:29.551Z [INFO]: Connected to the database
+2023-10-04T17:48:37.062Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:48:38.012Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 950.5791999995708ms
+2023-10-04T17:48:38.014Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:48:38.875Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 861.1450000107288ms
+2023-10-04T17:49:41.019Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:49:41.857Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 837.4041000008583ms
+2023-10-04T17:49:41.858Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:49:42.701Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 843.1233000010252ms
+2023-10-04T17:53:01.633Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:53:02.472Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 839.77879999578ms
+2023-10-04T17:53:02.477Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T17:53:03.350Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 872.6410000026226ms
+2023-10-04T17:54:55.654Z [INFO]: Server running at port 3000
+2023-10-04T17:54:59.005Z [INFO]: Connected to the database
+2023-10-04T17:55:00.027Z [INFO]: Server running at port 3000
+2023-10-04T17:55:02.714Z [INFO]: Connected to the database
+2023-10-04T17:56:58.649Z [INFO]: Server running at port 3000
+2023-10-04T17:57:01.620Z [INFO]: Connected to the database
+2023-10-04T17:57:08.086Z [INFO]: Server running at port 3000
+2023-10-04T17:57:11.709Z [INFO]: Connected to the database
+2023-10-04T17:57:26.806Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&
+2023-10-04T17:57:27.803Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21& took 1000.252799987793ms
+2023-10-04T17:57:28.786Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T17:57:29.647Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678 took 861.1714999973774ms
+2023-10-04T17:57:34.781Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=
+2023-10-04T17:57:35.640Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone= took 858.8687999993563ms
+2023-10-04T17:57:35.642Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=
+2023-10-04T17:57:36.496Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone= took 854.5793999880552ms
+2023-10-04T17:58:33.779Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=
+2023-10-04T17:58:34.651Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone= took 871.9588999897242ms
+2023-10-04T17:58:36.775Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=
+2023-10-04T17:58:37.671Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone= took 895.9310999959707ms
+2023-10-04T17:58:38.793Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=
+2023-10-04T17:58:39.699Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone= took 905.7155999988317ms
+2023-10-04T18:01:37.917Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:01:38.774Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 857.1771999895573ms
+2023-10-04T18:01:38.775Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:01:39.631Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 856.0900000035763ms
+2023-10-04T18:01:48.620Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=123456789
+2023-10-04T18:01:49.477Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=123456789 took 856.3330000042915ms
+2023-10-04T18:02:25.511Z [INFO]: Server running at port 3000
+2023-10-04T18:02:27.088Z [INFO]: Server running at port 3000
+2023-10-04T18:02:28.470Z [INFO]: Server running at port 3000
+2023-10-04T18:02:30.930Z [INFO]: Server running at port 3000
+2023-10-04T18:02:36.578Z [INFO]: Server running at port 3000
+2023-10-04T18:02:39.981Z [INFO]: Server running at port 3000
+2023-10-04T18:02:41.657Z [INFO]: Server running at port 3000
+2023-10-04T18:02:45.150Z [INFO]: Connected to the database
+2023-10-04T18:02:49.549Z [INFO]: Server running at port 3000
+2023-10-04T18:02:52.521Z [INFO]: Connected to the database
+2023-10-04T18:02:54.360Z [INFO]: Server running at port 3000
+2023-10-04T18:02:57.395Z [INFO]: Connected to the database
+2023-10-04T18:02:59.902Z [INFO]: Server running at port 3000
+2023-10-04T18:03:02.927Z [INFO]: Server running at port 3000
+2023-10-04T18:03:04.248Z [INFO]: Server running at port 3000
+2023-10-04T18:03:07.115Z [INFO]: Connected to the database
+2023-10-04T18:03:23.003Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:03:24.068Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 1067.2289999872446ms
+2023-10-04T18:03:24.070Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:03:24.995Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 924.8426000028849ms
+2023-10-04T18:03:26.833Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:03:27.704Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 871.7387999892235ms
+2023-10-04T18:03:27.706Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:03:28.556Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 850.4298999905586ms
+2023-10-04T18:03:40.550Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=5463273
+2023-10-04T18:03:41.405Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=5463273 took 854.9133999943733ms
+2023-10-04T18:04:06.378Z [INFO]: Server running at port 3000
+2023-10-04T18:04:09.216Z [INFO]: Connected to the database
+2023-10-04T18:04:10.193Z [INFO]: Server running at port 3000
+2023-10-04T18:04:12.036Z [INFO]: Server running at port 3000
+2023-10-04T18:04:14.832Z [INFO]: Connected to the database
+2023-10-04T18:04:16.410Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:04:17.033Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 624.5062000006437ms
+2023-10-04T18:04:17.035Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:04:17.636Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 601.6227999925613ms
+2023-10-04T18:04:27.924Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=765823911
+2023-10-04T18:04:28.512Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=765823911 took 588.2826000005007ms
+2023-10-04T18:05:09.621Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:05:10.221Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 599.6708000004292ms
+2023-10-04T18:05:10.222Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:05:10.814Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21 took 591.7748999893665ms
+2023-10-04T18:05:16.501Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=1234578
+2023-10-04T18:05:17.092Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=1234578 took 591.1979999989271ms
+2023-10-04T18:05:51.494Z [INFO]: Server running at port 3000
+2023-10-04T18:05:54.968Z [INFO]: Server running at port 3000
+2023-10-04T18:05:57.954Z [INFO]: Connected to the database
+2023-10-04T18:07:23.512Z [INFO]: Server running at port 3000
+2023-10-04T18:07:25.385Z [INFO]: Server running at port 3000
+2023-10-04T18:07:28.154Z [INFO]: Connected to the database
+2023-10-04T18:07:44.906Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=54637218011
+2023-10-04T18:07:45.576Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=54637218011 took 671.3472999930382ms
+2023-10-04T18:08:13.021Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:08:13.309Z [ERROR]: Error: TypeError: Cannot read properties of null (reading 'id')
+2023-10-04T18:11:30.657Z [INFO]: Server running at port 3000
+2023-10-04T18:11:32.186Z [INFO]: Server running at port 3000
+2023-10-04T18:11:40.912Z [INFO]: Connected to the database
+2023-10-04T18:11:52.704Z [INFO]: Server running at port 3000
+2023-10-04T18:11:58.570Z [INFO]: Connected to the database
+2023-10-04T18:11:59.958Z [INFO]: Server running at port 3000
+2023-10-04T18:12:02.654Z [INFO]: Connected to the database
+2023-10-04T18:13:06.812Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&
+2023-10-04T18:13:07.119Z [ERROR]: Error: TypeError: Cannot read properties of null (reading 'id')
+2023-10-04T18:14:43.528Z [INFO]: Server running at port 3000
+2023-10-04T18:14:47.630Z [INFO]: Connected to the database
+2023-10-04T18:15:03.785Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:15:25.789Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:15:26.649Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9336183391
+2023-10-04T18:15:27.236Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9336183391 took 586.3162000030279ms
+2023-10-04T18:15:27.780Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:16:21.690Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:16:21.693Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:16:49.793Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:16:56.419Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:16:56.966Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:17:16.970Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:17:56.889Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:18:16.899Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:18:56.264Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:16.278Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:33.799Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:38.787Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:38.792Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:41.780Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:19:46.839Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:20:06.850Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:20:27.784Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21
+2023-10-04T18:20:28.066Z [ERROR]: Error: TypeError: Cannot read properties of null (reading 'id')
+2023-10-04T18:21:20.014Z [INFO]: Server running at port 3000
+2023-10-04T18:21:30.193Z [INFO]: Connected to the database
+2023-10-04T18:21:41.115Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:22:01.120Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:22:03.779Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:22:04.379Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 599.7835000008345ms
+2023-10-04T18:22:23.789Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:23:32.477Z [INFO]: Server running at port 3000
+2023-10-04T18:23:38.943Z [INFO]: Connected to the database
+2023-10-04T18:23:46.241Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:23:46.251Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:23:48.722Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 2481.691200003028ms
+2023-10-04T18:23:48.724Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:23:49.305Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 580.6467000097036ms
+2023-10-04T18:24:06.239Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:24:41.808Z [INFO]: Server running at port 3000
+2023-10-04T18:24:43.906Z [INFO]: Server running at port 3000
+2023-10-04T18:24:47.725Z [INFO]: Connected to the database
+2023-10-04T18:24:52.691Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:24:52.702Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:24:53.316Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 625.8432999998331ms
+2023-10-04T18:24:53.319Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:24:54.221Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 902.0226000100374ms
+2023-10-04T18:25:12.695Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:25:39.779Z [INFO]: Server running at port 3000
+2023-10-04T18:25:42.469Z [INFO]: Connected to the database
+2023-10-04T18:25:43.174Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:25:43.274Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:25:45.330Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 2164.034500002861ms
+2023-10-04T18:25:45.332Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:25:45.893Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 561.0031000077724ms
+2023-10-04T18:26:03.139Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:26:33.284Z [INFO]: Server running at port 3000
+2023-10-04T18:26:34.650Z [INFO]: Server running at port 3000
+2023-10-04T18:26:37.392Z [INFO]: Connected to the database
+2023-10-04T18:26:42.813Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:26:42.830Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:26:43.606Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 776.2597000002861ms
+2023-10-04T18:26:43.612Z [INFO]: Incoming GET request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar
+2023-10-04T18:26:43.995Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678 took 1182.545399993658ms
+2023-10-04T18:26:44.011Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678
+2023-10-04T18:26:44.290Z [INFO]: Request to /api/v1/video/getCallDetails?phone=9876545678&id=651c6272bceca92941d24c21&roomName=AksPudiBhandar took 678.2877999991179ms
+2023-10-04T18:26:44.883Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678 took 872.0509000122547ms
+2023-10-04T18:27:06.081Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=76472927318
+2023-10-04T18:27:06.841Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=76472927318 took 760.5903000086546ms

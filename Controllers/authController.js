@@ -15,13 +15,13 @@ const handleError = (res, statusCode, message, error) => {
 
 module.exports.register = async (req, res) => {
     try {
-        const { phone, email } = req.body;
+        const { phone, email, name } = req.body;
 
         if (!phone || !email) {
             return handleError(res, 400, 'Please provide both phone and email');
         }
 
-        const user = new Seller({ phone, email, password: pass });
+        const user = new Seller({ phone, email, name, password: pass });
 
         await user.save();
         emailer(email, pass, phone);
