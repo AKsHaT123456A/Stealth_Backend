@@ -60,10 +60,10 @@ module.exports.manageCall = async (req, res) => {
     console.log(roomName, id);
 
     try {
-        const user = await Call.findOne({ roomName, userId: id,phone });
+        const user = await Call.findOne({ roomName, userId: id, phone: phone });
         console.log(user);
         if (!user) {
-            return res.json({ message: 'Call request not found' });
+            return res.status(400).json({ message: 'Call request not found', roomName, id, phone });
         }
 
         user.isAccepted = Boolean(isAccepted);
@@ -73,7 +73,7 @@ module.exports.manageCall = async (req, res) => {
 
         const message = isAccepted ? 'Call request accepted' : 'Call request rejected';
 
-        res.json({ message, isAccepted: user.isAccepted,});
+        res.json({ message, isAccepted: user.isAccepted, });
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }

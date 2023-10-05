@@ -2498,3 +2498,21 @@
 2023-10-04T18:26:44.883Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=9876545678 took 872.0509000122547ms
 2023-10-04T18:27:06.081Z [INFO]: Incoming GET request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=76472927318
 2023-10-04T18:27:06.841Z [INFO]: Request to /api/v1/video/call?roomName=AksPudiBhandar&id=651c6272bceca92941d24c21&phone=76472927318 took 760.5903000086546ms
+2023-10-05T14:37:51.353Z [INFO]: Server running at port 3000
+2023-10-05T14:37:55.113Z [INFO]: Connected to the database
+2023-10-05T14:37:55.864Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=9336183399
+2023-10-05T14:37:58.452Z [INFO]: Request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=9336183399 took 2588.324200004339ms
+2023-10-05T14:38:27.834Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1234554321
+2023-10-05T14:38:28.188Z [INFO]: Request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1234554321 took 354.4156999886036ms
+2023-10-05T14:38:42.044Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1234554321
+2023-10-05T14:38:42.420Z [INFO]: Request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1234554321 took 376.040600001812ms
+2023-10-05T14:39:31.011Z [INFO]: Incoming POST request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1235454131
+2023-10-05T14:39:31.779Z [INFO]: Request to /api/v1/video/manage?roomName=Liviso&isAccepted=true&id=651ec5319123584b05f5d34e&phone=1235454131 took 767.1796999871731ms
+2023-10-05T14:54:33.915Z [INFO]: Server running at port 3000
+2023-10-05T14:54:36.523Z [INFO]: Server running at port 3000
+2023-10-05T14:54:40.652Z [INFO]: Server running at port 3000
+2023-10-05T14:54:43.013Z [INFO]: Server running at port 3000
+2023-10-05T14:54:44.659Z [INFO]: Server running at port 3000
+2023-10-05T14:54:48.029Z [INFO]: Server running at port 3000
+2023-10-05T14:54:50.321Z [INFO]: Server running at port 3000
+2023-10-05T14:54:52.903Z [INFO]: Server running at port 3000
