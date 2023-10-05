@@ -56,11 +56,11 @@ module.exports.sendCallRequest = async (req, res) => {
 
 // Manage call request
 module.exports.manageCall = async (req, res) => {
-    const { isAccepted, isRejected, roomName, id } = req.query;
+    const { isAccepted, isRejected, roomName, id, phone } = req.query;
     console.log(roomName, id);
 
     try {
-        const user = await Call.findOne({ roomName, userId: id });
+        const user = await Call.findOne({ roomName, userId: id,phone });
         console.log(user);
         if (!user) {
             return res.json({ message: 'Call request not found' });
@@ -73,7 +73,7 @@ module.exports.manageCall = async (req, res) => {
 
         const message = isAccepted ? 'Call request accepted' : 'Call request rejected';
 
-        res.json({ message, isAccepted: user.isAccepted });
+        res.json({ message, isAccepted: user.isAccepted,});
     } catch (error) {
         handleErrorResponse(res, roomName, error);
     }
