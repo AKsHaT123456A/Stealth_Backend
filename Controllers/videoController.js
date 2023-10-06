@@ -80,6 +80,9 @@ module.exports.manageCall = async (req, res) => {
 };
 
 // Get call history
+const Call = require('./models/Call'); // Import your Call model
+const Seller = require('./models/Seller'); // Import your Seller model
+
 module.exports.getCallHistory = async (req, res) => {
     const { roomName, id, phone } = req.query;
 
@@ -91,8 +94,17 @@ module.exports.getCallHistory = async (req, res) => {
         // Find the call history by roomName, userId, and phone
         let callHistory = await Call.findOne({ roomName, userId: id, phone });
 
-        // Get the current date and time
-        const currentDate = new Date();
+        // Get the current date and time formatted as "4 Oct 2023, 7:53:38 pm" in IST (Indian Standard Time)
+        const currentDate = new Date().toLocaleString('en-IN', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true,
+            timeZone: 'Asia/Kolkata',
+        });
 
         if (!callHistory) {
             // If no call history exists, create a new one
@@ -129,6 +141,7 @@ module.exports.getCallHistory = async (req, res) => {
         handleErrorResponse(res, roomName, error);
     }
 };
+
 // Show call history
 module.exports.showCallHistory = async (req, res) => {
     const { roomName, id } = req.query;
