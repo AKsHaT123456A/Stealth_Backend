@@ -82,40 +82,37 @@ module.exports.manageCall = async (req, res) => {
 // Get call history
 module.exports.getCallHistory = async (req, res) => {
     const { roomName, id, phone } = req.query;
-    console.log(roomName, id, phone);
 
     try {
         if (!roomName) {
             return res.json({ message: 'Room name not found' });
         }
 
-        // Find the call history by roomName
-        const callHistory = await Call.findOne({ roomName, userId: id, phone: phone });
-        console.log(callHistory);
-        // Update the date field in the call history
-        const date = new Date();
-        const options = {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-            hour: 'numeric',
-            minute: 'numeric',
-            second: 'numeric',
-            hour12: true
-        };
-        const formattedDate = date.toLocaleString('en-In', options);
+        // Find the call history by roomName, userId, and phone
+        let callHistory = await Call.findOne({ roomName, userId: id, phone });
+
+        // Get the current date and time
+        const currentDate = new Date();
+
         if (!callHistory) {
-            if (phone) {
-                await Call({ date: formattedDate, roomName, userId: id, phone }).save();
-                return res.json({ message: 'Call is created' });
-            }
+            // If no call history exists, create a new one
+            callHistory = new Call({
+                date: currentDate,
+                roomName,
+                userId: id,
+                phone
+            });
+            await callHistory.save();
+            return res.json({ message: 'Call is created' });
         }
+
         // Update the date field in the call history record
-        await Call.findByIdAndUpdate(callHistory._id, { date: formattedDate, phone: phone });
+        callHistory.date = currentDate;
+        callHistory.phone = phone;
+        await callHistory.save();
 
         // Find the seller information based on roomName
         const seller = await Seller.findOne({ shopName: roomName });
-        console.log(seller);
 
         if (!seller) {
             return res.json({ message: 'Seller not found' });
@@ -132,7 +129,6 @@ module.exports.getCallHistory = async (req, res) => {
         handleErrorResponse(res, roomName, error);
     }
 };
-
 // Show call history
 module.exports.showCallHistory = async (req, res) => {
     const { roomName, id } = req.query;
