@@ -80,9 +80,6 @@ module.exports.manageCall = async (req, res) => {
 };
 
 // Get call history
-const Call = require('./models/Call'); // Import your Call model
-const Seller = require('./models/Seller'); // Import your Seller model
-
 module.exports.getCallHistory = async (req, res) => {
     const { roomName, id, phone } = req.query;
 
