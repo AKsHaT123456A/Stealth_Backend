@@ -62,7 +62,7 @@ const sellerSchema = new mongoose.Schema({
     },
     isOpen: {
         type: Boolean,
-        default: false
+        default: true
     },
 });
 
